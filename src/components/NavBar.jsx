@@ -13,6 +13,7 @@ import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/
 import Paragraph from '../layout/typography/Paragraph'
 import Header from '../layout/typography/Header'
 import RouteLinks from '../layout/typography/RouteLinks'
+import Button from '../layout/container/Button'
 
 const pageroute = [
     { name: 'Home', description: 'Get a better understanding of your traffic', href: '/', icon: ChartPieIcon },
@@ -31,7 +32,7 @@ export default function Example() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-        <header className="bg-white/90 backdrop-blur fixed top-0 w-screen z-50">
+        <header className=" fixed top-0 w-screen z-50">
             <nav className="mx-auto flex max-w-[93vw] items-center justify-between p-6 lg:px-8" aria-label="Global">
                 <div className="flex lg:flex-1">
                     <a href="/" className="-m-1.5 p-1.5">
@@ -56,6 +57,8 @@ export default function Example() {
                         <RouteLinks linkTitle={page.name} routeLocation={page.href} variant={'base'} key={id} />
                     ))}
                 </Popover.Group>
+                <Button variant={'default'}  btnText={'Contact'}/>
+
 
             </nav>
 
@@ -86,7 +89,6 @@ export default function Example() {
                                 <RouteLinks linkTitle={'Home'} className={'-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'} />
 
                             </div>
-
                         </div>
                     </div>
                 </Dialog.Panel>

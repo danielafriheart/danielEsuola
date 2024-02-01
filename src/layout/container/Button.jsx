@@ -9,7 +9,6 @@ const Button = ({ btnText, href, variant }) => {
         if (e.type === 'mouseenter') {
             // Mouse entering, add the rotate-45 class
             animateTarget.classList.add('rotate-45');
-            // console.log('Animating!');
         } else if (e.type === 'mouseleave') {
             // Mouse leaving, remove the rotate-45 class
             animateTarget.classList.remove('rotate-45');
@@ -23,8 +22,8 @@ const Button = ({ btnText, href, variant }) => {
     const variantStyles = {
         white: "bg-white text-black",
         black: "bg-black hover:bg-transparent text-white hover:text-black transition-all hover:border hover:border-black duration-300",
-        grey: "bg-[#F0F0F0] text-black hover:border",
-        no_Icon: "text-[2.5rem]",
+        grey: "bg-[#F0F0F0] hover:bg-transparent text-black transition-all hover:border hover:border-black duration-300",
+        default: "text-[2.5rem]",
     };
 
     const selectedVariant = variantStyles[variant] || variantStyles.white
@@ -39,7 +38,7 @@ const Button = ({ btnText, href, variant }) => {
                 className={`flex items-center space-x-3 py-4 px-10 rounded-full ${selectedVariant}`}
             >
                 <span>{btnText || 'Button'}</span>
-                <span className='animate-target transition-all duration-200'>{trailingIcon}</span>
+                <span className='animate-target transition-all duration-100'>{trailingIcon}</span>
             </NavLink>
         </button>
     )

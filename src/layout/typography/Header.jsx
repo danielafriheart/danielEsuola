@@ -11,7 +11,7 @@ import React from 'react'
 const Header = ({ leadingText, greyText, trailingText }) => {
 
     return (
-        <h1 className={`lg:text-header text-Paragraph lg:leading-[77px] leading-tight space-x-4 font-normal flex-wrap`}>
+        <h1 className={`lg:text-Header text-Header-sm lg:leading-[77px] leading-tight space-x-4 font-normal flex-wrap`}>
             {leadingText}
             {greyText && <span className='text-Gray'>{greyText}</span>}
             {trailingText}
