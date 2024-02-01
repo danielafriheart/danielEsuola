@@ -11,7 +11,7 @@ const Paragraph = ({ text, className, variant, trailingText, greyText }) => {
         base: "text-[1rem]leading-[22px] text-black font-normal",   // equivalent to 16px
         caption: "text-[1.125rem] text-[#666666]",  // equivalent to 18px
         label: "text-[1.5rem]",  // equivalent to 24px
-        paragraph: "lg:text-[2.5rem] text-Paragraph-sm", // equivalent to 40px
+        paragraph: "lg:text-[2.5rem] md:text-Paragraph-md text-Paragraph-sm", // equivalent to 40px
     };
 
     const selectedVariant = variantStyles[variant] || variantStyles.base;

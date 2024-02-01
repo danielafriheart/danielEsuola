@@ -8,7 +8,7 @@ const Hero = () => {
 
     return (
 
-        <Section className={'min-h-[85vh] grid place-content-center'}>
+        <Section className={'lg:h-[80vh] md:h-[70vh] h-[60vh] grid place-content-center'}>
 
             <div className='flex flex-col justify-center lg:space-y-20 space-y-10'>
 

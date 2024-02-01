@@ -16,9 +16,10 @@ export default {
         "Base": '1rem',      // equivalent to 16px
         "Caption": '1.125rem', // equivalent to 18px
         "Label": '1.5rem',    // equivalent to 24px
-        "Paragraph-sm": '2rem', // equivalent to 32px
+        "Paragraph-sm": '1.6rem', // equivalent to 26px
+        "Paragraph-md": '2rem', // equivalent to 32px
         "Paragraph": '2.5rem', // equivalent to 40px
-        "Header-sm": '3.25rem',     // equivalent to 52px
+        "Header-md": '3.25rem',     // equivalent to 52px
         "Header": '4rem',     // equivalent to 64px
       },
     },

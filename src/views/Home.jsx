@@ -7,6 +7,7 @@ import ActionAreaCard from '../components/ActionAreaCard'
 import Projects from '../components/Projects'
 import Section from '../layout/container/Section'
 import DesignSuccess from '../components/DesignSuccess'
+import Services from '../components/Services'
 
 const Home = () => {
     return (
@@ -22,6 +23,7 @@ const Home = () => {
             
             <Projects />
             <DesignSuccess/>
+            <Services/>
         </Container>
     )
 }
