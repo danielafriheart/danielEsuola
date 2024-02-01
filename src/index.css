@@ -1,0 +1,56 @@
+@import url('https://fonts.cdnfonts.com/css/manrope');
+@import url('https://fonts.cdnfonts.com/css/inter');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Manrope', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  /* outline: dashed 1px lightgray; */
+}
+
+.logo {
+  font-family: 'Inter', sans-serif;
+}
+
+.difference {
+  mix-blend-mode: difference;
+}
+
+.bn47 {
+  position: relative;
+  padding: 1rem 2rem 0.5rem 2.5rem;
+  color: #ffffff;
+  border: 3px solid #776e62;
+  -webkit-transition: padding 0.3s ease-in-out;
+  transition: padding 0.3s ease-in-out;
+}
+
+.bn47:before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  border-right: 3px solid #000000;
+  border-bottom: 3px solid #000000;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.bn47:hover {
+  padding: 0.75rem 2.25rem;
+}
+
+.bn47:hover:before {
+  top: 0;
+  left: 0;
+}
