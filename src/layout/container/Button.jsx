@@ -15,15 +15,16 @@ const Button = ({ btnText, href, variant }) => {
         }
     }
 
-    const trailingIcon = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-        <path fillRule="evenodd" d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z" clipRule="evenodd" />
-    </svg>
+    const trailingIcon =
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+            <path fillRule="evenodd" d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z" clipRule="evenodd" />
+        </svg>
 
     const variantStyles = {
         white: "bg-white text-black",
         black: "bg-black hover:bg-transparent text-white hover:text-black transition-all hover:border hover:border-black duration-300",
         grey: "bg-[#F0F0F0] hover:bg-transparent text-black transition-all hover:border hover:border-black duration-300",
-        default: "text-[2.5rem]",
+        default: "bg-black hover:bg-transparent text-white hover:text-black transition-all hover:border hover:border-black duration-300",
     };
 
     const selectedVariant = variantStyles[variant] || variantStyles.white
@@ -38,7 +39,7 @@ const Button = ({ btnText, href, variant }) => {
                 className={`flex items-center space-x-3 py-4 px-10 rounded-full ${selectedVariant}`}
             >
                 <span>{btnText || 'Button'}</span>
-                <span className='animate-target transition-all duration-100'>{trailingIcon}</span>
+                <span className={`animate-target transition-all duration-100 ${selectedVariant[variant] === 'default' ? 'hidden' : 'flex'}`}>{trailingIcon}</span>
             </NavLink>
         </button>
     )

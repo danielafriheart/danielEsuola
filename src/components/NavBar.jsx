@@ -57,8 +57,6 @@ export default function Example() {
                         <RouteLinks linkTitle={page.name} routeLocation={page.href} variant={'base'} key={id} />
                     ))}
                 </Popover.Group>
-                <Button variant={'default'}  btnText={'Contact'}/>
-
 
             </nav>
 
