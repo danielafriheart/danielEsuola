@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../layout/typography/Header'
 import Section from '../layout/container/Section'
 import Paragraph from '../layout/typography/Paragraph'
+import Button from '../layout/container/Button'
 
 const Hero = () => {
 
@@ -17,9 +18,12 @@ const Hero = () => {
                     <Header leadingText={"Discover the essence of Pearl, a free Framer template."} greyText={" Let's shape your brand into a masterpiece together. "} />
                 </span>
 
-                <span>
-                    <a class="bn47" href="/contact">Contact</a>
-                </span>
+                <div>
+                    <Button 
+                    btnText={'Contact'}
+                    variant={'black'}
+                    />
+                </div>
 
             </div>
 
