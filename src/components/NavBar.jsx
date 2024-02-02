@@ -10,22 +10,25 @@ import {
 
 import Paragraph from '../layout/typography/Paragraph'
 import RouteLinks from '../layout/typography/RouteLinks'
+import { useLocation } from 'react-router-dom'
 
-const pageroute = [
-    { name: 'Work', description: 'Get a better understanding of your traffic', href: '/work', icon: ChartPieIcon },
-    { name: 'About', description: 'Speak directly to your customers', href: '/sbout1', icon: CursorArrowRaysIcon },
-    { name: 'Contact', description: 'Your customers’ data will be safe and secure', href: '/contact', icon: FingerPrintIcon },
-]
+const Example = () => {
 
-const logo = <Paragraph text={'Okikiola'} variant={'label'} className={'font-medium logo'} />
+    const pageroute = [
+        { name: 'Work', description: 'Get a better understanding of your traffic', href: '/work', icon: ChartPieIcon },
+        { name: 'About', description: 'Speak directly to your customers', href: '/sbout1', icon: CursorArrowRaysIcon },
+        { name: 'Contact', description: 'Your customers’ data will be safe and secure', href: '/contact', icon: FingerPrintIcon },
+    ]
 
+    const logo = <Paragraph text={'Okikiola'} variant={'label'} className={'font-medium logo'} />
 
-function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
-}
+    function classNames(...classes) {
+        return classes.filter(Boolean).join(' ')
+    }
 
-export default function Example() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+    const location = useLocation();
 
     return (
         <header className=" fixed top-0 w-screen z-50">
@@ -55,7 +58,7 @@ export default function Example() {
                             linkTitle={page.name}
                             routeLocation={page.href}
                             routeStyleType={'noIcon'}
-                            hoverState={'hover'}
+                            hoverState={`${location.pathname === page.href ? 'always' : 'hover'}`}
                             variant={'base'}
                         />
                     ))}
@@ -96,3 +99,4 @@ export default function Example() {
         </header>
     )
 }
+export default Example
