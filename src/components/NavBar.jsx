@@ -1,23 +1,19 @@
-import { Fragment, useState } from 'react'
-import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
+import { useState } from 'react'
+import { Dialog, Popover } from '@headlessui/react'
 import {
-    ArrowPathIcon,
     Bars3Icon,
     ChartPieIcon,
     CursorArrowRaysIcon,
     FingerPrintIcon,
-    SquaresPlusIcon,
     XMarkIcon,
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+
 import Paragraph from '../layout/typography/Paragraph'
-import Header from '../layout/typography/Header'
 import RouteLinks from '../layout/typography/RouteLinks'
-import Button from '../layout/container/Button'
 
 const pageroute = [
-    { name: 'Home', description: 'Get a better understanding of your traffic', href: '/', icon: ChartPieIcon },
-    { name: 'Work', description: 'Speak directly to your customers', href: '/work', icon: CursorArrowRaysIcon },
+    { name: 'Work', description: 'Get a better understanding of your traffic', href: '/work', icon: ChartPieIcon },
+    { name: 'About', description: 'Speak directly to your customers', href: '/sbout1', icon: CursorArrowRaysIcon },
     { name: 'Contact', description: 'Your customers’ data will be safe and secure', href: '/contact', icon: FingerPrintIcon },
 ]
 
@@ -57,7 +53,6 @@ export default function Example() {
                         <RouteLinks linkTitle={page.name} routeLocation={page.href} variant={'base'} key={id} />
                     ))}
                 </Popover.Group>
-
             </nav>
 
 

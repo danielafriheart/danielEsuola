@@ -2,7 +2,6 @@ import * as React from 'react';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Paragraph from '../layout/typography/Paragraph';
 
 export default function BasicAccordion({ accordionTitle, accordionContent, accordionNumber }) {
@@ -14,15 +13,15 @@ export default function BasicAccordion({ accordionTitle, accordionContent, accor
         <Accordion sx={{
             backgroundColor: 'transparent',
             boxShadow: 'none',
-            borderBottom: 'none',
-            padding: '8px 10px'
+            borderBottom: '1px solid #969696',
+            padding: '8px 10px',
         }}>
             <AccordionSummary
                 expandIcon={icon}
                 aria-controls="panel1a-content"
                 id="panel1a-header"
                 sx={{
-                    padding: '20px 0px'
+                    padding: '20px 0px',
                 }}
             >
                 <Paragraph variant={'paragraph'} text={accordionTitle} />

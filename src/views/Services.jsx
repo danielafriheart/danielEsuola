@@ -1,5 +1,5 @@
 import React from 'react'
-import BasicAccordion from './BasicAccordion'
+import BasicAccordion from '../components/BasicAccordion'
 import Header from '../layout/typography/Header'
 import Paragraph from '../layout/typography/Paragraph'
 import Section from '../layout/container/Section'

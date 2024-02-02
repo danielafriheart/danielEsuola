@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import ActionAreaCard from './ActionAreaCard';
+import ActionAreaCard from '../components/ActionAreaCard';
 import Section from '../layout/container/Section';
 
 const Projects = () => {

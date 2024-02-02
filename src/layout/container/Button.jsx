@@ -22,8 +22,8 @@ const Button = ({ btnText, href, variant }) => {
 
     const variantStyles = {
         white: "bg-white text-black",
-        black: "bg-black hover:bg-transparent text-white hover:text-black transition-all hover:border hover:border-black duration-300",
-        grey: "bg-[#F0F0F0] hover:bg-transparent text-black transition-all hover:border hover:border-black duration-300",
+        black: "bg-black hover:bg-transparent text-white hover:text-black transition-all hover:border duration-300",
+        grey: "bg-[#F0F0F0] hover:bg-transparent text-black transition-all hover:border duration-300",
         default: "bg-black hover:bg-transparent text-white hover:text-black transition-all hover:border hover:border-black duration-300",
     };
 
@@ -39,7 +39,7 @@ const Button = ({ btnText, href, variant }) => {
                 className={`flex items-center space-x-3 py-4 px-10 rounded-full ${selectedVariant}`}
             >
                 <span>{btnText || 'Button'}</span>
-                <span className={`animate-target transition-all duration-100 ${selectedVariant[variant] === 'default' ? 'hidden' : 'flex'}`}>{trailingIcon}</span>
+                <span className={`animate-target transition-all duration-300 ${selectedVariant[variant] === 'default' ? 'hidden' : 'flex'}`}>{trailingIcon}</span>
             </NavLink>
         </button>
     )

@@ -6,10 +6,12 @@ const DesignSuccess = () => {
     return (
         <Section className={'my-24'}>
             <ThreeColumnGrid
-                caption={'Designing Success'}
-                paragrahText={"See how we've turned ideas into reality. Dive into the stories of"}
-                greyText={'successful product designs that make a difference.'}
-                btnText={'Our Work'}
+                caption={'My Story'}
+                paragrahText={"For me, this is a journey of "}
+                greyText={'creativity and exploration... '}
+                trailingText={'I really just want to create.'}
+                btnText={'About Me'}
+                href={'/about'}
             />
         </Section>
     )
