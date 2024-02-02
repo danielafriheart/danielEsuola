@@ -50,7 +50,14 @@ export default function Example() {
 
                 <Popover.Group className="hidden lg:flex lg:gap-x-12">
                     {pageroute.map((page, id) => (
-                        <RouteLinks linkTitle={page.name} routeLocation={page.href} variant={'base'} key={id} />
+                        <RouteLinks
+                            key={id}
+                            linkTitle={page.name}
+                            routeLocation={page.href}
+                            routeStyleType={'noIcon'}
+                            hoverState={'hover'}
+                            variant={'base'}
+                        />
                     ))}
                 </Popover.Group>
             </nav>

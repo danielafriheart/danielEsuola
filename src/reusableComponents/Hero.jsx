@@ -12,7 +12,7 @@ const Hero = () => {
 
             <div className='flex flex-col justify-center lg:space-y-20 space-y-10'>
 
-                <Paragraph text={'Developer · Software Developer'} variant={'base'} className={'font-normal'} />
+                <Paragraph text={'Developer · Software Developer'} variant={'base'} className={'font-thin'} />
 
                 <span className='lg:w-[87vw]'>
                     <Header leadingText={"Discover the essence of Pearl, a free Framer template."} greyText={" Let's shape your brand into a masterpiece together. "} />

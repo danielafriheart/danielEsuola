@@ -28,7 +28,7 @@ export default function BasicAccordion({ accordionTitle, accordionContent, accor
             </AccordionSummary>
 
             <AccordionDetails>
-                <Paragraph variant={'label'} className='py-3 px-16' text={accordionContent} />
+                <Paragraph variant={'label'} className='py-10 px-16 font-thin' text={accordionContent} />
             </AccordionDetails>
         </Accordion>
     );
