@@ -11,6 +11,10 @@ const Services = () => {
             caption: 'I specialize in scalable Front-end Web application development, including planning, design, build, testing and maintenance..',
         },
         {
+            service: 'Branding',
+            caption: 'I specialize in scalable Front-end Web application development, including planning, design, build, testing and maintenance..',
+        },
+        {
             service: 'Design & Animation',
             caption: 'I collaborate with designers to execute web app and design system animations and interactions.',
         },

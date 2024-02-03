@@ -4,6 +4,7 @@ import Home from './views/Home'
 import Error from './views/Error'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
+import Works from './views/Works'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Routes>
 
         <Route path='/' element={<Home />} />
+        <Route path='/work' element={<Works />} />
         <Route path='*' element={<Error />} />
 
       </Routes>
