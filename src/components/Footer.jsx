@@ -23,7 +23,7 @@ const Footer = () => {
 
     return (
         <footer className='bg-black'>
-            <Section className={'lg:min-h-[90vh] flex flex-col justify-between'}>
+            <Section className={'lg:min-h-[80vh] flex flex-col justify-between'}>
                 <section className='grid lg:grid-cols-[45%,55%]'>
                     <div className='lg:space-y-14 space-y-10 mb-10 lg:mb-0'>
                         <Paragraph variant={'base'} className={'font-thin text-white'} text={'Contact'} />
@@ -56,6 +56,7 @@ const Footer = () => {
                                         className={'text-white hover:text-white/80 transition-all duration-300 font-thin'}
                                         variant={'caption'}
                                         hoverState={'none'}
+                                        targetState={'_blank'}
                                     />
                                 ))
                             }

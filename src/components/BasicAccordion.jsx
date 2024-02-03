@@ -21,7 +21,7 @@ export default function BasicAccordion({ accordionTitle, accordionContent, accor
                 aria-controls="panel1a-content"
                 id="panel1a-header"
                 sx={{
-                    padding: '20px 0px',
+                    padding: '10px 0px',
                 }}
             >
                 <Paragraph variant={'paragraph'} text={accordionTitle} />

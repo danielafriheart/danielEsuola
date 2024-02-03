@@ -16,7 +16,7 @@ const Example = () => {
 
     const pageroute = [
         { name: 'Work', description: 'Get a better understanding of your traffic', href: '/work', icon: ChartPieIcon },
-        { name: 'About', description: 'Speak directly to your customers', href: '/sbout1', icon: CursorArrowRaysIcon },
+        { name: 'About', description: 'Speak directly to your customers', href: '/about', icon: CursorArrowRaysIcon },
         { name: 'Contact', description: 'Your customers’ data will be safe and secure', href: '/contact', icon: FingerPrintIcon },
     ]
 

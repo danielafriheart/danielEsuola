@@ -7,11 +7,11 @@ import Section from '../layout/container/Section'
 const Services = () => {
     const WHAT_I_DO = [
         {
-            service: 'Front End Development / Engineering',
-            caption: 'I specialize in scalable front-end web application development, including planning, design, build, testing and maintenance..',
+            service: 'Engineering',
+            caption: 'I specialize in scalable Front-end Web application development, including planning, design, build, testing and maintenance..',
         },
         {
-            service: 'Interaction Design & Animation',
+            service: 'Design & Animation',
             caption: 'I collaborate with designers to execute web app and design system animations and interactions.',
         },
         {
@@ -21,31 +21,24 @@ const Services = () => {
 
     ]
     return (
-        <Section>
-            <div className='flex flex-col gap-10'>
-                <Paragraph variant={'base'} text={'Services'} className={'font-thin'}/>
-            </div>
-
-            <div>
-                <Header text={'SERVICES'} />
-
-                <table className='w-full'>
-                    <tbody>
-                        {
-                            WHAT_I_DO.map((SERVICES, id) => {
-                                return (
-                                    <BasicAccordion
-                                        key={id}
-                                        accordionTitle={SERVICES.service}
-                                        accordionContent={SERVICES.caption}
-                                        // accordionNumber={`0${id + 1}`} //Accordion Number
-                                    />
-                                )
-                            })
-                        }
-                    </tbody>
-                </table>
-            </div>
+        <Section className={'space-y-5'}>
+            <Paragraph variant={'base'} text={'Services'} className={'font-thin'} />
+            <table className='w-full'>
+                <tbody>
+                    {
+                        WHAT_I_DO.map((SERVICES, id) => {
+                            return (
+                                <BasicAccordion
+                                    key={id}
+                                    accordionTitle={SERVICES.service}
+                                    accordionContent={SERVICES.caption}
+                                // accordionNumber={`0${id + 1}`} //Accordion Number
+                                />
+                            )
+                        })
+                    }
+                </tbody>
+            </table>
         </Section >
     )
 }
