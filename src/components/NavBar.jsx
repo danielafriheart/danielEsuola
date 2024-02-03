@@ -60,6 +60,7 @@ const Example = () => {
                             routeStyleType={'noIcon'}
                             hoverState={`${location.pathname === page.href ? 'always' : 'hover'}`}
                             variant={'base'}
+                            className={'font-thin'}
                         />
                     ))}
                 </Popover.Group>
