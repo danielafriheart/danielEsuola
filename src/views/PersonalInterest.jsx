@@ -19,15 +19,13 @@ const Interests = () => {
     };
 
     return (
-        <Section className='flex flex-col lg:gap-10 gap-10 '>
+        <Section className='flex flex-col lg:gap-0 gap-10 '>
 
             <section>
                 <div className='flex justify-between'>
                     <Paragraph text={'Personal Interest'} className={'lg:w-fit w-1/3 font-thin'}/>
                     <Paragraph text={'"CLICK & DRAG AROUND"'} className={'lg:flex hidden font-thin'} variant={'base'} />
                 </div>
-
-
             </section>
 
             <div className='lg:grid lg:grid-cols-[1.5fr,2fr] flex flex-col-reverse gap-0 h-fit'>

@@ -12,16 +12,16 @@ import Interests from './PersonalInterest'
 const About = () => {
     const Services = [
         {
-            name: 'Career Essentials in Software Development by Microsoft and LinkedIn 2024',
-            caption: 'By Microsoft and LinkedIn 2024',
+            name: 'Career Essentials in Software Development by Microsoft & LinkedIn 2024',
+            caption: 'By Microsoft and LinkedIn January 24, 2024',
         },
         {
             name: 'JavaScript Algorithms & Data Structures 2023',
-            caption: 'Representing approximately 300 hours of work..',
+            caption: 'This certifies that I successfully completed the JavaScript Algorithms and Data Structures, representing approximately 300 hours of work.',
         },
         {
             name: 'Responsive Web Design 2022',
-            caption: 'This certifies that I successfully completed the Responsive Web Design Developer Certification on January 25, 2022',
+            caption: 'This certifies that I successfully completed the Responsive Web Design Developer Certification on January 25, 2022.',
         },
 
     ]

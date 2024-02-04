@@ -9,7 +9,7 @@ const Hero = () => {
     return (
 
         <Section className={'lg:h-[80vh] md:h-[70vh] h-[60vh] flex flex-col justify-center'}>
-            <div className='flex flex-col justify-center lg:space-y-20 space-y-10 px-0'>
+            <div className='flex flex-col justify-center lg:space-y-10 space-y-10 px-0'>
 
 
                 <Paragraph text={'Developer · Software Developer'} variant={'base'} className={'font-thin'} />

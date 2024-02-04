@@ -11,6 +11,9 @@ import {
 import Paragraph from '../layout/typography/Paragraph'
 import RouteLinks from '../layout/typography/RouteLinks'
 import { useLocation } from 'react-router-dom'
+import Avatar from '@mui/joy/Avatar';
+import Box from '@mui/joy/Box';
+
 
 const Example = () => {
 
@@ -32,12 +35,13 @@ const Example = () => {
 
     return (
         <header className=" fixed top-0 w-screen z-50">
-            <nav className="mx-auto flex  max-w-[93vw] items-center justify-between p-6 lg:px-8" aria-label="Global">
-               
+            <nav className="mx-auto flex max-w-[93vw] items-center justify-between py-10 lg:px-8" aria-label="Global">
+
                 <div className="flex lg:flex-1">
                     <a href="/" className="-m-1.5">
-                        <span className="sr-only">Your Company</span>
-                        {logo}
+                        <Box sx={{ display: 'flex', gap: 2 }}>
+                            <Avatar alt="Esuola Daniel Okikiola" src="https://res.cloudinary.com/dnzi0xxtx/image/upload/v1707069784/Daniel/Avatar_te2xb4.jpg" size='lg' />
+                        </Box>
                     </a>
                 </div>
 
