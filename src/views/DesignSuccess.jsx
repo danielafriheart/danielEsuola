@@ -4,7 +4,7 @@ import ThreeColumnGrid from '../layout/container/ThreeColumnGrid'
 
 const DesignSuccess = () => {
     return (
-        <Section className={'my-24'}>
+        <Section>
             <ThreeColumnGrid
                 caption={'Designing Success'}
                 paragrahText={"See how I've turned ideas into reality. Dive into the stories of"}

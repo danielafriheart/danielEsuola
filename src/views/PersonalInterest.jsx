@@ -6,6 +6,8 @@ import { Model as Whitexbox } from '../3dModels/Whitexbox'
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
 import Paragraph from '../layout/typography/Paragraph';
+import RouteLinks from '../layout/typography/RouteLinks';
+import Section from '../layout/container/Section';
 // import Links from '../../layouts/typography/Links';
 
 
@@ -17,54 +19,52 @@ const Interests = () => {
     };
 
     return (
-        <section className='flex flex-col lg:gap-20 gap-10 lg:h-[95vh]'>
+        <Section className='flex flex-col lg:gap-10 gap-10 '>
 
             <section>
                 <div className='flex justify-between'>
-                    <span className='flex lg:w-1/4 justify-between'>
-                        <Paragraph text={'03/'} />
-                        <Paragraph text={'PERSONAL INTEREST'} className={'lg:w-fit w-1/3'} />
-                    </span>
-                    <Paragraph text={'"CLICK & DRAG AROUND"'} className={'lg:flex hidden'} />
+                    <Paragraph text={'Personal Interest'} className={'lg:w-fit w-1/3 font-thin'}/>
+                    <Paragraph text={'"CLICK & DRAG AROUND"'} className={'lg:flex hidden font-thin'} variant={'base'} />
                 </div>
-                <div className='w-full lg:overflow-x-scroll lg:overflow-y-hidden pb-0 flex lg:flex-row flex-col lg:gap-10 gap-0'>
-                    <Paragraph variant={'paragraph'} className={'cursor-pointer'} text="GAMING" active={activeTab === '1'} onClick={() => handleTabChange('1')} />
-                    <Paragraph variant={'paragraph'} className={'cursor-pointer'} text="MUSIC" active={activeTab === '2'} onClick={() => handleTabChange('2')} />
-                    <Paragraph variant={'paragraph'} className={'cursor-pointer'} text="VR" active={activeTab === '3'} onClick={() => handleTabChange('3')} />
-                </div>
+
 
             </section>
 
-            <div className='lg:grid lg:grid-cols-[1fr,2fr] flex flex-col-reverse gap-10 h-full'>
-                <div className='lg:h-full lg:grid place-content-center'>
-                    <section >
+            <div className='lg:grid lg:grid-cols-[1.5fr,2fr] flex flex-col-reverse gap-0 h-fit'>
+                <div className=''>
+                    <section className='flex flex-col justify-evenly h-full'>
+                        <div className='w-full pb-0 flex flex-col lg:space-y-3'>
+                            <Paragraph variant={'label'} className={'cursor-pointer hover:underline underline-offset-4'} text="GAMING" active={activeTab === '1'} onClick={() => handleTabChange('1')} />
+                            <Paragraph variant={'label'} className={'cursor-pointer hover:underline underline-offset-4'} text="MUSIC" active={activeTab === '2'} onClick={() => handleTabChange('2')} />
+                            <Paragraph variant={'label'} className={'cursor-pointer hover:underline underline-offset-4'} text="VR" active={activeTab === '3'} onClick={() => handleTabChange('3')} />
+                        </div>
                         {
                             activeTab === '1' &&
                             <div className='flex flex-col gap-5'>
-                                {/* <Label text={'XBOX 360 / PLAYSTATION'} /> */}
-                                <Paragraph text={'Most of my gaming time goes to FIFA. I often play God Of War, Call of Duty, Marvel\'s Spider-Man and a few others.'} />
-                                <Paragraph text={'I\'m also exploring VR gaming with Oculus.'} />
+                                <Paragraph variant={'paragraph'} text={'Xbox 360 / Playstation'} />
+                                <Paragraph variant={'caption'} text={'Most of my gaming time goes to FIFA. I often play God Of War, Call of Duty, Marvel\'s Spider-Man and a few others.'} />
+                                <Paragraph variant={'caption'} text={"I'm also exploring "} greyText={'VR gaming with Oculus.'} />
                             </div>
                         }
                         {
                             activeTab === '2' &&
                             <div className='flex flex-col gap-5'>
-                                {/* <Label text={'AN ECLECTIC MUSIC TASTE'} /> */}
-                                <Paragraph text={'From the upbeat rhythms of Amapiano, Afrobeat to the soulful melodies of Fuji, I find myself drawn to the unique sounds and styles of different genres.'} />
-                                {/* <Links targetState={'_blank'} href={'#Spotify'} text={'My Spotify Playlist'} hoverState={'always'} title={'Spotify'} /> */}
+                                <Paragraph variant={'paragraph'} text={'An Eclectic Music Taste'} />
+                                <Paragraph variant={'caption'} text={'From the upbeat rhythms of Amapiano, Afrobeat to the soulful melodies of Fuji, I find myself drawn to the unique sounds and styles of different genres.'} />
+                                {/* <RouteLinks targetState={'_blank'} href={'#Spotify'} linkTitle={'Spotify Playlist'} hoverState={'hover'} title={'Spotify'} className={'text-Gray cursor-pointer w-1/2'} /> */}
                             </div>
                         }
                         {
                             activeTab === '3' &&
                             <div className='flex flex-col gap-5'>
-                                {/* <Label text={'VISION PRO / OCULUS'} /> */}
-                                <Paragraph text={'The concept of being able to fully immerse myself in a completely different world, with the ability to interact with it as if it were real, is absolutely thrilling to me.'} />
-                                <Paragraph text={'It is a technology that I am deeply interested in and am excited to see where it takes us in the future.'} />
+                                <Paragraph variant={'paragraph'} text={'Vision Pro / Oculus'} />
+                                <Paragraph variant={'caption'} text={'The concept of being able to fully immerse myself in a completely different world, with the ability to interact with it as if it were real, is absolutely thrilling to me.'} />
+                                <Paragraph variant={'caption'} text={'It is a technology that I am deeply interested in and am excited to see where it takes us in the future.'} />
                             </div>
                         }
                     </section>
                 </div>
-                <div className='lg:h-full h-[30vh]'>
+                <div className='lg:h-[70vh] h-[30vh]'>
                     <Canvas className='h-[100%] hover:cursor-grab'>
                         {
                             activeTab === '1' &&
@@ -135,12 +135,12 @@ const Interests = () => {
                             </>
                         }
                         {/* Display axes to show XYZ dimensions */}
-                        <axesHelper args={[5]} />
+                        {/* <axesHelper args={[5]} /> */}
                     </Canvas>
                 </div>
             </div>
 
-        </section>
+        </Section>
     );
 };
 

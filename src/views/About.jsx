@@ -12,20 +12,16 @@ import Interests from './PersonalInterest'
 const About = () => {
     const Services = [
         {
-            name: 'Engineering',
-            caption: 'I specialize in scalable Front-end Web application development, including planning, design, build, testing and maintenance..',
+            name: 'Career Essentials in Software Development by Microsoft and LinkedIn 2024',
+            caption: 'By Microsoft and LinkedIn 2024',
         },
         {
-            name: 'Branding',
-            caption: 'I specialize in scalable Front-end Web application development, including planning, design, build, testing and maintenance..',
+            name: 'JavaScript Algorithms & Data Structures 2023',
+            caption: 'Representing approximately 300 hours of work..',
         },
         {
-            name: 'Design & Animation',
-            caption: 'I collaborate with designers to execute web app and design system animations and interactions.',
-        },
-        {
-            name: 'Creative Implementation',
-            caption: 'I design optimized layouts and interactions for performance and usability.',
+            name: 'Responsive Web Design 2022',
+            caption: 'This certifies that I successfully completed the Responsive Web Design Developer Certification on January 25, 2022',
         },
 
     ]
@@ -44,11 +40,9 @@ const About = () => {
 
             <TwoColumnGrid caption={'Our Mission'} paragrahText={'We strive to bring creativity and functionality together,'} greyText={' crafting solutions that resonate with your audience. '} />
 
-            <Section>
-                <Interests />
-            </Section>
+            <Interests />
 
-            <TwoColumnGrid caption={'Services'} paragrahText={'Services are designed with simplicity and '} greyText={' effectiveness in mind.'} trailingText={' We offer a comprehensive range of solutions tailored to meet your design needs.'}>
+            <TwoColumnGrid caption={'Honors'} paragrahText={'Awards '} greyText={' &'} trailingText={' Recognitions.'}>
                 {Services.map(Service => (
                     <ul>
                         <li className='mb-8'>
@@ -59,11 +53,11 @@ const About = () => {
                 ))}
             </TwoColumnGrid>
 
-            <Section>
+            {/* <Section>
                 <MediaCard imageSrc={"https://res.cloudinary.com/dnzi0xxtx/image/upload/v1705678476/StoqHive/nkhzPF2aG9jHzZ0Tx12GETeVy0_nrbmax.webp"} customHeight={'65vh'} />
-            </Section>
+            </Section> */}
 
-            <DesignSuccess />
+            {/* <DesignSuccess /> */}
 
         </>
     )

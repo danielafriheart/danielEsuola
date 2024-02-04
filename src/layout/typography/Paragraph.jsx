@@ -18,7 +18,7 @@ const Paragraph = ({ text, className, variant, trailingText, greyText, onClick }
     const selectedVariant = variantStyles[variant] || variantStyles.base;
 
     return (
-        <p className={`${selectedVariant} ${className} space-x-4`} onClick={onclick}>
+        <p className={`${selectedVariant} ${className} space-x-4`} onClick={onClick}>
             {text}
             <span> {greyText && <span className='text-Gray'>{greyText}</span>}</span>
             {trailingText}
