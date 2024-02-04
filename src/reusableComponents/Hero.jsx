@@ -8,13 +8,13 @@ const Hero = () => {
 
     return (
 
-        <Section className={'lg:h-[80vh] md:h-[70vh] h-[60vh] grid place-content-center'}>
+        <Section className={'lg:h-[80vh] md:h-[70vh] h-[60vh] flex flex-col justify-center'}>
+            <div className='flex flex-col justify-center lg:space-y-20 space-y-10 px-0'>
 
-            <div className='flex flex-col justify-center lg:space-y-20 space-y-10'>
 
                 <Paragraph text={'Developer · Software Developer'} variant={'base'} className={'font-thin'} />
 
-                <span className='lg:w-[87vw]'>
+                <span className='lg:w-[80vw] w-full'>
                     <Header leadingText={"Discover the essence of Pearl, a free Framer template."} greyText={" Let's shape your brand into a masterpiece together. "} />
                 </span>
 

@@ -14,14 +14,15 @@ export default function MediaCover({ imageSrc, children, customHeight, className
                 gap: 2,
                 flexWrap: 'wrap',
                 p: 0, m: 0,
-                height: [customHeight  || '50vh']
+                height: [customHeight  || '50vh'],
             }}
         >
             <Card component="li"
                 sx={{
                     minWidth: 300,
                     maxWidth: '100%',
-                    flexGrow: 1
+                    flexGrow: 1,
+                    borderRadius:'20px'
                 }}>
                 <CardCover>
                     <img
@@ -32,11 +33,7 @@ export default function MediaCover({ imageSrc, children, customHeight, className
                         className={className}
                     />
                 </CardCover>
-                <CardCover
-                // sx={{
-                //     background: 'linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0) 200px), linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0) 300px)',
-                // }}
-                />
+                <CardCover/>
                 <CardContent>
                     <Typography
                         level="body-lg"

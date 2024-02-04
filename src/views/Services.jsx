@@ -7,19 +7,19 @@ import Section from '../layout/container/Section'
 const Services = () => {
     const WHAT_I_DO = [
         {
-            service: 'Engineering',
+            name: 'Engineering',
             caption: 'I specialize in scalable Front-end Web application development, including planning, design, build, testing and maintenance..',
         },
         {
-            service: 'Branding',
+            name: 'Branding',
             caption: 'I specialize in scalable Front-end Web application development, including planning, design, build, testing and maintenance..',
         },
         {
-            service: 'Design & Animation',
+            name: 'Design & Animation',
             caption: 'I collaborate with designers to execute web app and design system animations and interactions.',
         },
         {
-            service: 'Creative Implementation',
+            name: 'Creative Implementation',
             caption: 'I design optimized layouts and interactions for performance and usability.',
         },
 
@@ -34,7 +34,7 @@ const Services = () => {
                             return (
                                 <BasicAccordion
                                     key={id}
-                                    accordionTitle={SERVICES.service}
+                                    accordionTitle={SERVICES.name}
                                     accordionContent={SERVICES.caption}
                                 // accordionNumber={`0${id + 1}`} //Accordion Number
                                 />
