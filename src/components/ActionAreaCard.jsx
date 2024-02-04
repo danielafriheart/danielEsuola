@@ -1,23 +1,41 @@
 import React from 'react'
-import Section from '../layout/container/Section'
 import Paragraph from '../layout/typography/Paragraph'
+import MediaCard from '../components/MediaCard'
 
-const ActionAreaCard = ({ caption, label }) => {
+const ActionAreaCard = ({ caption, label, customHeight }) => {
+
+  /**
+   * The function `handleAnimate` adds or removes classes to animate a target element based on mouse
+   * enter or mouse leave events.
+   */
   const handleAnimate = (e) => {
     const cardDiv = e.currentTarget;
     const animateTarget = cardDiv.querySelector('.animate-target');
 
+    /* The code block is a conditional statement that checks if the mouse event type is 'mouseenter'. If it
+    is, it adds the classes 'rotate-45', 'bg-white', and 'lg:p-5' to the animateTarget element. It also
+    removes the classes 'bg-white/30', 'text-white', and 'lg:p-4' from the animateTarget element.
+    Finally, it logs the message 'Animating!' to the console. */
     if (e.type === 'mouseenter') {
       // Mouse entering, add the rotate-45 class
       animateTarget.classList.add('rotate-45', 'bg-white', 'lg:p-5');
+
       animateTarget.classList.remove('bg-white/30', 'text-white', 'lg:p-4');
-      console.log('Animating!');
+
+      /* The code block `} else if (e.type === 'mouseleave') { ... }` is handling the mouse leave event.
+      When the mouse leaves the target element, it removes the classes 'rotate-45' and 'lg:p-5' from the
+      animateTarget element. It also adds the classes 'bg-white/30', 'text-white', and 'lg:p-4' to the
+      animateTarget element. This effectively reverts the element back to its original state before the
+      mouse entered. */
     } else if (e.type === 'mouseleave') {
       // Mouse leaving, remove the rotate-45 class
       animateTarget.classList.remove('rotate-45', 'lg:p-5');
+
       animateTarget.classList.add('bg-white/30', 'text-white', 'lg:p-4');
     }
   }
+
+  const Src = "https://res.cloudinary.com/dnzi0xxtx/image/upload/v1705678476/StoqHive/0h67TFuk7bDRVujjwt6jBREPseM_bv6zxx.png"
 
   return (
     <a href=""
@@ -25,10 +43,13 @@ const ActionAreaCard = ({ caption, label }) => {
       onMouseEnter={handleAnimate}
       onMouseLeave={handleAnimate}
     >
-      <section className='space-y-5'>
+      <section className='space-y-5 mb-10 lg:mb-0 md:mb-0'>
         <div className='h-full relative z-10'>
 
-          <img src="https://res.cloudinary.com/dnzi0xxtx/image/upload/v1705678476/StoqHive/0h67TFuk7bDRVujjwt6jBREPseM_bv6zxx.png" alt="image" className='rounded-3xl lg:min-h-[500px] w-full'/>
+          <MediaCard
+            imageSrc={Src}
+            customHeight={customHeight}
+          />
 
           <span className='rounded-full lg:p-4 md:p-3 bg-white/30 w-fit absolute left-5 bottom-5 text-white hover:text-black transition-all duration-300 animate-target hidden lg:flex md:flex'>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">

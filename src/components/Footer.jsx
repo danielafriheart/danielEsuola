@@ -63,7 +63,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </section>
-                <Paragraph trailingText={'2023 Pearl Framer template crafted with love by Dawid Pietrasiak'} className={'text-gray-400 font-thin lg:mt-auto lg:my-0 my-5'} />
+                <Paragraph trailingText={'2023 Pearl Framer template crafted with love by Dawid Pietrasiak'} className={'text-white/50 font-thin lg:mt-auto lg:my-0 my-5'} />
             </Section>
         </footer>
     )
