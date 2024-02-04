@@ -32,7 +32,8 @@ const Example = () => {
 
     return (
         <header className=" fixed top-0 w-screen z-50">
-            <nav className="mx-auto flex max-w-[93vw] items-center justify-between p-6 lg:px-8" aria-label="Global">
+            <nav className="mx-auto flex  max-w-[93vw] items-center justify-between p-6 lg:px-8" aria-label="Global">
+               
                 <div className="flex lg:flex-1">
                     <a href="/" className="-m-1.5">
                         <span className="sr-only">Your Company</span>

@@ -4,11 +4,14 @@ import Section from './Section';
 
 const TwoColumnGrid = ({ caption, greyText, children, paragrahText, href, trailingText }) => {
   return (
-    <Section className='grid lg:grid-cols-[1fr,4fr] lg:gap-0 md:gap-5'>
+    <Section className='grid lg:grid-cols-[1fr,4fr] lg:gap-0 gap-5'>
       <div><Paragraph variant={'base'} text={caption} className={'font-thin'} /></div>
-      <div><Paragraph variant={'paragraph'} text={paragrahText} greyText={greyText} trailingText={trailingText} /></div>
+      <div>
+        <Paragraph variant={'paragraph'} text={paragrahText} greyText={greyText} trailingText={trailingText} />
 
-      <div>{children}</div>
+        <div className='mt-20'>{children}</div>
+      </div>
+
     </Section>
   )
 }

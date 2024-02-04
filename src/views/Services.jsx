@@ -1,11 +1,10 @@
 import React from 'react'
 import BasicAccordion from '../components/BasicAccordion'
-import Header from '../layout/typography/Header'
 import Paragraph from '../layout/typography/Paragraph'
 import Section from '../layout/container/Section'
 
 const Services = () => {
-    const WHAT_I_DO = [
+    const Services = [
         {
             name: 'Engineering',
             caption: 'I specialize in scalable Front-end Web application development, including planning, design, build, testing and maintenance..',
@@ -30,12 +29,12 @@ const Services = () => {
             <table className='w-full'>
                 <tbody>
                     {
-                        WHAT_I_DO.map((SERVICES, id) => {
+                        Services.map((Service, id) => {
                             return (
                                 <BasicAccordion
                                     key={id}
-                                    accordionTitle={SERVICES.name}
-                                    accordionContent={SERVICES.caption}
+                                    accordionTitle={Service.name}
+                                    accordionContent={Service.caption}
                                 // accordionNumber={`0${id + 1}`} //Accordion Number
                                 />
                             )
