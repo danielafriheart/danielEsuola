@@ -22,7 +22,7 @@ const Footer = () => {
     ]
 
     return (
-        <footer className='bg-black mt-20'>
+        <footer className='bg-[black] mt-20'>
             <Section className={'lg:min-h-[100vh] flex flex-col justify-between'}>
                 <section className='grid lg:grid-cols-[45%,55%]'>
                     <div className='lg:space-y-14 space-y-10 mb-10 lg:mb-0'>

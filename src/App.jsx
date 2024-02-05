@@ -6,13 +6,15 @@ import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 import Works from './views/Works'
 import About from './views/About'
+import ShareWebsite from './views/ShareWebsite'
 
 const App = () => {
   return (
-    <>
+    <div className='relative'>
       <NavBar />
+      <ShareWebsite />
+      
       <Routes>
-
         <Route path='/' element={<Home />} />
         <Route path='/work' element={<Works />} />
         <Route path='/about' element={<About />} />
@@ -20,7 +22,7 @@ const App = () => {
 
       </Routes>
       <Footer />
-    </>
+    </div>
 
   )
 }

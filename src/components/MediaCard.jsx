@@ -14,7 +14,7 @@ export default function MediaCover({ imageSrc, children, customHeight, className
                 gap: 2,
                 flexWrap: 'wrap',
                 p: 0, m: 0,
-                height: [customHeight  || '50vh'],
+                height: [customHeight || '50vh'],
             }}
         >
             <Card component="li"
@@ -22,7 +22,8 @@ export default function MediaCover({ imageSrc, children, customHeight, className
                     minWidth: 300,
                     maxWidth: '100%',
                     flexGrow: 1,
-                    borderRadius:'20px'
+                    borderRadius: '20px',
+                    p: 3,
                 }}>
                 <CardCover>
                     <img
@@ -33,7 +34,7 @@ export default function MediaCover({ imageSrc, children, customHeight, className
                         className={className}
                     />
                 </CardCover>
-                <CardCover/>
+                <CardCover />
                 <CardContent>
                     <Typography
                         level="body-lg"
