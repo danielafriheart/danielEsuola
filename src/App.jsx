@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './views/Home'
 import Error from './views/Error'
 import NavBar from './components/NavBar'
+import Modal from './components/Modal'
 import Footer from './components/Footer'
 import Works from './views/Works'
 import About from './views/About'
@@ -13,6 +14,7 @@ const App = () => {
     <div className='relative'>
       <NavBar />
       <ShareWebsite />
+      <Modal/>
       
       <Routes>
         <Route path='/' element={<Home />} />
