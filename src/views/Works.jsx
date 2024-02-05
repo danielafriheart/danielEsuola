@@ -10,7 +10,7 @@ const Works = () => {
         <>
             <Section className={'lg:h-[55vh] md:h-[50vh] h-[45vh] flex flex-col justify-center'}>
                 <div className='flex flex-col justify-center lg:space-y-6 space-y-10'>
-                    <Header leadingText={"Designing Success"} />
+                    <Header leadingText={"Designing Success 🚀"} />
                     <span className='lg:w-[50vw]'>
                         <Paragraph text={"See how we've turned ideas into reality. Dive into the stories of"} greyText={'successful product designs that make a difference.'} variant={'paragraph_md'} />
                     </span>

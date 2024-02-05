@@ -7,6 +7,7 @@ import Gallery from './Gallery'
 import MediaCard from '../components/MediaCard'
 import TwoColumnGrid from '../layout/container/TwoColumnGrid'
 import Interests from './PersonalInterest'
+import Container from '../layout/container/Container'
 
 
 const About = () => {
@@ -27,18 +28,22 @@ const About = () => {
     ]
 
     return (
-        <>
-            <Section className={'lg:h-[65vh] md:h-[50vh] h-[45vh] flex flex-col justify-center'}>
+        <Container title={'Esuola Daniel'} description={"Esuola Daniel's Portfolio Website"}>
+            <Section className={'lg:min-h-[60vh] md:h-[70vh] h-[60vh] flex flex-col justify-center'}>
                 <div className='flex flex-col justify-center lg:space-y-6 space-y-8 lg:w-[50vw]'>
-                    <Paragraph text={'About Me'} variant={'base'} className={'font-thin'} />
-                    <Header leadingText={"Create Your Dream Website With The"} greyText={' Free Framer Template'} />
-                    <Paragraph text={"We redefine possibility by combining imagination with precision to shape extraordinary experiences."} variant={'paragraph_md'} />
+                    {/* <Paragraph text={'About Me'} variant={'base'} className={'font-thin'} /> */}
+                    <Header leadingText={'Ókíkìọlá'} />
+                    <Paragraph text={"I support Designers & Agencies with Creative Development."} variant={'paragraph'} />
+                    <Paragraph text={"With a background in design, I work closely with design focused teams to build websites and microsites for companies and individuals. I have years of experience working and collaborating on product teams and leading engineering efforts.."} variant={'base'} className={'font-thin'}/>
+                    <Paragraph text={"With my experience in UI and product engineering, I solve product problems and build appealing usable web experiences."} variant={'base'} className={'font-thin'}/>
+                    {/* <Paragraph text={""} variant={'paragraph_md'} /> */}
+                    {/* <Paragraph text={""} variant={'paragraph_md'} /> */}
                 </div>
             </Section>
 
             <Gallery />
 
-            <TwoColumnGrid caption={'Our Mission'} paragrahText={'We strive to bring creativity and functionality together,'} greyText={' crafting solutions that resonate with your audience. '} />
+            <TwoColumnGrid caption={'Our Mission'} greyText={'As humans, I believe our sole purpose is to create.'} paragrahText={' I redefine possibility by combining imagination with precision to shape extraordinary experiences. '} />
 
             <Interests />
 
@@ -59,7 +64,7 @@ const About = () => {
 
             {/* <DesignSuccess /> */}
 
-        </>
+        </Container>
     )
 }
 

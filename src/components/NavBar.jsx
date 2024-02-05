@@ -40,7 +40,7 @@ const Example = () => {
                 <div className="flex lg:flex-1">
                     <a href="/" className="-m-1.5">
                         <Box sx={{ display: 'flex', gap: 2 }}>
-                            <Avatar alt="Esuola Daniel Okikiola" src="https://res.cloudinary.com/dnzi0xxtx/image/upload/v1707069784/Daniel/Avatar_te2xb4.jpg" size='lg' />
+                            <Avatar alt="Esuola Daniel Okikiola" src="https://res.cloudinary.com/dnzi0xxtx/image/upload/v1707069784/Daniel/Avatar_te2xb4.jpg" />
                         </Box>
                     </a>
                 </div>

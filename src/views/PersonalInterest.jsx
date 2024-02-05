@@ -12,7 +12,7 @@ import Section from '../layout/container/Section';
 
 
 const Interests = () => {
-    const [activeTab, setActiveTab] = useState('1');
+    const [activeTab, setActiveTab] = useState(3);
 
     const handleTabChange = (newTab) => {
         setActiveTab(newTab);
@@ -23,7 +23,7 @@ const Interests = () => {
 
             <section>
                 <div className='flex justify-between'>
-                    <Paragraph text={'Personal Interest'} className={'lg:w-fit w-1/3 font-thin'}/>
+                    <Paragraph text={'Personal Interest'} className={'lg:w-fit w-1/3 font-thin'} />
                     <Paragraph text={'"CLICK & DRAG AROUND"'} className={'lg:flex hidden font-thin'} variant={'base'} />
                 </div>
             </section>
@@ -32,12 +32,13 @@ const Interests = () => {
                 <div className=''>
                     <section className='flex flex-col justify-evenly h-full'>
                         <div className='w-full pb-0 flex flex-col lg:space-y-3'>
-                            <Paragraph variant={'label'} className={'cursor-pointer hover:underline underline-offset-4'} text="GAMING" active={activeTab === '1'} onClick={() => handleTabChange('1')} />
-                            <Paragraph variant={'label'} className={'cursor-pointer hover:underline underline-offset-4'} text="MUSIC" active={activeTab === '2'} onClick={() => handleTabChange('2')} />
-                            <Paragraph variant={'label'} className={'cursor-pointer hover:underline underline-offset-4'} text="VR" active={activeTab === '3'} onClick={() => handleTabChange('3')} />
+                            <Paragraph variant={'label'} className={`cursor-pointer hover:underline underline-offset-4 ${activeTab === 1 ? 'underline' : ''}`} text="Gaming" active={activeTab === '1'} onClick={() => handleTabChange(1)} />
+                            <Paragraph variant={'label'} className={`cursor-pointer hover:underline underline-offset-4 ${activeTab === 3 ? 'underline' : ''}`} text="Virtual Reality" active={activeTab === '3'} onClick={() => handleTabChange(3)} />
+                            <Paragraph variant={'label'} className={`cursor-pointer hover:underline underline-offset-4 ${activeTab === 2 ? 'underline' : ''}`} text="Music" active={activeTab === '2'} onClick={() => handleTabChange(2)} />
+
                         </div>
                         {
-                            activeTab === '1' &&
+                            activeTab === 1 &&
                             <div className='flex flex-col gap-5'>
                                 <Paragraph variant={'paragraph'} text={'Xbox 360 / Playstation'} />
                                 <Paragraph variant={'caption'} text={'Most of my gaming time goes to FIFA. I often play God Of War, Call of Duty, Marvel\'s Spider-Man and a few others.'} />
@@ -45,7 +46,7 @@ const Interests = () => {
                             </div>
                         }
                         {
-                            activeTab === '2' &&
+                            activeTab === 2 &&
                             <div className='flex flex-col gap-5'>
                                 <Paragraph variant={'paragraph'} text={'An Eclectic Music Taste'} />
                                 <Paragraph variant={'caption'} text={'From the upbeat rhythms of Amapiano, Afrobeat to the soulful melodies of Fuji, I find myself drawn to the unique sounds and styles of different genres.'} />
@@ -53,7 +54,7 @@ const Interests = () => {
                             </div>
                         }
                         {
-                            activeTab === '3' &&
+                            activeTab === 3 &&
                             <div className='flex flex-col gap-5'>
                                 <Paragraph variant={'paragraph'} text={'Vision Pro / Oculus'} />
                                 <Paragraph variant={'caption'} text={'The concept of being able to fully immerse myself in a completely different world, with the ability to interact with it as if it were real, is absolutely thrilling to me.'} />
@@ -65,7 +66,7 @@ const Interests = () => {
                 <div className='lg:h-[70vh] h-[30vh]'>
                     <Canvas className='h-[100%] hover:cursor-grab'>
                         {
-                            activeTab === '1' &&
+                            activeTab === 1 &&
                             <>
                                 <PerspectiveCamera position={[0.3, 10, 0.3]} fov={45} makeDefault />
                                 <OrbitControls
@@ -88,7 +89,7 @@ const Interests = () => {
                             </>
                         }
                         {
-                            activeTab === '2' &&
+                            activeTab === 2 &&
                             <>
                                 <PerspectiveCamera position={[0, 10, 0]} fov={45} makeDefault />
                                 <OrbitControls
@@ -110,7 +111,7 @@ const Interests = () => {
                             </>
                         }
                         {
-                            activeTab === '3' &&
+                            activeTab === 3 &&
                             <>
                                 <PerspectiveCamera position={[0.3, 1, -0.3]} fov={45} makeDefault />
                                 <OrbitControls

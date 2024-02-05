@@ -8,8 +8,8 @@ const TwoColumnGrid = ({ caption, greyText, children, paragrahText, href, traili
       <div><Paragraph variant={'base'} text={caption} className={'font-thin'} /></div>
       <div>
         <Paragraph variant={'paragraph'} text={paragrahText} greyText={greyText} trailingText={trailingText} />
-
-        <div className='mt-20'>{children}</div>
+        
+        {children && <div className='mt-20'>{children}</div>}
       </div>
 
     </Section>

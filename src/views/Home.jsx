@@ -10,7 +10,7 @@ import MyStory from './MyStory'
 
 const Home = () => {
     return (
-        <Container title={'Okikiola.'} description={"Esuola Daniel's Portfolio Website"}>
+        <Container title={'Esuola Daniel'} description={"Esuola Daniel's Portfolio Website"}>
             <Hero />
             <CurrentlyWorkingOn />
             <Projects />
