@@ -3,18 +3,16 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './views/Home'
 import Error from './views/Error'
 import NavBar from './components/NavBar'
-import Modal from './components/Modal'
 import Footer from './components/Footer'
 import Works from './views/Works'
 import About from './views/About'
-import ShareWebsite from './views/ShareWebsite'
+import ShareWebsite from './components/ShareWebsite'
 
 const App = () => {
   return (
     <div className='relative'>
       <NavBar />
       <ShareWebsite />
-      <Modal/>
       
       <Routes>
         <Route path='/' element={<Home />} />

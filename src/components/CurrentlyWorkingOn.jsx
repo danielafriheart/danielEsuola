@@ -1,6 +1,6 @@
 import React from 'react'
 import Section from '../layout/container/Section'
-import ActionAreaCard from '../components/ActionAreaCard'
+import ActionAreaCard from './ActionAreaCard'
 
 const CurrentlyWorkingOn = () => {
     return (

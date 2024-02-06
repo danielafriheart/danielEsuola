@@ -2,8 +2,8 @@ import React from 'react'
 import Section from '../layout/container/Section'
 import Paragraph from '../layout/typography/Paragraph'
 import Header from '../layout/typography/Header'
-import Projects from './Projects'
-import Mystory from './MyStory'
+import Projects from '../components/Projects'
+import Mystory from '../components/MyStory'
 
 const Works = () => {
     return (

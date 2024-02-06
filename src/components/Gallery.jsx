@@ -1,6 +1,6 @@
 import React from 'react'
 import Section from '../layout/container/Section'
-import MediaCard from '../components/MediaCard'
+import MediaCard from './MediaCard'
 import Paragraph from '../layout/typography/Paragraph'
 
 const Gallery = ({ Src }) => {

@@ -1,11 +1,11 @@
 import React from 'react'
 import Container from '../layout/container/Container'
-import Hero from '../reusableComponents/Hero'
-import CurrentlyWorkingOn from './CurrentlyWorkingOn'
-import Projects from './Projects'
-import DesignSuccess from './DesignSuccess'
-import Services from './Services'
-import MyStory from './MyStory'
+import Hero from '../components/Hero'
+import CurrentlyWorkingOn from '../components/CurrentlyWorkingOn'
+import Projects from '../components/Projects'
+import DesignSuccess from '../components/DesignSuccess'
+import Services from '../components/Services'
+import MyStory from '../components/MyStory'
 
 
 const Home = () => {
