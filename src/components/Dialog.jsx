@@ -4,6 +4,7 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
 import Paragraph from "../layout/typography/Paragraph";
 import Qr from "../Img/danielafriheart.svg";
 import Avatar from '@mui/joy/Avatar';
+import MediaCover from './MediaCard';
 
 
 export default function Example({ open, setOpen, dialogTitle, dialogMessage }) {
@@ -39,7 +40,7 @@ export default function Example({ open, setOpen, dialogTitle, dialogMessage }) {
                         >
                             <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
                                 <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
-                                    <div className="mt-3 text-center space-y-5">
+                                    <div className="text-center space-y-5">
                                         <Dialog.Title>
                                             <Paragraph text={'Ókíkìọlá'} variant={'paragraph_md'} />
                                         </Dialog.Title>
@@ -51,7 +52,7 @@ export default function Example({ open, setOpen, dialogTitle, dialogMessage }) {
 
                                         <div className={'grid place-content-center'}>
                                             {/* <Paragraph text={dialogTitle} variant={'paragraph_md'} /> */}
-                                            <Avatar alt="Esuola Daniel Okikiola" src="https://res.cloudinary.com/dnzi0xxtx/image/upload/v1707069784/Daniel/Avatar_te2xb4.jpg" className='mx-auto' />
+                                            <Avatar alt="Esuola Daniel Okikiola" src="https://res.cloudinary.com/dnzi0xxtx/image/upload/v1707069784/Daniel/Avatar_te2xb4.jpg" className='mx-auto mb-5' />
                                         </div>
 
                                     </div>

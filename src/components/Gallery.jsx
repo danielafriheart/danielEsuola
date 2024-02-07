@@ -17,7 +17,7 @@ const Gallery = ({ Src }) => {
                 </div>
                 <div><MediaCard imageSrc={Src_two} >
                     <Paragraph variant={'base'}
-                        text={'" As humans, I believe our sole purpose is to create. "'}
+                        text={'"As humans, I believe our sole purpose is to create"'}
                         className={'font-thin text-white w-1/2'}
                     />
                 </MediaCard>

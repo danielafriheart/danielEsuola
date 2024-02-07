@@ -18,8 +18,8 @@ import Box from '@mui/joy/Box';
 const Example = () => {
 
     const pageroute = [
-        { name: 'Work', description: 'Get a better understanding of your traffic', href: '/work', icon: ChartPieIcon },
-        { name: 'About', description: 'Speak directly to your customers', href: '/about', icon: CursorArrowRaysIcon },
+        { name: 'Work,', description: 'Get a better understanding of your traffic', href: '/work', icon: ChartPieIcon },
+        { name: 'About,', description: 'Speak directly to your customers', href: '/about', icon: CursorArrowRaysIcon },
         { name: 'Contact', description: 'Your customers’ data will be safe and secure', href: '/contact', icon: FingerPrintIcon },
     ]
 
@@ -56,7 +56,7 @@ const Example = () => {
                     </button>
                 </div>
 
-                <Popover.Group className="hidden lg:flex lg:gap-x-12">
+                <Popover.Group className="hidden lg:flex lg:gap-x-3">
                     {pageroute.map((page, id) => (
                         <RouteLinks
                             key={id}

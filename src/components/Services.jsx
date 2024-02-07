@@ -2,6 +2,7 @@ import React from 'react'
 import BasicAccordion from './BasicAccordion'
 import Paragraph from '../layout/typography/Paragraph'
 import Section from '../layout/container/Section'
+import TwoColumnGrid from '../layout/container/TwoColumnGrid'
 
 const Services = () => {
     const Services = [
@@ -24,25 +25,16 @@ const Services = () => {
 
     ]
     return (
-        <Section className={'space-y-5'}>
-            <Paragraph variant={'base'} text={'Services'} className={'font-thin'} />
-            <table className='w-full'>
-                <tbody>
-                    {
-                        Services.map((Service, id) => {
-                            return (
-                                <BasicAccordion
-                                    key={id}
-                                    accordionTitle={Service.name}
-                                    accordionContent={Service.caption}
-                                // accordionNumber={`0${id + 1}`} //Accordion Number
-                                />
-                            )
-                        })
-                    }
-                </tbody>
-            </table>
-        </Section >
+        <TwoColumnGrid caption={'Services'} paragrahText={'What I bring to the '} greyText={' Table'} trailingText={' :)'}>
+            {Services.map(Service => (
+                <ul>
+                    <li className='mb-8'>
+                        <Paragraph text={Service.name} variant={'label'} />
+                        <Paragraph text={Service.caption} variant={'base'} className={'font-thin mt-2'} />
+                    </li>
+                </ul>
+            ))}
+        </TwoColumnGrid>
     )
 }
 

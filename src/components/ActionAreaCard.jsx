@@ -2,7 +2,7 @@ import React from 'react'
 import Paragraph from '../layout/typography/Paragraph'
 import MediaCard from '../components/MediaCard'
 
-const ActionAreaCard = ({ caption, label, customHeight }) => {
+const ActionAreaCard = ({ caption, label, customHeight, src }) => {
 
   /**
    * The function `handleAnimate` adds or removes classes to animate a target element based on mouse
@@ -35,7 +35,7 @@ const ActionAreaCard = ({ caption, label, customHeight }) => {
     }
   }
 
-  const Src = "https://res.cloudinary.com/dnzi0xxtx/image/upload/v1705678476/StoqHive/0h67TFuk7bDRVujjwt6jBREPseM_bv6zxx.png"
+  const img = "https://res.cloudinary.com/dnzi0xxtx/image/upload/v1705678476/StoqHive/0h67TFuk7bDRVujjwt6jBREPseM_bv6zxx.png"
 
   return (
     <a href=""
@@ -47,7 +47,7 @@ const ActionAreaCard = ({ caption, label, customHeight }) => {
         <div className='h-full relative z-10'>
 
           <MediaCard
-            imageSrc={Src}
+            imageSrc={src || img}
             customHeight={customHeight}
           />
 

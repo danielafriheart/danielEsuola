@@ -2,13 +2,12 @@ import React from 'react'
 import Section from '../layout/container/Section'
 import ActionAreaCard from './ActionAreaCard'
 
-const CurrentlyWorkingOn = () => {
+const CurrentlyWorkingOn = ({ src }) => {
     return (
         <Section>
             <ActionAreaCard
-                caption={'StoqHive'}
-                label={'Business Management System'}
                 customHeight={'70vh'}
+                src={src}
             />
         </Section>
     )
