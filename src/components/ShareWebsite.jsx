@@ -13,7 +13,7 @@ const ShareWebsite = () => {
         <>
             <Dialog open={open} setOpen={setOpen} dialogTitle={'Connect'} dialogMessage={"Thank you for subscribing to our waitlist! We've just sent you a special gift via email. Stay tuned; we'll be in touch soon! 😉"} />
 
-            <button onClick={handleShare} className='p-3 bg-white rounded-xl fixed bottom-10 right-10 z-50 shadow'>
+            <button onClick={handleShare} className='p-3 rounded-xl fixed bottom-10 right-16 z-50 lg:flex hidden'>
                 <IoShareOutline size={'2em'} />
             </button>
         </>

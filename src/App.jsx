@@ -15,8 +15,8 @@ const App = () => {
 
   return (
     <div className='relative'>
-      <NavBar />
-      <ShareWebsite />
+      {!isContactPage && <NavBar />}
+      {!isContactPage && <ShareWebsite />}
       <Routes>
         <Route path='/' element={<About />} />
         {/* <Route path='/' element={<Navigate to="/about" replace />} /> */}
@@ -25,7 +25,7 @@ const App = () => {
         <Route path='/contact' element={<Contact />} />
         <Route path='*' element={<Error />} />
       </Routes>
-      
+
       {/*  `{!isContactPage && <Footer />}` is a conditional rendering statement in JSX. It checks if the
    `isContactPage` variable is `false`. If it is `false`, it renders the `<Footer />` component. If
    it is `true`, it does not render anything. */}

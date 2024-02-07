@@ -29,7 +29,6 @@ const Projects = () => {
             description: 'Description for Project 4...',
             technologies: ['Node.js', 'Express', 'MongoDB'],
         },
-        // Add more projects as needed
     ];
 
     const [selectedProjectId, setSelectedProjectId] = useState(null);
@@ -40,7 +39,7 @@ const Projects = () => {
 
     return (
         <Section>
-            <section className='grid lg:grid-cols-2 md:grid-cols-2 lg:gap-12 md:gap-10'>
+            <section className='grid lg:grid-cols-2 md:grid-cols-2 lg:gap-510 md:gap-10'>
                 {
                     projectsData.map(project => (
                         <div className=''>
