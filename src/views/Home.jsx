@@ -6,9 +6,6 @@ import Projects from '../components/Projects'
 import DesignSuccess from '../components/DesignSuccess'
 import Services from '../components/Services'
 import MyStory from '../components/MyStory'
-import TwoColumnGrid from '../layout/container/TwoColumnGrid'
-import Paragraph from '../layout/typography/Paragraph'
-
 
 const Home = () => {
     return (
@@ -17,7 +14,7 @@ const Home = () => {
             <CurrentlyWorkingOn src={'https://res.cloudinary.com/dnzi0xxtx/image/upload/v1707164727/Daniel/IMG_4854_ednbr2.jpg'} />
             <MyStory />
             <Services />
-            <Projects />
+            {/* <Projects /> */}
             <DesignSuccess />
         </Container>
     )

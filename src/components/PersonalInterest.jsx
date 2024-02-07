@@ -32,9 +32,9 @@ const Interests = () => {
                 <div className=''>
                     <section className='flex flex-col justify-evenly h-full'>
                         <div className='w-full pb-0 flex flex-col lg:space-y-3'>
-                            <Paragraph variant={'label'} className={`cursor-pointer hover:underline underline-offset-4 ${activeTab === 1 ? 'underline' : ''}`} text="Gaming" active={activeTab === '1'} onClick={() => handleTabChange(1)} />
-                            <Paragraph variant={'label'} className={`cursor-pointer hover:underline underline-offset-4 ${activeTab === 3 ? 'underline' : ''}`} text="Virtual Reality" active={activeTab === '3'} onClick={() => handleTabChange(3)} />
-                            <Paragraph variant={'label'} className={`cursor-pointer hover:underline underline-offset-4 ${activeTab === 2 ? 'underline' : ''}`} text="Music" active={activeTab === '2'} onClick={() => handleTabChange(2)} />
+                            <Paragraph variant={'label'} className={`cursor-pointer hover:underline underline-offset-4 transition-all duration-300 ${activeTab === 1 ? 'underline' : 'text-Gray'}`} text="Gaming" active={activeTab === '1'} onClick={() => handleTabChange(1)} />
+                            <Paragraph variant={'label'} className={`cursor-pointer hover:underline underline-offset-4 transition-all duration-300 ${activeTab === 3 ? 'underline' : 'text-Gray'}`} text="Virtual Reality" active={activeTab === '3'} onClick={() => handleTabChange(3)} />
+                            <Paragraph variant={'label'} className={`cursor-pointer hover:underline underline-offset-4 transition-all duration-300 ${activeTab === 2 ? 'underline' : 'text-Gray'}`} text="Music" active={activeTab === '2'} onClick={() => handleTabChange(2)} />
 
                         </div>
                         {

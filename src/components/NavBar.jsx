@@ -23,7 +23,8 @@ const Example = () => {
         { name: 'Contact', description: 'Your customers’ data will be safe and secure', href: '/contact', icon: FingerPrintIcon },
     ]
 
-    const logo = <Paragraph text={'Okikiola'} variant={'label'} className={'font-medium logo'} />
+    const logo = <Avatar alt="Esuola Daniel Okikiola" src="https://res.cloudinary.com/dnzi0xxtx/image/upload/v1707069784/Daniel/Avatar_te2xb4.jpg" s />
+
 
     function classNames(...classes) {
         return classes.filter(Boolean).join(' ')
@@ -40,7 +41,7 @@ const Example = () => {
                 <div className="flex lg:flex-1">
                     <a href="/" className="-m-1.5">
                         <Box sx={{ display: 'flex', gap: 2 }}>
-                            <Avatar alt="Esuola Daniel Okikiola" src="https://res.cloudinary.com/dnzi0xxtx/image/upload/v1707069784/Daniel/Avatar_te2xb4.jpg" s/>
+                            {logo}
                         </Box>
                     </a>
                 </div>
@@ -56,7 +57,7 @@ const Example = () => {
                     </button>
                 </div>
 
-                <Popover.Group className="hidden lg:flex lg:gap-x-3">
+                <Popover.Group className="hidden lg:flex lg:gap-x-5">
                     {pageroute.map((page, id) => (
                         <RouteLinks
                             key={id}
@@ -93,10 +94,24 @@ const Example = () => {
                     <div className="mt-6 flow-root">
                         <div className="-my-6 divide-y divide-gray-500/10">
                             <div className="space-y-2 py-6">
-
-
-                                <RouteLinks linkTitle={'Home'} className={'-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'} />
-
+                                <RouteLinks
+                                    linkTitle={'Home'}
+                                    routeLocation={'/'}
+                                    className={'font-thin'}
+                                    hoverState={'hover'}
+                                // className={'-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'}
+                                />
+                                {pageroute.map((page, id) => (
+                                    <RouteLinks
+                                        key={id}
+                                        linkTitle={page.name}
+                                        routeLocation={page.href}
+                                        // routeStyleType={'noIcon'}
+                                        hoverState={`${location.pathname === page.href ? 'always' : 'hover'}`}
+                                        variant={'base'}
+                                        className={'font-thin'}
+                                    />
+                                ))}
                             </div>
                         </div>
                     </div>

@@ -4,6 +4,7 @@ import Paragraph from '../layout/typography/Paragraph'
 import Header from '../layout/typography/Header'
 import Button from '../layout/container/Button'
 import RouteLinks from '../layout/typography/RouteLinks'
+import { useLocation } from 'react-router-dom'
 
 const Footer = () => {
 
@@ -20,15 +21,16 @@ const Footer = () => {
         { name: 'Instagram', href: '/work' },
         { name: 'Linkedln', href: 'https://www.linkedin.com/in/daniel-esuola/' },
     ]
+    const location = useLocation();
 
     return (
-        <footer className='bg-[black] mt-20'>
-            <Section className={'lg:min-h-[100vh] flex flex-col justify-between'}>
+        <footer className='pt-20'>
+            <Section className={'lg:min-h-[90vh] flex flex-col justify-between'}>
                 <section className='grid lg:grid-cols-[45%,55%]'>
                     <div className='lg:space-y-14 space-y-10 mb-10 lg:mb-0'>
-                        <Paragraph variant={'base'} className={'font-thin text-white'} text={'Contact'} />
-                        <Header className={'text-white'} leadingText={"Let's start creating together"} />
-                        <Button variant={'white'} btnText={"Let's talk"} href={'/contact'} />
+                        <Paragraph variant={'base'} className={'font-thin '} text={'Contact'} />
+                        <Header className={''} leadingText={"Let's start creating together"} />
+                        <Button variant={'black'} btnText={"Let's talk"} href={'/contact'} />
                     </div>
                     <div className='grid lg:grid-cols-[50%,50%] lg:ml-40 space-y-3 lg:space-y-0'>
                         <div className='space-y-3 lg:mx-auto'>
@@ -39,8 +41,9 @@ const Footer = () => {
                                         linkTitle={page.name}
                                         routeLocation={page.href}
                                         routeStyleType={'noIcon'}
-                                        className={'text-white hover:text-white/80 transition-all duration-300 font-thin'}
+                                        className={'transition-all duration-300 font-thin'}
                                         variant={'caption'}
+                                        hoverState={`${location.pathname === page.href ? 'always' : 'hover'}`}
                                     />
                                 ))
                             }
@@ -53,7 +56,7 @@ const Footer = () => {
                                         linkTitle={social.name}
                                         routeLocation={social.href}
                                         routeStyleType={'icon'}
-                                        className={'text-white hover:text-white/80 transition-all duration-300 font-thin'}
+                                        className={'transition-all duration-300 font-thin'}
                                         variant={'caption'}
                                         hoverState={'none'}
                                         targetState={'_blank'}
@@ -63,7 +66,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </section>
-                <Paragraph trailingText={'2023 Pearl Framer template crafted with love by Dawid Pietrasiak'} className={'text-white/50 font-thin lg:mt-auto lg:my-0 my-5'} />
+                <Paragraph trailingText={'2023 Pearl Framer template crafted with love by Dawid Pietrasiak'} className={'font-thin lg:mt-auto lg:my-0 my-5'} />
             </Section>
         </footer>
     )

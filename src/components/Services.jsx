@@ -1,7 +1,5 @@
 import React from 'react'
-import BasicAccordion from './BasicAccordion'
 import Paragraph from '../layout/typography/Paragraph'
-import Section from '../layout/container/Section'
 import TwoColumnGrid from '../layout/container/TwoColumnGrid'
 
 const Services = () => {

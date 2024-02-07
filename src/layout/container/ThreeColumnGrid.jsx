@@ -4,7 +4,7 @@ import Button from './Button';
 
 const ThreeColumnGrid = ({ caption, greyText, btnText, paragrahText, href, trailingText }) => {
     return (
-        <section className='grid lg:grid-cols-[1fr,4fr] lg:gap-0 md:gap-5'>
+        <section className='grid lg:grid-cols-[1fr,4fr] lg:gap-0 md:gap-5 lg:space-y-0 space-y-5'>
             <div><Paragraph variant={'base'} text={caption} className={'font-thin'} /></div>
 
             <section className='grid lg:grid-cols-[4fr,1fr] lg:space-y-0 space-y-10'>
