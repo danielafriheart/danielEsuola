@@ -7,8 +7,6 @@ import {
     FingerPrintIcon,
     XMarkIcon,
 } from '@heroicons/react/24/outline'
-
-import Paragraph from '../layout/typography/Paragraph'
 import RouteLinks from '../layout/typography/RouteLinks'
 import { useLocation } from 'react-router-dom'
 import Avatar from '@mui/joy/Avatar';
@@ -76,7 +74,7 @@ const Example = () => {
             {/* <<<<<<<<<<========== Mobile Menu Section ==========>>>>>>>>>> */}
             <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
                 <div className="fixed inset-0 z-10" />
-                <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#992333] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div className="flex items-center justify-between">
                         <a href="#" className="-m-1.5 p-1.5">
                             <span className="sr-only">Your Company</span>
@@ -97,7 +95,7 @@ const Example = () => {
                                 <RouteLinks
                                     linkTitle={'Home'}
                                     routeLocation={'/'}
-                                    className={'font-thin'}
+                                    className={'font-thin text-white'}
                                     hoverState={'hover'}
                                 // className={'-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'}
                                 />
@@ -109,7 +107,7 @@ const Example = () => {
                                         // routeStyleType={'noIcon'}
                                         hoverState={`${location.pathname === page.href ? 'always' : 'hover'}`}
                                         variant={'base'}
-                                        className={'font-thin'}
+                                        className={'font-thin text-white'}
                                     />
                                 ))}
                             </div>

@@ -6,9 +6,7 @@ import { Model as Whitexbox } from '../3dModels/Whitexbox'
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
 import Paragraph from '../layout/typography/Paragraph';
-import RouteLinks from '../layout/typography/RouteLinks';
 import Section from '../layout/container/Section';
-// import Links from '../../layouts/typography/Links';
 
 
 const Interests = () => {
@@ -24,18 +22,17 @@ const Interests = () => {
             <section>
                 <div className='flex justify-between'>
                     <Paragraph text={'Personal Interest'} className={'lg:w-fit w-1/3 font-thin'} />
-                    <Paragraph text={'"CLICK & DRAG AROUND"'} className={'lg:flex hidden font-thin'} variant={'base'} />
+                    <Paragraph text={'"CLICK & DRAG AROUND"'} className={'font-thin'} variant={'base'} />
                 </div>
             </section>
 
             <div className='lg:grid lg:grid-cols-[1.5fr,2fr] flex flex-col-reverse gap-0 h-fit'>
                 <div className=''>
                     <section className='flex flex-col justify-evenly h-full'>
-                        <div className='w-full pb-0 flex flex-col lg:space-y-3'>
+                        <div className='w-full pb-0 flex flex-col lg:space-y-3 mb-10 lg:mb-0'>
                             <Paragraph variant={'label'} className={`cursor-pointer hover:underline underline-offset-4 transition-all duration-300 ${activeTab === 1 ? 'underline' : 'text-Gray'}`} text="Gaming" active={activeTab === '1'} onClick={() => handleTabChange(1)} />
                             <Paragraph variant={'label'} className={`cursor-pointer hover:underline underline-offset-4 transition-all duration-300 ${activeTab === 3 ? 'underline' : 'text-Gray'}`} text="Virtual Reality" active={activeTab === '3'} onClick={() => handleTabChange(3)} />
                             <Paragraph variant={'label'} className={`cursor-pointer hover:underline underline-offset-4 transition-all duration-300 ${activeTab === 2 ? 'underline' : 'text-Gray'}`} text="Music" active={activeTab === '2'} onClick={() => handleTabChange(2)} />
-
                         </div>
                         {
                             activeTab === 1 &&
@@ -50,7 +47,6 @@ const Interests = () => {
                             <div className='flex flex-col gap-5'>
                                 <Paragraph variant={'paragraph'} text={'An Eclectic Music Taste'} />
                                 <Paragraph variant={'caption'} text={'From the upbeat rhythms of Amapiano, Afrobeat to the soulful melodies of Fuji, I find myself drawn to the unique sounds and styles of different genres.'} />
-                                {/* <RouteLinks targetState={'_blank'} href={'#Spotify'} linkTitle={'Spotify Playlist'} hoverState={'hover'} title={'Spotify'} className={'text-Gray cursor-pointer w-1/2'} /> */}
                             </div>
                         }
                         {

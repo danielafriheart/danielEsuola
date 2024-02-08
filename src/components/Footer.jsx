@@ -24,7 +24,7 @@ const Footer = () => {
     const location = useLocation();
 
     return (
-        <footer className='pt-20'>
+        <footer className='lg:pt-20'>
             <Section className={'lg:min-h-[90vh] flex flex-col justify-between'}>
                 <section className='grid lg:grid-cols-[45%,55%]'>
                     <div className='lg:space-y-14 space-y-10 mb-10 lg:mb-0'>
@@ -32,7 +32,7 @@ const Footer = () => {
                         <Header className={''} leadingText={"Let's start creating together"} />
                         <Button variant={'black'} btnText={"Let's talk"} href={'/contact'} />
                     </div>
-                    <div className='grid lg:grid-cols-[50%,50%] lg:ml-40 space-y-3 lg:space-y-0'>
+                    <div className='grid lg:grid-cols-[50%,50%] lg:ml-40 space-y-3 lg:space-y-0 mb-20 lg:mb-0'>
                         <div className='space-y-3 lg:mx-auto'>
                             {
                                 pages.map(page => (
@@ -66,7 +66,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </section>
-                <Paragraph trailingText={'2023 Pearl Framer template crafted with love by Dawid Pietrasiak'} className={'font-thin lg:mt-auto lg:my-0 my-5'} />
+                <Paragraph trailingText={'2024 Esuola Daniel Okikiola'} className={'font-thin lg:mt-auto lg:my-0 my-5'} />
             </Section>
         </footer>
     )
