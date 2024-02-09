@@ -2,7 +2,7 @@ import React from 'react'
 import Link from '@mui/material/Link';
 import Paragraph from './Paragraph'
 
-const RouteLinks = ({ routeLocation, linkTitle, className, title, hoverState, targetState, variant, routeStyleType }) => {
+const RouteLinks = ({ routeLocation, linkTitle, className, title, hoverState, targetState, variant, routeStyleType, data_aos, data_aos_duration, data_aos_delay }) => {
 
     const trailingIcon =
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className={`w-5 h-5 ${className}`}>
@@ -36,6 +36,11 @@ const RouteLinks = ({ routeLocation, linkTitle, className, title, hoverState, ta
         >
 
             <Link
+                data-aos-easing="ease-in-out"
+                data-aos-duration={data_aos_duration}
+                data-aos-delay={data_aos_delay}
+                data-aos-offset="0"
+                data-aos={data_aos}
                 href={routeLocation}
                 title={title}
                 rel={'noreferrer noopener'}

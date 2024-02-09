@@ -16,9 +16,33 @@ import Box from '@mui/joy/Box';
 const Example = () => {
 
     const pageroute = [
-        { name: 'Work,', description: 'Get a better understanding of your traffic', href: '/work', icon: ChartPieIcon },
-        { name: 'About,', description: 'Speak directly to your customers', href: '/about', icon: CursorArrowRaysIcon },
-        { name: 'Contact', description: 'Your customers’ data will be safe and secure', href: '/contact', icon: FingerPrintIcon },
+        {
+            name: 'Work,',
+            description: 'Get a better understanding of your traffic',
+            href: '/work',
+            icon: ChartPieIcon,
+            data_aos: 'fade-in',
+            data_aos_duration: '0',
+            data_aos_delay: '0'
+        },
+        {
+            name: 'About,',
+            description: 'Speak directly to your customers',
+            href: '/about',
+            icon: CursorArrowRaysIcon,
+            data_aos: 'fade-in',
+            data_aos_duration: '600',
+            data_aos_delay: '100'
+        },
+        {
+            name: 'Contact',
+            description: 'Your customers’ data will be safe and secure',
+            href: '/contact',
+            icon: FingerPrintIcon,
+            data_aos: 'fade-in',
+            data_aos_duration: '700',
+            data_aos_delay: '150'
+        },
     ]
 
     const logo = <Avatar alt="Esuola Daniel Okikiola" src="https://res.cloudinary.com/dnzi0xxtx/image/upload/v1707069784/Daniel/Avatar_te2xb4.jpg" s />
@@ -58,6 +82,9 @@ const Example = () => {
                 <Popover.Group className="hidden lg:flex lg:gap-x-5">
                     {pageroute.map((page, id) => (
                         <RouteLinks
+                            data_aos={page.data_aos}
+                            data_aos_duration={page.data_aos_duration}
+                            data_aos_delay={page.data_aos_delay}
                             key={id}
                             linkTitle={page.name}
                             routeLocation={page.href}

@@ -33,6 +33,9 @@ const Button = ({ btnText, href, variant }) => {
             type='button'
             onMouseEnter={handleAnimate}
             onMouseLeave={handleAnimate}
+            data_aos={'fade-in'}
+            data_aos_duration={'0'}
+            data_aos_delay={'0'}
         >
             <NavLink
                 to={href}

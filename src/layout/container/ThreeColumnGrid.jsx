@@ -9,11 +9,22 @@ const ThreeColumnGrid = ({ caption, greyText, btnText, paragrahText, href, trail
                 variant={'base'}
                 text={caption}
                 className={'font-thin'}
+                data_aos={'fade-in'}
+                data_aos_duration={'1000'}
+                data_aos_delay={'0'}
             /></div>
 
             <section className='grid lg:grid-cols-[4fr,1fr] lg:space-y-0 space-y-10'>
-                <div><Paragraph variant={'paragraph'} text={paragrahText} greyText={greyText} trailingText={trailingText} /></div>
-                <div className='lg:text-right'><Button btnText={btnText} variant={'grey'} href={href} /></div>
+                <div><Paragraph
+                    data_aos={'fade-in'}
+                    data_aos_duration={'0'}
+                    data_aos_delay={'0'}
+                    variant={'paragraph'} text={paragrahText} greyText={greyText} trailingText={trailingText}
+                /></div>
+
+                <div className='lg:text-right'>
+                    <Button btnText={btnText} variant={'grey'} href={href}
+                    /></div>
             </section>
         </section>
     )
