@@ -8,6 +8,10 @@ import Contact from './components/Contact'
 import Works from './views/Works'
 import ShareWebsite from './components/ShareWebsite'
 import About from './views/About'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const App = () => {
   const location = useLocation();

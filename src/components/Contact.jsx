@@ -10,20 +10,12 @@ import Container from '../layout/container/Container'
 
 const Contact = () => {
 
-    const pages = [
-        { name: 'Home', href: '/' },
-        { name: 'Work', href: '/work' },
-        { name: 'About', href: '/about' },
-        { name: 'Contact', href: '/contact' }
-    ]
-
     const social_links = [
         { name: 'YouTube', href: 'https://www.tiktok.com/@danielafriheart?lang=en' },
         { name: 'Twitter', href: 'https://twitter.com/DanielAfriheart' },
         { name: 'Instagram', href: '/work' },
         { name: 'Linkedln', href: 'https://www.linkedin.com/in/daniel-esuola/' },
     ]
-    const location = useLocation();
 
     return (
         <Container title={'Esuola Daniel'} description={"Esuola Daniel's Portfolio Website"}>
@@ -31,8 +23,6 @@ const Contact = () => {
                 <section className='grid lg:grid-cols-[45%,55%]'>
 
                     <div className='lg:space-y-14 space-y-10 mb-20 lg:mb-0'>
-                        {/* <Avatar alt="Esuola Daniel Okikiola" src="https://res.cloudinary.com/dnzi0xxtx/image/upload/v1707069784/Daniel/Avatar_te2xb4.jpg" s /> */}
-
                         <a href="/" rel='noreferrer noopener' className='text-white/50 border border-white/50 hover:border-white hover:bg-white/10 hover:text-white transition-all duration-300 flex items-center space-x-10  px-5 rounded-full w-fit'>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
                                 <path fillRule="evenodd" d="M7.28 7.72a.75.75 0 0 1 0 1.06l-2.47 2.47H21a.75.75 0 0 1 0 1.5H4.81l2.47 2.47a.75.75 0 1 1-1.06 1.06l-3.75-3.75a.75.75 0 0 1 0-1.06l3.75-3.75a.75.75 0 0 1 1.06 0Z" clipRule="evenodd" />
@@ -49,20 +39,18 @@ const Contact = () => {
                     <div className='grid lg:grid-cols-[50%,50%] lg:ml-40 space-y-3 lg:space-y-0 lg:mb-0 mb-20'>
                         <div className=''></div>
                         <div className='space-y-3 lg:w-[80%] w-full ml-auto flex flex-col justify-end'>
-                            {
-                                social_links.map(social => (
-                                    <RouteLinks
-                                        key={social.name}
-                                        linkTitle={social.name}
-                                        routeLocation={social.href}
-                                        routeStyleType={'icon'}
-                                        className={'transition-all duration-300 font-thin text-white'}
-                                        variant={'caption'}
-                                        hoverState={'none'}
-                                        targetState={'_blank'}
-                                    />
-                                ))
-                            }
+                            {social_links.map(social => (
+                                <RouteLinks
+                                    key={social.name}
+                                    linkTitle={social.name}
+                                    routeLocation={social.href}
+                                    routeStyleType={'icon'}
+                                    className={'transition-all duration-300 font-thin text-white'}
+                                    variant={'caption'}
+                                    hoverState={'none'}
+                                    targetState={'_blank'}
+                                />
+                            ))}
                         </div>
                     </div>
                 </section>
