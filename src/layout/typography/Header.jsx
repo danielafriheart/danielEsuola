@@ -12,7 +12,7 @@ const Header = ({ leadingText, greyText, trailingText, className }) => {
 
     return (
         <h1
-        data-aos="fade-left" 
+        data-aos="fade-in" 
         data-aos-easing="ease-in-out"
         data-aos-duration="300"
         data-aos-offset="0"

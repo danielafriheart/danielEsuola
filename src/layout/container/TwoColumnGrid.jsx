@@ -5,11 +5,28 @@ import Section from './Section';
 const TwoColumnGrid = ({ caption, greyText, children, paragrahText, href, trailingText }) => {
   return (
     <Section className='grid lg:grid-cols-[1fr,4fr] lg:gap-0 gap-5'>
-      <div><Paragraph variant={'base'} text={caption} className={'font-thin'} /></div>
       <div>
-        <Paragraph variant={'paragraph'} text={paragrahText} greyText={greyText} trailingText={trailingText} />
+        <Paragraph
+          data_aos={'fade-in'}
+          data_aos_duration={'1000'}
+          data_aos_delay={'0'}
+          variant={'base'}
+          text={caption}
+          className={'font-thin'}
+        />
+      </div>
+      <div>
+        <Paragraph
+          data_aos={'fade-in'}
+          data_aos_duration={'0'}
+          data_aos_delay={'0'}
+          variant={'paragraph'}
+          text={paragrahText}
+          greyText={greyText}
+          trailingText={trailingText}
+        />
 
-        {children && <div className='mt-20 space-y-5'>{children}</div>}
+        {children && <div className='mt-20 space-y-10'>{children}</div>}
       </div>
 
     </Section>

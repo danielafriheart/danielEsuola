@@ -10,13 +10,13 @@ const Gallery = ({ Src }) => {
         <Section className={'py-0'}>
             <div
                 data-aos="fade-up"
-                data-aos-duration="700"
+                data-aos-duration="1000"
+                data-aos-delay="40"
                 className='grid lg:grid-cols-[2fr,1fr] md:grid-cols-[2fr,1fr] gap-6'
             >
                 <div>
                     <MediaCard
                         imageSrc={Src_one}>
-
                     </MediaCard>
                 </div>
                 <div><MediaCard imageSrc={Src_two} >

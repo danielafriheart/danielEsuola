@@ -21,8 +21,17 @@ const Interests = () => {
 
             <section>
                 <div className='flex justify-between'>
-                    <Paragraph text={'Personal Interest'} className={'lg:w-fit w-1/3 font-thin'} />
-                    <Paragraph text={'"CLICK & DRAG AROUND"'} className={'font-thin'} variant={'base'} />
+                    <Paragraph
+                        data_aos={'fade-in'}
+                        text={'Personal Interest'}
+                        className={'lg:w-fit w-1/3 font-thin'}
+                    />
+                    <Paragraph
+                        data_aos={'fade-in'}
+                        text={'"CLICK & DRAG AROUND"'}
+                        className={'font-thin'}
+                        variant={'base'}
+                    />
                 </div>
             </section>
 
@@ -30,31 +39,107 @@ const Interests = () => {
                 <div className=''>
                     <section className='flex flex-col justify-evenly h-full'>
                         <div className='w-full pb-0 flex flex-col lg:space-y-3 mb-10 lg:mb-0'>
-                            <Paragraph variant={'label'} className={`cursor-pointer hover:underline underline-offset-4 transition-all duration-300 ${activeTab === 1 ? 'underline' : 'text-Gray'}`} text="Gaming" active={activeTab === '1'} onClick={() => handleTabChange(1)} />
-                            <Paragraph variant={'label'} className={`cursor-pointer hover:underline underline-offset-4 transition-all duration-300 ${activeTab === 3 ? 'underline' : 'text-Gray'}`} text="Virtual Reality" active={activeTab === '3'} onClick={() => handleTabChange(3)} />
-                            <Paragraph variant={'label'} className={`cursor-pointer hover:underline underline-offset-4 transition-all duration-300 ${activeTab === 2 ? 'underline' : 'text-Gray'}`} text="Music" active={activeTab === '2'} onClick={() => handleTabChange(2)} />
+                            <Paragraph
+                                variant={'label'}
+                                className={`cursor-pointer hover:underline underline-offset-4 transition-all duration-300 ${activeTab === 1 ? 'underline' : 'text-Gray'}`}
+                                text="Gaming"
+                                active={activeTab === '1'}
+                                onClick={() => handleTabChange(1)}
+                                data_aos={'fade-left'}
+                                data_aos_duration={'400'}
+                                data_aos_delay={'10'}
+                            />
+                            <Paragraph
+                                variant={'label'}
+                                className={`cursor-pointer hover:underline underline-offset-4 transition-all duration-300 ${activeTab === 3 ? 'underline' : 'text-Gray'}`}
+                                text="Virtual Reality"
+                                active={activeTab === '3'}
+                                onClick={() => handleTabChange(3)}
+                                data_aos={'fade-left'}
+                                data_aos_duration={'600'}
+                                data_aos_delay={'20'}
+                            />
+                            <Paragraph
+                                variant={'label'}
+                                className={`cursor-pointer hover:underline underline-offset-4 transition-all duration-300 ${activeTab === 2 ? 'underline' : 'text-Gray'}`}
+                                text="Music"
+                                active={activeTab === '2'}
+                                onClick={() => handleTabChange(2)}
+                                data_aos={'fade-left'}
+                                data_aos_duration={'800'}
+                                data_aos_delay={'30'}
+                            />
                         </div>
                         {
                             activeTab === 1 &&
                             <div className='flex flex-col gap-5'>
-                                <Paragraph variant={'paragraph'} text={'Xbox 360 / Playstation'} />
-                                <Paragraph variant={'caption'} text={'Most of my gaming time goes to FIFA. I often play God Of War, Call of Duty, Marvel\'s Spider-Man and a few others.'} />
-                                <Paragraph variant={'caption'} text={"I'm also exploring "} greyText={'VR gaming with Oculus.'} />
+                                <Paragraph
+                                    variant={'paragraph'}
+                                    text={'Xbox 360 / Playstation'}
+                                    data_aos={'fade-in'}
+                                    data_aos_duration={'0'}
+                                    data_aos_delay={'0'}
+                                />
+                                <Paragraph
+                                    data_aos={'fade-in'}
+                                    data_aos_duration={'600'}
+                                    data_aos_delay={'100'}
+                                    variant={'caption'}
+                                    text={'Most of my gaming time goes to FIFA. I often play God Of War, Call of Duty, Marvel\'s Spider-Man and a few others.'}
+                                />
+                                <Paragraph
+                                    data_aos={'fade-in'}
+                                    data_aos_duration={'700'}
+                                    data_aos_delay={'150'}
+                                    variant={'caption'}
+                                    text={"I'm also exploring "}
+                                    greyText={'VR gaming with Oculus.'}
+                                />
                             </div>
                         }
                         {
                             activeTab === 2 &&
                             <div className='flex flex-col gap-5'>
-                                <Paragraph variant={'paragraph'} text={'An Eclectic Music Taste'} />
-                                <Paragraph variant={'caption'} text={'From the upbeat rhythms of Amapiano, Afrobeat to the soulful melodies of Fuji, I find myself drawn to the unique sounds and styles of different genres.'} />
+                                <Paragraph
+                                    variant={'paragraph'}
+                                    text={'An Eclectic Music Taste'}
+                                    data_aos={'fade-in'}
+                                    data_aos_duration={'0'}
+                                    data_aos_delay={'0'}
+                                />
+                                <Paragraph
+                                    data_aos={'fade-in'}
+                                    data_aos_duration={'600'}
+                                    data_aos_delay={'100'}
+                                    variant={'caption'}
+                                    text={'From the upbeat rhythms of Amapiano, Afrobeat to the soulful melodies of Fuji, I find myself drawn to the unique sounds and styles of different genres.'}
+                                />
                             </div>
                         }
                         {
                             activeTab === 3 &&
                             <div className='flex flex-col gap-5'>
-                                <Paragraph variant={'paragraph'} text={'Vision Pro / Oculus'} />
-                                <Paragraph variant={'caption'} text={'The concept of being able to fully immerse myself in a completely different world, with the ability to interact with it as if it were real, is absolutely thrilling to me.'} />
-                                <Paragraph variant={'caption'} text={'It is a technology that I am deeply interested in and am excited to see where it takes us in the future.'} />
+                                <Paragraph
+                                    variant={'paragraph'}
+                                    text={'Vision Pro / Oculus'}
+                                    data_aos={'fade-in'}
+                                    data_aos_duration={'0'}
+                                    data_aos_delay={'0'}
+                                />
+                                <Paragraph
+                                    data_aos={'fade-in'}
+                                    data_aos_duration={'600'}
+                                    data_aos_delay={'100'}
+                                    variant={'caption'}
+                                    text={'The concept of being able to fully immerse myself in a completely different world, with the ability to interact with it as if it were real, is absolutely thrilling to me.'}
+                                />
+                                <Paragraph
+                                    data_aos={'fade-in'}
+                                    data_aos_duration={'700'}
+                                    data_aos_delay={'150'}
+                                    variant={'caption'}
+                                    text={'It is a technology that I am deeply interested in and am excited to see where it takes us in the future.'}
+                                />
                             </div>
                         }
                     </section>
