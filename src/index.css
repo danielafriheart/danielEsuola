@@ -5,10 +5,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root{
-  background-color: #F8F3F0;
-} */
-
 * {
   font-family: 'Manrope', sans-serif;
   padding: 0;
@@ -16,12 +12,4 @@
   box-sizing: border-box;
 
   /* outline: dashed 1px lightgray; */
-}
-
-.logo {
-  font-family: 'Inter', sans-serif;
-}
-
-.difference {
-  mix-blend-mode: difference;
 }

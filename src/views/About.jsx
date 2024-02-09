@@ -41,7 +41,6 @@ const About = () => {
         <Container title={'Esuola Daniel'} description={"Esuola Daniel's Portfolio Website"}>
             <Hero />
             <Gallery />
-
             <TwoColumnGrid caption={'Perspective'} greyText={'As humans, I believe our sole purpose is to create.'} paragrahText={' I redefine possibility by combining imagination with precision to shape extraordinary experiences. '}>
                 <Paragraph
                     data_aos={'fade-in'}
@@ -85,13 +84,7 @@ const About = () => {
                     </ul>
                 ))}
             </TwoColumnGrid>
-
-            {/* <Section>
-                <MediaCard imageSrc={"https://res.cloudinary.com/dnzi0xxtx/image/upload/v1705678476/StoqHive/nkhzPF2aG9jHzZ0Tx12GETeVy0_nrbmax.webp"} customHeight={'65vh'} />
-            </Section> */}
-
             <DesignSuccess />
-
         </Container>
     )
 }
