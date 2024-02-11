@@ -10,6 +10,14 @@ import Container from '../layout/container/Container'
 
 const Contact = () => {
 
+    const cursor = document.querySelector('.cursor'); //Cursor
+    const changeCursorCopy = () => {
+        cursor.classList.add('changeCursorCopy')
+    }
+    const defaultCursor = () => {
+        cursor.classList.remove('changeCursorCopy')
+    }
+
     const social_links = [
         {
             name: 'YouTube',
@@ -58,18 +66,23 @@ const Contact = () => {
                             <Paragraph variant={'base'} className={'font-thin text-white'} text={'Home'} />
                         </a>
 
-                        <Header leadingText={"esuoladaniel002 @gmail.com"} className={'text-white'} />
+                        <div
+                            onMouseEnter={changeCursorCopy}
+                            onMouseLeave={defaultCursor}
+                        >
+                            <Header leadingText={"esuoladaniel002 @gmail.com"} className={'text-white'} />
+                        </div>
 
                         <Paragraph
                             data_aos={'fade-in'}
                             data_aos_duration={'600'}
                             data_aos_delay={'20'}
-                            text={"Send me a message or get in touch with me on any of my socials."}
+                            text={"Send me an email or get in touch with me on any of my socials."}
                             greyText={"Let's start creating magic."}
                             className={'text-white font-thin'} variant={'paragraph_md'}
                         />
 
-                        <Button variant={'white'} btnText={"Email me"} href={'/contact'} />
+                        {/* <Button variant={'white'} btnText={"Email me"} href={'/contact'} /> */}
                     </div>
                     <div className='grid lg:grid-cols-[50%,50%] lg:ml-40 space-y-3 lg:space-y-0 lg:mb-0 mb-20'>
                         <div className=''></div>

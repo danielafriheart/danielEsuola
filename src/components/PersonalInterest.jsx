@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Suspense, useState } from 'react';
 // import ContainerHeader from '../../layouts/container/ContainerHeader';
 import { Model as Jbl } from '../3dModels/Jbl'
 import { Model as Visionpro } from '../3dModels/Visionapro'
@@ -25,7 +25,7 @@ const Interests = () => {
     }
 
     return (
-        <Section className='flex flex-col lg:gap-0 gap-10 '>
+        <Section className='flex flex-col lg:gap-10 gap-10 '>
 
             <section>
                 <div className='flex justify-between'>
@@ -162,76 +162,79 @@ const Interests = () => {
                         onMouseLeave={defaultCursor}
                         className='h-[100%] hover:cursor-grab'
                     >
-                        {
-                            activeTab === 1 &&
-                            <>
-                                <PerspectiveCamera position={[0.3, 10, 0.3]} fov={45} makeDefault />
-                                <OrbitControls
-                                    enableZoom={false}
-                                    enablePan={false}
-                                    enableDamping
-                                    dampingFactor={0.25}
-                                    // rotateSpeed={0.4}
-                                    target={[0, 3, 0]} // Set the target to the center of the object
-                                    minPolarAngle={[1]}
-                                    maxPolarAngle={[0]}
-                                />
-                                <ambientLight intensity={700} color={'#ffffff'} />
-                                <directionalLight castShadow color="#ffffff" position={[0, 10, 5]} intensity={0.5} />
-                                <pointLight position={[0, 10, 0]} color={'white'} intensity={50} />
+                        <Suspense fallback={null}>
 
-                                <mesh receiveShadow castShadow position={[0, 2, 0]}>
-                                    <Whitexbox />
-                                </mesh>
-                            </>
-                        }
-                        {
-                            activeTab === 2 &&
-                            <>
-                                <PerspectiveCamera position={[0, 10, 0]} fov={45} makeDefault />
-                                <OrbitControls
-                                    enableZoom={false}
-                                    enablePan={false}
-                                    enableDamping
-                                    dampingFactor={0.25}
-                                    // rotateSpeed={0.4}
-                                    target={[0, 2, 0]} // Set the target to the center of the object
-                                    minPolarAngle={[1]}
-                                    maxPolarAngle={[0]}
-                                />
-                                <ambientLight intensity={700} color={'#ffffff'} />
-                                <directionalLight castShadow color="#ffffff" position={[0, 10, 5]} intensity={40} />
-                                <pointLight position={[0, 10, 0]} color={'white'} intensity={50} />
-                                <mesh receiveShadow castShadow position={[0, 0, 0]}>
-                                    <Jbl />
-                                </mesh>
-                            </>
-                        }
-                        {
-                            activeTab === 3 &&
-                            <>
-                                <PerspectiveCamera position={[0.3, 1, -0.3]} fov={45} makeDefault />
-                                <OrbitControls
-                                    enableZoom={false}
-                                    enablePan={false}
-                                    enableDamping
-                                    dampingFactor={0.25}
-                                    // rotateSpeed={0.4}
-                                    target={[0, 2, 0]} // Set the target to the center of the object
-                                    minPolarAngle={[1]}
-                                    maxPolarAngle={[0]}
-                                />
-                                <ambientLight color={'#dddddd'} intensity={0} />
-                                <directionalLight castShadow color="#dddddd" position={[50, 10, 0]} intensity={5} />
-                                <directionalLight castShadow color="#dddddd" position={[-50, -10, 0]} intensity={3} />
-                                <pointLight position={[0, 10, 0]} color={'grey'} intensity={0} />
-                                <mesh receiveShadow castShadow position={[0, 2, 0]}>
-                                    <Visionpro />
-                                </mesh>
-                            </>
-                        }
-                        {/* Display axes to show XYZ dimensions */}
-                        {/* <axesHelper args={[5]} /> */}
+                            {
+                                activeTab === 1 &&
+                                <>
+                                    <PerspectiveCamera position={[0.3, 10, 0.3]} fov={45} makeDefault />
+                                    <OrbitControls
+                                        enableZoom={false}
+                                        enablePan={false}
+                                        enableDamping
+                                        dampingFactor={0.25}
+                                        // rotateSpeed={0.4}
+                                        target={[0, 3, 0]} // Set the target to the center of the object
+                                        minPolarAngle={[1]}
+                                        maxPolarAngle={[0]}
+                                    />
+                                    <ambientLight intensity={700} color={'#ffffff'} />
+                                    <directionalLight castShadow color="#ffffff" position={[0, 10, 5]} intensity={0.5} />
+                                    <pointLight position={[0, 10, 0]} color={'white'} intensity={50} />
+
+                                    <mesh receiveShadow castShadow position={[0, 2, 0]}>
+                                        <Whitexbox />
+                                    </mesh>
+                                </>
+                            }
+                            {
+                                activeTab === 2 &&
+                                <>
+                                    <PerspectiveCamera position={[0, 10, 0]} fov={45} makeDefault />
+                                    <OrbitControls
+                                        enableZoom={false}
+                                        enablePan={false}
+                                        enableDamping
+                                        dampingFactor={0.25}
+                                        // rotateSpeed={0.4}
+                                        target={[0, 2, 0]} // Set the target to the center of the object
+                                        minPolarAngle={[1]}
+                                        maxPolarAngle={[0]}
+                                    />
+                                    <ambientLight intensity={700} color={'#ffffff'} />
+                                    <directionalLight castShadow color="#ffffff" position={[0, 10, 5]} intensity={40} />
+                                    <pointLight position={[0, 10, 0]} color={'white'} intensity={50} />
+                                    <mesh receiveShadow castShadow position={[0, 0, 0]}>
+                                        <Jbl />
+                                    </mesh>
+                                </>
+                            }
+                            {
+                                activeTab === 3 &&
+                                <>
+                                    <PerspectiveCamera position={[0.3, 1, -0.3]} fov={45} makeDefault />
+                                    <OrbitControls
+                                        enableZoom={false}
+                                        enablePan={false}
+                                        enableDamping
+                                        dampingFactor={0.25}
+                                        // rotateSpeed={0.4}
+                                        target={[0, 2, 0]} // Set the target to the center of the object
+                                        minPolarAngle={[1]}
+                                        maxPolarAngle={[0]}
+                                    />
+                                    <ambientLight color={'#dddddd'} intensity={0} />
+                                    <directionalLight castShadow color="#dddddd" position={[50, 10, 0]} intensity={5} />
+                                    <directionalLight castShadow color="#dddddd" position={[-50, -10, 0]} intensity={3} />
+                                    <pointLight position={[0, 10, 0]} color={'grey'} intensity={0} />
+                                    <mesh receiveShadow castShadow position={[0, 2, 0]}>
+                                        <Visionpro />
+                                    </mesh>
+                                </>
+                            }
+                            {/* Display axes to show XYZ dimensions */}
+                            {/* <axesHelper args={[5]} /> */}
+                        </Suspense>
                     </Canvas>
                 </div>
             </div>
