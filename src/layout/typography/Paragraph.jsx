@@ -19,10 +19,10 @@ const Paragraph = ({ text, className, variant, trailingText, greyText, onClick, 
 
     return (
         <p
-            data-aos-easing="ease-in-out"
             data-aos-duration={data_aos_duration}
             data-aos-delay={data_aos_delay}
             data-aos-offset="0"
+            data-aos-easing="ease-in-sine"
             data-aos={data_aos}
             className={`${selectedVariant} ${className} space-x-4`}
             onClick={onClick}

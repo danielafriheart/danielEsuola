@@ -8,8 +8,7 @@ const TwoColumnGrid = ({ caption, greyText, children, paragrahText, href, traili
       <div>
         <Paragraph
           data_aos={'fade-in'}
-          data_aos_duration={'1000'}
-          data_aos_delay={'0'}
+          data_aos_delay={'100'}
           variant={'base'}
           text={caption}
           className={'font-thin'}
@@ -18,8 +17,7 @@ const TwoColumnGrid = ({ caption, greyText, children, paragrahText, href, traili
       <div>
         <Paragraph
           data_aos={'fade-in'}
-          data_aos_duration={'0'}
-          data_aos_delay={'0'}
+          data_aos_delay={'300'}
           variant={'paragraph'}
           text={paragrahText}
           greyText={greyText}

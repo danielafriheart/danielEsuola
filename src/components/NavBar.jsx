@@ -134,7 +134,7 @@ const Example = () => {
                                         // routeStyleType={'noIcon'}
                                         hoverState={`${location.pathname === page.href ? 'always' : 'hover'}`}
                                         variant={'base'}
-                                        className={'font-thin text-white'}
+                                        className={'font-thin text-white navLink'}
                                     />
                                 ))}
                             </div>

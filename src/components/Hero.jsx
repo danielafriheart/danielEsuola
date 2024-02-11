@@ -35,7 +35,7 @@ const Hero = () => {
                 <Paragraph
                     data_aos={'fade-in'}
                     data_aos_duration={'0'}
-                    data_aos_delay={'0'}
+                    data_aos_delay={'300'}
                     text={"I support Designers & Agencies with "}
                     greyText={'Creative'}
                     trailingText={' Development.'}
@@ -44,14 +44,14 @@ const Hero = () => {
 
                 <Paragraph
                     data_aos={'fade-in'}
-                    data_aos_duration={'600'}
-                    data_aos_delay={'100'}
+                    data_aos_delay={'400'}
+                    data_aos_easing={'300'}
                     text={"I'm a creative developer with years of experience in building products and appealing web experiences. I've collaborated with individuals and teams to build experiences for SMEs and large enterprises including Osome and StoqHive."} variant={'base'} className={'font-thin'} />
 
                 <Paragraph
                     data_aos={'fade-in'}
+                    data_aos_delay={'400'}
                     data_aos_duration={'700'}
-                    data_aos_delay={'150'}
                     text={"Each project is an opportuinity to learn new concepts across multiple domains including arts, maths and physics."} variant={'base'} className={'font-thin'}
                 />
             </div>

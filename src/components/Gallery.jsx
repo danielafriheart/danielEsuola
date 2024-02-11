@@ -12,6 +12,7 @@ const Gallery = ({ Src }) => {
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="40"
+                data-aos-easing="ease-in-out"
                 className='grid lg:grid-cols-[2fr,1fr] md:grid-cols-[2fr,1fr] gap-6'
             >
                 <div>

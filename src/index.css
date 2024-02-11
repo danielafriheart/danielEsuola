@@ -1,5 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/manrope');
 @import url('https://fonts.cdnfonts.com/css/inter');
+@import url('https://fonts.cdnfonts.com/css/clash-display');
+
 
 @tailwind base;
 @tailwind components;
@@ -10,6 +12,181 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  cursor: none;
+  scroll-behavior: smooth;
 
   /* outline: dashed 1px lightgray; */
+}
+body{
+  scroll-snap-type: y mandatory;
+}
+section{
+  scroll-snap-align: start;
+}
+
+.navLink{
+  mix-blend-mode: difference !important;
+}
+
+
+/* h1,
+h2,
+.h2 {
+    font-family: 'Clash Display', sans-serif !important;
+
+} */
+
+
+::selection {
+  background-color: lightgray;
+  color: white;
+}
+
+/* Custom cursor */
+.cursor {
+  z-index: 10000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
+
+.cursor::after,
+.cursor::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  height: 10px;
+  width: 10px;
+  border-radius: 50px;
+}
+
+.cursor::before {
+  background-color: rgb(0, 0, 0);
+}
+
+/* .cursor.click::before {
+  animation: click 1s ease forwards;
+  background-color: rgb(255, 255, 255);
+}
+@keyframes click {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(7);
+  }
+} */
+
+.bigCursor {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px solid white;
+  /* background-color: rgba(255, 255, 255, 0.2); */
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
+
+.bigCursor::after,
+.bigCursor::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(0, 0, 0);
+  height: 80%;
+  width: 80%;
+  border-radius: 50px;
+}
+
+.bigCursor::before {
+  background-color: rgb(0, 0, 0);
+}
+
+.bigCursor.click::before {
+  animation: click 1s ease forwards;
+  background-color: rgb(0, 0, 0);
+}
+
+
+/* CLick and drag */
+.clickAndDrag {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 90px;
+  width: 90px;
+  border-radius: 50px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.clickAndDrag::after,
+.clickAndDrag::before {
+  content: "click and drag";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255);
+  height: 80%;
+  width: 80%;
+  border-radius: 50px;
+  @apply text-[0.8em] grid place-content-center text-center font-thin p-1 text-[#000000]
+}
+
+.clickAndDrag::before {
+  background-color: rgb(0, 0, 0);
+}
+
+
+/* changeCursorCopy */
+.changeCursorCopy {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 90px;
+  width: 90px;
+  border-radius: 50px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.changeCursorCopy::after,
+.changeCursorCopy::before {
+  content: "send email";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(0, 0, 0);
+  height: 80%;
+  width: 80%;
+  border-radius: 50px;
+  @apply text-[0.8em] grid place-content-center text-center font-bold p-3 text-[#ffffff]
+}
+
+.changeCursorCopy::before {
+  background-color: rgb(0, 0, 0);
 }
