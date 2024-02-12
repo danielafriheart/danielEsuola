@@ -7,28 +7,36 @@ const Projects = () => {
     const projectsData = [
         {
             id: 1,
-            title: 'Project 1',
-            description: 'Description for Project 1...',
-            technologies: ['React', 'JavaScript', 'CSS'],
+            title: 'StoqHive',
+            description: 'Business Management System',
+            year: '2024',
+            url: 'https://res.cloudinary.com/dnzi0xxtx/image/upload/v1684072609/Daniel/unsplash_ZSPBhokqDMc_tyivrp.png',
+
         },
         {
             id: 2,
             title: 'Project 2',
             description: 'Description for Project 2...',
-            technologies: ['Node.js', 'Express', 'MongoDB'],
+            year: '2002',
+            url: 'https://res.cloudinary.com/dnzi0xxtx/image/upload/v1684072602/Daniel/unsplash_pyMbXQhPK0k_kxgyib.png',
+
         },
         {
             id: 23,
             title: 'Project 3',
             description: 'Description for Project 3...',
-            technologies: ['Node.js', 'Express', 'MongoDB'],
+            year: '2002',
+            url: 'https://res.cloudinary.com/dnzi0xxtx/image/upload/v1684072609/Daniel/unsplash_3ZvHsFiZyME_aslnv3.png',
+
         },
         {
             id: 4,
             title: 'Project 4',
             description: 'Description for Project 4...',
-            technologies: ['Node.js', 'Express', 'MongoDB'],
+            year: '2002',
+            url: 'https://res.cloudinary.com/dnzi0xxtx/image/upload/v1684072609/Daniel/unsplash_ZSPBhokqDMc_tyivrp.png',
         },
+
     ];
 
     const [selectedProjectId, setSelectedProjectId] = useState(null);
@@ -39,20 +47,25 @@ const Projects = () => {
 
     return (
         <Section>
-            <section className='grid lg:grid-cols-2 md:grid-cols-2 lg:gap-510 md:gap-10'>
+            {/* <section className='grid lg:grid-cols-2 md:grid-cols-2 lg:gap-8 md:gap-10'> */}
+            <section className='space-y-40'>
                 {
                     projectsData.map(project => (
-                        <div className=''>
+                        <div>
                             <ActionAreaCard
+                                src={project.url}
                                 caption={project.title}
                                 label={project.description}
+                                year={project.year}
                                 key={project.id}
                                 onClick={() => handleProjectClick(project.id)}
+                                customHeight={'75vh'}
                             />
                         </div>
                     ))
                 }
             </section>
+            {/* </section> */}
         </Section>
     )
 }

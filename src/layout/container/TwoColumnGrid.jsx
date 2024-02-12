@@ -7,7 +7,6 @@ const TwoColumnGrid = ({ caption, greyText, children, paragrahText, href, traili
     <Section className='grid lg:grid-cols-[1fr,4fr] lg:gap-0 gap-5'>
       <div>
         <Paragraph
-          data_aos={'fade-in'}
           data_aos_delay={'100'}
           variant={'base'}
           text={caption}
@@ -16,8 +15,7 @@ const TwoColumnGrid = ({ caption, greyText, children, paragrahText, href, traili
       </div>
       <div>
         <Paragraph
-          data_aos={'fade-in'}
-          data_aos_delay={'300'}
+          data_aos_delay={'200'}
           variant={'paragraph'}
           text={paragrahText}
           greyText={greyText}

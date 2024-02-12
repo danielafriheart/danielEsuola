@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes, Navigate, Outlet, useLocation } from 'react-router-dom'
-import Home from './views/Home'
+// import Home from './views/Home'
 import Error from './views/Error'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
@@ -24,7 +24,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<About />} />
         {/* <Route path='/' element={<Navigate to="/about" replace />} /> */}
-        <Route path='/work' element={<Works />} />
+        <Route path='/projects' element={<Works />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='*' element={<Error />} />

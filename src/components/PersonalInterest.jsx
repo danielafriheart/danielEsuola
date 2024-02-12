@@ -30,18 +30,16 @@ const Interests = () => {
             <section>
                 <div className='flex justify-between'>
                     <Paragraph
-                        data_aos={'fade-in'}
+                      
                         text={'Personal Interest'}
                         className={'lg:w-fit w-1/3 font-thin'}
-                        data_aos_duration={'400'}
                         data_aos_delay={'500'}
                     />
                     <Paragraph
-                        data_aos={'fade-in'}
+                      
                         text={'"CLICK & DRAG AROUND"'}
                         className={'font-thin'}
                         variant={'base'}
-                        data_aos_duration={'400'}
                         data_aos_delay={'600'}
                     />
                 </div>
@@ -58,7 +56,6 @@ const Interests = () => {
                                 active={activeTab === '1'}
                                 onClick={() => handleTabChange(1)}
                                 data_aos={'fade-left'}
-                                data_aos_duration={'400'}
                                 data_aos_delay={'10'}
                             />
                             <Paragraph
@@ -68,7 +65,6 @@ const Interests = () => {
                                 active={activeTab === '3'}
                                 onClick={() => handleTabChange(3)}
                                 data_aos={'fade-left'}
-                                data_aos_duration={'600'}
                                 data_aos_delay={'20'}
                             />
                             <Paragraph
@@ -78,7 +74,6 @@ const Interests = () => {
                                 active={activeTab === '2'}
                                 onClick={() => handleTabChange(2)}
                                 data_aos={'fade-left'}
-                                data_aos_duration={'800'}
                                 data_aos_delay={'30'}
                             />
                         </div>
@@ -88,20 +83,17 @@ const Interests = () => {
                                 <Paragraph
                                     variant={'paragraph'}
                                     text={'Xbox 360 / Playstation'}
-                                    data_aos={'fade-in'}
-                                    data_aos_duration={'0'}
+                                  
                                     data_aos_delay={'100'}
                                 />
                                 <Paragraph
-                                    data_aos={'fade-in'}
-                                    data_aos_duration={'600'}
+                                  
                                     data_aos_delay={'200'}
                                     variant={'caption'}
                                     text={'Most of my gaming time goes to FIFA. I often play God Of War, Call of Duty, Marvel\'s Spider-Man and a few others.'}
                                 />
                                 <Paragraph
-                                    data_aos={'fade-in'}
-                                    data_aos_duration={'700'}
+                                  
                                     data_aos_delay={'300'}
                                     variant={'caption'}
                                     text={"I'm also exploring "}
@@ -115,13 +107,11 @@ const Interests = () => {
                                 <Paragraph
                                     variant={'paragraph'}
                                     text={'An Eclectic Music Taste'}
-                                    data_aos={'fade-in'}
-                                    data_aos_duration={'0'}
+                                  
                                     data_aos_delay={'100'}
                                 />
                                 <Paragraph
-                                    data_aos={'fade-in'}
-                                    data_aos_duration={'600'}
+                                  
                                     data_aos_delay={'200'}
                                     variant={'caption'}
                                     text={'From the upbeat rhythms of Amapiano, Afrobeat to the soulful melodies of Fuji, I find myself drawn to the unique sounds and styles of different genres.'}
@@ -134,20 +124,17 @@ const Interests = () => {
                                 <Paragraph
                                     variant={'paragraph'}
                                     text={'Vision Pro / Oculus'}
-                                    data_aos={'fade-in'}
-                                    data_aos_duration={'0'}
+                                  
                                     data_aos_delay={'100'}
                                 />
                                 <Paragraph
-                                    data_aos={'fade-in'}
-                                    data_aos_duration={'600'}
+                                  
                                     data_aos_delay={'200'}
                                     variant={'caption'}
                                     text={'The concept of being able to fully immerse myself in a completely different world, with the ability to interact with it as if it were real, is absolutely thrilling to me.'}
                                 />
                                 <Paragraph
-                                    data_aos={'fade-in'}
-                                    data_aos_duration={'700'}
+                                  
                                     data_aos_delay={'300'}
                                     variant={'caption'}
                                     text={'It is a technology that I am deeply interested in and am excited to see where it takes us in the future.'}

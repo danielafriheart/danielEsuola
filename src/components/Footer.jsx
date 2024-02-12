@@ -12,25 +12,21 @@ const Footer = () => {
     //     {
     //         name: 'Home', href: '/',
     //         data_aos: 'fade-in',
-    //         data_aos_duration: '0',
     //         data_aos_delay: '0'
     //     },
     //     {
-    //         name: 'Work', href: '/work',
+    //         name: 'Work', href: '/projects',
     //         data_aos: 'fade-in',
-    //         data_aos_duration: '600',
     //         data_aos_delay: '100'
     //     },
     //     {
     //         name: 'About', href: '/about',
     //         data_aos: 'fade-in',
-    //         data_aos_duration: '700',
     //         data_aos_delay: '150',
     //     },
     //     {
     //         name: 'Contact', href: '/contact',
     //         data_aos: 'fade-in',
-    //         data_aos_duration: '800',
     //         data_aos_delay: '200'
     //     }
     // ]
@@ -40,28 +36,24 @@ const Footer = () => {
             name: 'YouTube',
             href: 'https://www.tiktok.com/@danielafriheart?lang=en',
             data_aos: 'fade-in',
-            data_aos_duration: '600',
             data_aos_delay: '100'
         },
         {
             name: 'Twitter',
             href: 'https://twitter.com/DanielAfriheart',
             data_aos: 'fade-in',
-            data_aos_duration: '600',
             data_aos_delay: '100'
         },
         {
             name: 'Instagram',
-            href: '/work',
+            href: '/projects',
             data_aos: 'fade-in',
-            data_aos_duration: '700',
             data_aos_delay: '150'
         },
         {
             name: 'Linkedln',
             href: 'https://www.linkedin.com/in/daniel-esuola/',
             data_aos: 'fade-in',
-            data_aos_duration: '800',
             data_aos_delay: '200'
         },
     ]
@@ -91,8 +83,7 @@ const Footer = () => {
                         </div>
                         <Paragraph
                             data_aos={'fade-in'}
-                            data_aos_duration={'600'}
-                            data_aos_delay={'20'}
+                            data_aos_delay={'300'}
                             text={"Send me an email or get in touch with me on any of my socials."}
                             greyText={"Let's start creating magic."}
                             className={'font-thin'} variant={'paragraph_md'}
@@ -105,7 +96,6 @@ const Footer = () => {
                                 pages.map(page => (
                                     <RouteLinks
                                         data_aos={page.data_aos}
-                                        data_aos_duration={page.data_aos_duration}
                                         data_aos_delay={page.data_aos_delay}
                                         key={page.name}
                                         linkTitle={page.name}
@@ -123,7 +113,6 @@ const Footer = () => {
                                 social_links.map(social => (
                                     <RouteLinks
                                         data_aos={social.data_aos}
-                                        data_aos_duration={social.data_aos_duration}
                                         data_aos_delay={social.data_aos_delay}
                                         key={social.name}
                                         linkTitle={social.name}

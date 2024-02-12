@@ -8,24 +8,25 @@ const Gallery = ({ Src }) => {
     const Src_two = "https://res.cloudinary.com/dnzi0xxtx/image/upload/v1707164392/Daniel/IMG_4811_jge1as.jpg"
     return (
         <Section className={'py-0'}>
-            <div
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="40"
-                data-aos-easing="ease-in-out"
-                className='grid lg:grid-cols-[2fr,1fr] md:grid-cols-[2fr,1fr] gap-5'
-            >
-                <div>
-                    <MediaCard
-                        imageSrc={Src_one}>
-                    </MediaCard>
+            <div className='grid lg:grid-cols-[2fr,1fr] md:grid-cols-[2fr,1fr] gap-5'>
+                <div
+                    data-aos="fade-in"
+                    data-aos-delay="500"
+                    data-aos-easing="ease-in-sine"
+                >
+                    <MediaCard imageSrc={Src_one}></MediaCard>
                 </div>
-                <div><MediaCard imageSrc={Src_two} >
-                    <Paragraph variant={'base'}
-                        text={'"As humans, I believe our sole purpose is to create"'}
-                        className={'font-thin text-white w-1/2'}
-                    />
-                </MediaCard>
+                <div
+                    data-aos="fade-in"
+                    data-aos-delay="600"
+                    data-aos-easing="ease-in-sine"
+                >
+                    <MediaCard imageSrc={Src_two} >
+                        <Paragraph variant={'base'}
+                            text={'"As humans, I believe our sole purpose is to create"'}
+                            className={'font-thin text-white w-1/2'}
+                        />
+                    </MediaCard>
                 </div>
             </div>
         </Section>

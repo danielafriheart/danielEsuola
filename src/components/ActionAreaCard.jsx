@@ -2,7 +2,7 @@ import React from 'react'
 import Paragraph from '../layout/typography/Paragraph'
 import MediaCard from '../components/MediaCard'
 
-const ActionAreaCard = ({ caption, label, customHeight, src }) => {
+const ActionAreaCard = ({ caption, label, year, customHeight, src }) => {
 
   /**
    * The function `handleAnimate` adds or removes classes to animate a target element based on mouse
@@ -44,7 +44,10 @@ const ActionAreaCard = ({ caption, label, customHeight, src }) => {
       onMouseLeave={handleAnimate}
     >
       <section className='space-y-5 mb-10 lg:mb-0 md:mb-0'>
-        <div className='h-full relative z-10'>
+        <div className='h-full relative z-10'
+          data-aos-delay={'500'}
+          data-aos="fade-in"
+        >
 
           <MediaCard
             imageSrc={src || img}
@@ -59,9 +62,10 @@ const ActionAreaCard = ({ caption, label, customHeight, src }) => {
 
         </div>
 
-        <div className='space-y-2'>
-          <Paragraph variant={'caption'} text={caption} />
+        <div className='space-x-2 flex justify-between'>
+          <Paragraph variant={'label'} text={caption} />
           <Paragraph variant={'label'} text={label} />
+          <Paragraph variant={'label'} text={year} />
         </div>
       </section>
     </a>

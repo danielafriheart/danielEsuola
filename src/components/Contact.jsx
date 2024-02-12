@@ -23,41 +23,36 @@ const Contact = () => {
             name: 'YouTube',
             href: 'https://www.tiktok.com/@danielafriheart?lang=en',
             data_aos: 'fade-in',
-            data_aos_duration: '0',
             data_aos_delay: '0'
         },
         {
             name: 'Twitter',
             href: 'https://twitter.com/DanielAfriheart',
             data_aos: 'fade-in',
-            data_aos_duration: '600',
             data_aos_delay: '100'
         },
         {
             name: 'Instagram',
-            href: '/work',
+            href: '/projects',
             data_aos: 'fade-in',
-            data_aos_duration: '700',
             data_aos_delay: '150'
         },
         {
             name: 'Linkedln',
             href: 'https://www.linkedin.com/in/daniel-esuola/',
             data_aos: 'fade-in',
-            data_aos_duration: '800',
             data_aos_delay: '200'
         },
     ]
 
     return (
-        <Container title={'Esuola Daniel'} description={"Esuola Daniel's Portfolio Website"}>
+        <Container title={'Okikiola'} description={"Esuola Daniel's Portfolio Website"}>
             <Section className={'min-h-screen h-fit flex flex-col justify-between bg-[#000000]'}>
                 <section className='grid lg:grid-cols-[45%,55%]'>
 
                     <div className='lg:space-y-14 space-y-10 mb-20 lg:mb-0'>
                         <a href="/" rel='noreferrer noopener' className='text-white/50 border border-white/50 hover:border-white hover:bg-white/10 hover:text-white transition-all duration-300 flex items-center space-x-10  px-5 rounded-full w-fit'
                             data_aos={'fade-left'}
-                            data_aos_duration={'600'}
                             data_aos_delay={'20'}
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
@@ -75,7 +70,6 @@ const Contact = () => {
 
                         <Paragraph
                             data_aos={'fade-in'}
-                            data_aos_duration={'600'}
                             data_aos_delay={'20'}
                             text={"Send me an email or get in touch with me on any of my socials."}
                             greyText={"Let's start creating magic."}
@@ -98,7 +92,6 @@ const Contact = () => {
                                     hoverState={'none'}
                                     targetState={'_blank'}
                                     data_aos={social.data_aos}
-                                    data_aos_duration={social.data_aos_duration}
                                     data_aos_delay={social.data_aos_delay}
                                 />
                             ))}

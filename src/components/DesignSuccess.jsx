@@ -6,11 +6,11 @@ const DesignSuccess = () => {
     return (
         <Section>
             <ThreeColumnGrid
-                caption={'Designing Success'}
+                caption={'Design Success'}
                 paragrahText={"See how I've turned ideas into reality. Dive into the stories of"}
                 greyText={'successful product designs that make a difference.'}
-                btnText={'My Work'}
-                href={'/work'}
+                btnText={'Select Projects'}
+                href={'/projects'}
             />
         </Section>
     )

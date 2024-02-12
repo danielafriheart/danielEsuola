@@ -12,11 +12,10 @@ const Header = ({ leadingText, greyText, trailingText, className }) => {
 
     return (
         <h1
-        data-aos="fade-in" 
-        data-aos-easing="ease-in-sine"
-        data-aos-delay="300"
-        data-aos-offset="0"
-         className={`${className} lg:text-Header md:text-Header-md text-Paragraph-md lg:leading-[77px] leading-tight space-x-4 font-normal flex-wrap`}>
+            data-aos="fade-in"
+            data-aos-delay="200"
+            data-aos-easing="ease-in-sine"
+            className={`${className} lg:text-Header md:text-Header-md text-Paragraph-md lg:leading-[77px] leading-tight space-x-4 font-normal flex-wrap`}>
             {leadingText}
             {greyText && <span className='text-Gray'>{greyText}</span>}
             {trailingText}

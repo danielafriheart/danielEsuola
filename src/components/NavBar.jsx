@@ -17,30 +17,27 @@ const Example = () => {
 
     const pageroute = [
         {
-            name: 'Work,',
+            name: 'Projects ,',
             description: 'Get a better understanding of your traffic',
-            href: '/work',
+            href: '/projects',
             icon: ChartPieIcon,
             data_aos: 'fade-in',
-            data_aos_duration: '0',
             data_aos_delay: '0'
         },
-        {
-            name: 'About,',
-            description: 'Speak directly to your customers',
-            href: '/about',
-            icon: CursorArrowRaysIcon,
-            data_aos: 'fade-in',
-            data_aos_duration: '600',
-            data_aos_delay: '100'
-        },
+        // {
+        //     name: 'About,',
+        //     description: 'Speak directly to your customers',
+        //     href: '/about',
+        //     icon: CursorArrowRaysIcon,
+        //     data_aos: 'fade-in',
+        //     data_aos_delay: '100'
+        // },
         {
             name: 'Contact',
             description: 'Your customers’ data will be safe and secure',
             href: '/contact',
             icon: FingerPrintIcon,
             data_aos: 'fade-in',
-            data_aos_duration: '700',
             data_aos_delay: '150'
         },
     ]
@@ -79,11 +76,10 @@ const Example = () => {
                     </button>
                 </div>
 
-                <Popover.Group className="hidden lg:flex lg:gap-x-5">
+                <Popover.Group className="hidden lg:flex lg:gap-x-3">
                     {pageroute.map((page, id) => (
                         <RouteLinks
                             data_aos={page.data_aos}
-                            data_aos_duration={page.data_aos_duration}
                             data_aos_delay={page.data_aos_delay}
                             key={id}
                             linkTitle={page.name}
