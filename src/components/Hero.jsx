@@ -13,7 +13,7 @@ const Hero = () => {
                 <Header leadingText={'Ókíkìọlá'} />
 
                 <Paragraph
-                    data_aos_delay={'300'}
+                    data_aos_delay={'10'}
                     text={"I support Designers & Agencies with "}
                     greyText={'Creative'}
                     trailingText={' Development.'}
@@ -21,11 +21,11 @@ const Hero = () => {
                 />
 
                 <Paragraph
-                    data_aos_delay={'400'}
+                    data_aos_delay={'20'}
                     text={"I'm a creative developer with years of experience in building products and appealing web experiences. I've collaborated with individuals and teams to build experiences for SMEs and large enterprises including Osome and StoqHive."} variant={'base'} className={'font-thin'} />
 
                 <Paragraph
-                    data_aos_delay={'500'}
+                    data_aos_delay={'30'}
                     text={"Each project is an opportuinity to learn new concepts across multiple domains including arts, maths and physics."} variant={'base'} className={'font-thin'}
                 />
 
