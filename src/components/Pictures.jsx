@@ -41,17 +41,22 @@ function Gallery() {
             {rows.map((row, i) => (
                 <div key={i} className={`grid lg:grid-cols-4 lg:space-x-5 lg:space-y-0 space-y-5`}>
                     {row.map((img, image) => (
-                        <MediaCard imageSrc={img}></MediaCard>
-
-                        // <div
-                        //     key={image}
-                        //     style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover', backgroundPosition: 'center', }}
-                        //     className='rounded-xl h-[80vh]'
-                        //     data-aos="fade-in"
-                        //     data-aos-delay="500"
-                        //     data-aos-easing="ease-in-sine"
-                        // >
-                        // </div>
+                        <div
+                            key={image}
+                            style={{
+                                backgroundImage: `url(${img})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                // backgroundRepeat:'no-repeat',
+                                backgroundAttachment:'fixed',
+                                // background: 'linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0) 200px), linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0) 300px)',
+                            }}
+                            className='rounded-xl h-[80vh] bg-fixed'
+                            data-aos="fade-in"
+                            data-aos-delay="500"
+                            data-aos-easing="ease-in-sine"
+                        >
+                        </div>
                     ))}
                 </div>
             ))}

@@ -7,6 +7,7 @@ import Interests from '../components/PersonalInterest'
 import Container from '../layout/container/Container'
 import Hero from '../components/Hero'
 import Pictures from '../components/Pictures'
+import MyServices from '../components/Services'
 
 
 const About = () => {
@@ -35,7 +36,7 @@ const About = () => {
     return (
         <Container title={'Okikiola'} description={"Esuola Daniel's Portfolio Website"}>
             <Hero />
-            
+
             <Gallery />
 
             <TwoColumnGrid caption={'Perspective'} greyText={'As humans, I believe our sole purpose is to create.'} paragrahText={' I redefine possibility by combining imagination with precision to shape extraordinary experiences. '}>
@@ -52,11 +53,13 @@ const About = () => {
                 />
             </TwoColumnGrid>
 
+            <MyServices />
+
             <Interests />
 
-            <TwoColumnGrid caption={''} paragrahText={"When I’m not at the computer you can find me riding my skateboard,"} greyText={' watching anything star wars related or walking our dogs. '}/>
-
+            <TwoColumnGrid caption={''} paragrahText={"When I’m not on my computer, building or exploring new web experiences, "} greyText={' I’m probably playing games or making videos for YouTube.'} />
             <Pictures />
+
 
             <TwoColumnGrid caption={'Honors'} paragrahText={'Awards '} greyText={' &'} trailingText={' Recognitions.'}>
                 {Services.map(Service => (

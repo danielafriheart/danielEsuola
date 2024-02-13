@@ -17,30 +17,20 @@
 
   /* outline: dashed 1px lightgray; */
 }
-body{
+
+body {
   scroll-snap-type: y mandatory;
   overflow-x: hidden;
 }
-section{
+
+section {
   scroll-snap-align: start;
 }
 
-.navLink{
+.navLink {
   mix-blend-mode: difference !important;
 }
 
-
-/* h1,
-h2,
-.h2 {
-    font-family: 'Druk Wide Bold', sans-serif;
-} */
-
-
-::selection {
-  background-color: lightgray;
-  color: white;
-}
 
 /* Custom cursor */
 .cursor {
@@ -49,13 +39,13 @@ h2,
   top: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 0.2);
-  /* border: 1px solid white; */
   height: 30px;
   width: 30px;
   border-radius: 50px;
   transform: translate(-50%, -50%);
   pointer-events: none;
   mix-blend-mode: difference;
+  /* border: 1px solid white; */
 }
 
 .cursor::after,
@@ -82,13 +72,13 @@ h2,
   top: 0;
   left: 0;
   border: 2px solid white;
-  /* background-color: rgba(255, 255, 255, 0.2); */
   height: 60px;
   width: 60px;
   border-radius: 50px;
   transform: translate(-50%, -50%);
   pointer-events: none;
   mix-blend-mode: difference;
+  /* background-color: rgba(255, 255, 255, 0.2); */
 }
 
 .bigCursor::after,
@@ -170,10 +160,7 @@ h2,
   height: 80%;
   width: 80%;
   border-radius: 50px;
-  /* mix-blend-mode: difference; */
   @apply text-[0.8em] grid place-content-center text-center font-thin p-1 text-[#000000] bg-white
-
-  /* @apply text-[0.8em] grid place-content-center text-center font-bold p-3 text-[#ffffff] */
 }
 
 .changeCursorCopy::before {
