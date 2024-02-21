@@ -9,12 +9,10 @@ const Gallery = ({ Src }) => {
     return (
         <Section className={'py-0'}>
             <div className='grid lg:grid-cols-[2fr,1fr] md:grid-cols-[2fr,1fr] gap-5'>
-                <div
-                >
+                <div>
                     <MediaCard imageSrc={Src_one}></MediaCard>
                 </div>
-                <div
-                >
+                <div>
                     <MediaCard imageSrc={Src_two} >
                         {/* <Paragraph variant={'base'}
                             text={'"Creative Junkie"'}

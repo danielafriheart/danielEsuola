@@ -70,7 +70,7 @@ const Footer = () => {
 
 
     return (
-        <footer className='lg:pt-20'>
+        <footer className='lg:pt-20 pb-40'>
             <Section className={'flex flex-col justify-between'}>
                 <section className='grid lg:grid-cols-[55%,45%]'>
                     <div className='lg:space-y-14 space-y-10 mb-10 lg:mb-0'>
