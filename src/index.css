@@ -21,7 +21,7 @@
 body {
   scroll-snap-type: y mandatory;
   overflow-x: hidden;
-  font-size: clamp(1.125rem, 2vw, 1rem) !important;
+  font-size: clamp(1.125rem, 2vw, 0.9rem) !important;
 }
 
 section {
@@ -45,12 +45,6 @@ h1 {
   color: transparent;
 }
 
-/* The `@keyframes reveal` rule defines a CSS animation that gradually changes the
-`background-position-x` property of an element from `200%` to `0%`. This animation creates a visual
-effect where the background of the element appears to move horizontally from right to left,
-revealing the content underneath it. In this specific case, the animation is applied to an `h1`
-element with a gradient background, making the text appear as if it is being revealed as the
-background moves. */
 @keyframes reveal {
   from {
     background-position-x: 200%;
@@ -68,8 +62,6 @@ p {
   animation-duration: 1ms;
 }
 
-/* The `@keyframes fade` rule you provided is defining a CSS animation called "fade". This animation
-gradually changes the opacity of an element from 0 to 1. */
 @keyframes fade {
   from {
     opacity: 0;
@@ -213,4 +205,11 @@ gradually changes the opacity of an element from 0 to 1. */
 
 .changeCursorCopy::before {
   background-color: rgb(0, 0, 0);
+}
+
+.contact {
+  background-image: url('./Img/daniel.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center calc(100% - (-100%));
 }

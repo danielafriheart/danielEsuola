@@ -46,7 +46,7 @@ const Projects = () => {
     return (
         <Section>
             {/* <section className='grid lg:grid-cols-2 md:grid-cols-2 lg:gap-8 md:gap-10'> */}
-            <section className='lg:space-y-40 space-y-10'>
+            <section className='lg:space-y-20 space-y-10'>
                 {
                     projectsData.map(project => (
                         <div>

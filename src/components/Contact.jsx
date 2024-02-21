@@ -7,6 +7,8 @@ import RouteLinks from '../layout/typography/RouteLinks'
 import { useLocation } from 'react-router-dom'
 import Avatar from '@mui/joy/Avatar';
 import Container from '../layout/container/Container'
+import Daniel from '../Img/daniel.png'
+
 
 const Contact = () => {
 
@@ -47,8 +49,8 @@ const Contact = () => {
 
     return (
         <Container title={'Esuola Daniel'} description={"Esuola Daniel's Portfolio Website"}>
-            <Section className={'min-h-screen h-fit flex flex-col justify-between bg-[#000000]'}>
-                <section className='grid lg:grid-cols-[45%,55%]'>
+            <Section className={'min-h-screen h-fit flex flex-col justify-between bg-[#000000] contact'}>
+                <section className='grid lg:grid-cols-[45%,55%] z-50 bg-[url(`${Daniel}`)]'>
 
                     <div className='lg:space-y-14 space-y-10 mb-20 lg:mb-0'>
                         <a href="/" rel='noreferrer noopener' className='text-white/50 border border-white/50 hover:border-white hover:bg-white/10 hover:text-white transition-all duration-300 flex items-center space-x-10  px-5 rounded-full w-fit'
@@ -100,7 +102,7 @@ const Contact = () => {
                 </section>
                 <Paragraph trailingText={'2024 Esuola Daniel Okikiola'} variant={'base'} className={'font-thin lg:mt-auto lg:my-0 my-5 text-white/50'} />
             </Section>
-        </Container>
+        </Container >
     )
 }
 
