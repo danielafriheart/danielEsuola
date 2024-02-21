@@ -19,9 +19,6 @@ const Paragraph = ({ text, className, variant, trailingText, greyText, onClick, 
 
     return (
         <p
-            data-aos={'fade-in'}
-            data-aos-delay={data_aos_delay}
-            data-aos-easing="ease-in-sine"
             className={`${selectedVariant} ${className} space-x-4`}
             onClick={onClick}
         >

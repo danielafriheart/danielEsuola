@@ -8,7 +8,7 @@ import Container from '../layout/container/Container'
 
 const Works = () => {
     return (
-        <Container title={'Okikiola'} description={"Esuola Daniel's Portfolio Website"}>
+        <Container title={'Esuola Daniel'} description={"Esuola Daniel's Portfolio Website"}>
             <Section className={'lg:h-[55vh] md:h-[50vh] h-[45vh] flex flex-col justify-center'}>
                 <div className='flex flex-col justify-center lg:space-y-6 space-y-10'>
                     <Header leadingText={"Selected Work (2018 - 2024)"} />

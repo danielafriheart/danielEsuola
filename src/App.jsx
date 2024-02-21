@@ -20,7 +20,7 @@ const App = () => {
   return (
     <div className='relative'>
       {!isContactPage && <NavBar />}
-      {!isContactPage && <ShareWebsite />}
+      {/* {!isContactPage && <ShareWebsite />} */}
       <Routes>
         <Route path='/' element={<About />} />
         {/* <Route path='/' element={<Navigate to="/about" replace />} /> */}

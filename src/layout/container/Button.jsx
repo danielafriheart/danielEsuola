@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+import Paragraph from '../typography/Paragraph';
 
 const Button = ({ btnText, href, variant }) => {
     const handleAnimate = (e) => {
@@ -40,7 +41,8 @@ const Button = ({ btnText, href, variant }) => {
                 to={href}
                 className={`flex items-center space-x-3 py-4 px-10 rounded-full ${selectedVariant}`}
             >
-                <span>{btnText || 'Button'}</span>
+                {/* <span>{btnText || 'Button'}</span> */}
+                <Paragraph text={btnText || 'Button'} variant={'base'}/>
                 <span className={`animate-target transition-all duration-300 ${selectedVariant[variant] === 'default' ? 'hidden' : 'flex'}`}>{trailingIcon}</span>
             </NavLink>
         </button>

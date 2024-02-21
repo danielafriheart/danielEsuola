@@ -25,18 +25,27 @@ export default function MediaCover({ imageSrc, children, customHeight, className
                     borderRadius: '12px',
                     p: 3,
                 }}>
-                <CardCover>
-                    <img
+                <CardCover
+                    sx={{
+                        backgroundImage: `url(${imageSrc})`,
+                        backgroundSize: 'cover',
+                        backgroundAttachment: 'fixed',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat'
+                    }}
+                >
+                    {/* <img
                         src={imageSrc}
                         srcSet={imageSrc}
                         loading="lazy"
                         alt="image"
                         className={className}
-                    />
+                    /> */}
                 </CardCover>
                 <CardCover
                     sx={{
                         background: 'linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0) 200px), linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0) 300px)',
+                        backgroundAttachment: 'fixed'
                     }}
                 />
                 <CardCover />

@@ -46,7 +46,7 @@ const Contact = () => {
     ]
 
     return (
-        <Container title={'Okikiola'} description={"Esuola Daniel's Portfolio Website"}>
+        <Container title={'Esuola Daniel'} description={"Esuola Daniel's Portfolio Website"}>
             <Section className={'min-h-screen h-fit flex flex-col justify-between bg-[#000000]'}>
                 <section className='grid lg:grid-cols-[45%,55%]'>
 

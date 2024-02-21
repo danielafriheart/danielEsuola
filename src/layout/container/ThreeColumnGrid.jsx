@@ -13,7 +13,7 @@ const ThreeColumnGrid = ({ caption, greyText, btnText, paragrahText, href, trail
                 data_aos_delay={'100'}
             /></div>
 
-            <section className='grid lg:grid-cols-[4fr,1fr] lg:space-y-0 space-y-10'>
+            <section className='grid lg:grid-cols-[75%,25%] lg:space-y-0 space-y-10'>
                 <div><Paragraph
                     data_aos={'fade-in'}
                     data_aos_delay={'300'}
