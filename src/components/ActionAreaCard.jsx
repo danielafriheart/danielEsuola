@@ -44,10 +44,7 @@ const ActionAreaCard = ({ caption, label, year, customHeight, src }) => {
       onMouseLeave={handleAnimate}
     >
       <section className='space-y-5 mb-10 lg:mb-0 md:mb-0'>
-        <div className='h-full relative z-10'
-          data-aos-delay={'0'}
-          data-aos="fade-up"
-        >
+        <div className='h-full relative z-10'>
 
           <MediaCard
             imageSrc={src || img}
@@ -55,7 +52,7 @@ const ActionAreaCard = ({ caption, label, year, customHeight, src }) => {
           >
             <div className='text-'>
               <Paragraph variant={'paragraph'} text={caption} />
-              <Paragraph variant={'label'} text={label} className={'text-white font-normal'}/>
+              <Paragraph variant={'label'} text={label} className={'text-white font-normal'} />
               <Paragraph variant={'base'} text={year} className={'text-white font-thin'} />
             </div>
           </MediaCard>

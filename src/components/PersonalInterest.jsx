@@ -45,7 +45,7 @@ const Interests = () => {
                 </div>
             </section>
 
-            <div className='lg:grid lg:grid-cols-[1.5fr,2fr] flex flex-col-reverse gap-0 h-fit'>
+            <div className='lg:grid lg:grid-cols-[45%,55%] flex flex-col-reverse gap-0 h-fit'>
                 <div className=''>
                     <section className='flex flex-col justify-evenly h-full'>
                         <div className='w-full pb-0 flex flex-col lg:space-y-3 mb-10 lg:mb-0'>
