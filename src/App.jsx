@@ -10,6 +10,7 @@ import ShareWebsite from './components/ShareWebsite'
 import About from './views/About'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import ProjectDetail from './views/project/ProjectDetail'
 // ..
 AOS.init();
 
@@ -23,8 +24,10 @@ const App = () => {
       {/* {!isContactPage && <ShareWebsite />} */}
       <Routes>
         <Route path='/' element={<About />} />
-        {/* <Route path='/' element={<Navigate to="/about" replace />} /> */}
+        
         <Route path='/projects' element={<Works />} />
+        <Route path="/projects/:projectId" element={<ProjectDetail />} />
+
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='*' element={<Error />} />

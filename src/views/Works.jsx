@@ -2,7 +2,7 @@ import React from 'react'
 import Section from '../layout/container/Section'
 import Paragraph from '../layout/typography/Paragraph'
 import Header from '../layout/typography/Header'
-import Projects from '../components/Projects'
+import Projects from '../views/project/Projects'
 import Mystory from '../components/MyStory'
 import Container from '../layout/container/Container'
 

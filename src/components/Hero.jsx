@@ -11,7 +11,7 @@ const Hero = () => {
             <div className='flex flex-col justify-center lg:space-y-6 space-y-8 lg:w-[50vw]'>
 
                 {/* <Header leadingText={'Ókíkìọlá'} /> */}
-                <Header leadingText={'Esuola Daniel'} greyText={' Okikiola'}/>
+                <Header leadingText={'Esuola Daniel'} greyText={' Okikiola'} className={'font-medium'}/>
 
                 <Paragraph
                     text={"I support Designers & Agencies with "}

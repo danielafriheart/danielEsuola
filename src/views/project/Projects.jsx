@@ -1,8 +1,15 @@
 import React, { useState } from 'react'
-import ActionAreaCard from './ActionAreaCard';
-import Section from '../layout/container/Section';
+import ActionAreaCard from '../../components/ActionAreaCard';
+import Section from '../../layout/container/Section';
+import { useNavigate } from 'react-router-dom';
 
 const Projects = () => {
+
+    const navigate = useNavigate();
+
+    const handleProjectClick = (projectId) => {
+        navigate(`/projects/${projectId}`);
+    };
 
     const projectsData = [
         {
@@ -34,18 +41,10 @@ const Projects = () => {
             year: '(2002)',
             url: 'https://res.cloudinary.com/dnzi0xxtx/image/upload/v1684072609/Daniel/unsplash_ZSPBhokqDMc_tyivrp.png',
         },
-
     ];
-
-    const [selectedProjectId, setSelectedProjectId] = useState(null);
-
-    const handleProjectClick = (projectId) => {
-        setSelectedProjectId(projectId);
-    };
 
     return (
         <Section>
-            {/* <section className='grid lg:grid-cols-2 md:grid-cols-2 lg:gap-8 md:gap-10'> */}
             <section className='lg:space-y-20 space-y-10'>
                 {
                     projectsData.map(project => (
@@ -63,7 +62,6 @@ const Projects = () => {
                     ))
                 }
             </section>
-            {/* </section> */}
         </Section>
     )
 }

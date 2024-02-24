@@ -38,8 +38,8 @@ const ActionAreaCard = ({ caption, label, year, customHeight, src }) => {
   const img = "https://res.cloudinary.com/dnzi0xxtx/image/upload/v1705678476/StoqHive/0h67TFuk7bDRVujjwt6jBREPseM_bv6zxx.png"
 
   return (
-    <a href=""
-      className={''}
+    <div
+      className={'cursor-pointer'}
       onMouseEnter={handleAnimate}
       onMouseLeave={handleAnimate}
     >
@@ -67,7 +67,7 @@ const ActionAreaCard = ({ caption, label, year, customHeight, src }) => {
 
 
       </section>
-    </a>
+    </div>
   )
 }
 
