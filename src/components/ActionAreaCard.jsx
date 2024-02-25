@@ -1,6 +1,7 @@
 import React from 'react'
 import Paragraph from '../layout/typography/Paragraph'
 import MediaCard from '../components/MediaCard'
+import Header from '../layout/typography/Header'
 
 const ActionAreaCard = ({ caption, label, year, customHeight, src }) => {
 
@@ -51,7 +52,7 @@ const ActionAreaCard = ({ caption, label, year, customHeight, src }) => {
             customHeight={customHeight}
           >
             <div className='text-'>
-              <Paragraph variant={'paragraph'} text={caption} />
+              <Header variant={'paragraph'} leadingText={caption} className={'text-White'}/>
               <Paragraph variant={'label'} text={label} className={'text-white font-normal'} />
               <Paragraph variant={'base'} text={year} className={'text-white font-thin'} />
             </div>
