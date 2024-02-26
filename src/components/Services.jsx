@@ -44,9 +44,11 @@ const Services = () => {
                                 text={Service.name} variant={'label'}
                                 data_aos={Service.data_aos}
                                 data_aos_delay={Service.data_aos_delay}
+                                className={'font-medium'}
                             />
                             <Paragraph
-                                text={Service.caption} variant={'base'} className={'font-thin mt-2'}
+                                text={Service.caption} variant={'label'} 
+                                className={'mt-3 font-thin'}
                                 data_aos={Service.data_aos}
                                 data_aos_delay={Service.data_aos_delay}
                             />

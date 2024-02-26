@@ -7,7 +7,7 @@ import projectsData from './ProjectData'; // Import projectsData
 const Projects = () => {
     return (
         <Section>
-            <section className='lg:space-y-20 space-y-10'>
+            <section className='lg:space-y-24 space-y-10'>
                 {
                     projectsData.map(project => (
                         <div key={project.id}>
@@ -15,7 +15,7 @@ const Projects = () => {
                                 <ActionAreaCard
                                     src={project.imageUrl}
                                     caption={project.name}
-                                    label={project.description}
+                                    label={project.writeUp.article}
                                     year={project.year}
                                     customHeight={'80vh'}
                                 />

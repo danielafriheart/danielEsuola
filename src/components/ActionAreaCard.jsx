@@ -51,10 +51,12 @@ const ActionAreaCard = ({ caption, label, year, customHeight, src }) => {
             imageSrc={src || img}
             customHeight={customHeight}
           >
-            <div className='text-'>
-              <Header variant={'paragraph'} leadingText={caption} className={'text-White'}/>
-              <Paragraph variant={'label'} text={label} className={'text-white font-normal'} />
-              <Paragraph variant={'base'} text={year} className={'text-white font-thin'} />
+            <div>
+              <Paragraph variant={'base'} text={year} className={'font-thin text-white'} />
+              <Header variant={'paragraph'} leadingText={caption} className={'text-white'}/>
+              <div className='lg:w-[50vw]'>
+                <Paragraph variant={'paragraph_md'} text={label} className={'font-thin'} />
+              </div>
             </div>
           </MediaCard>
 
@@ -63,9 +65,7 @@ const ActionAreaCard = ({ caption, label, year, customHeight, src }) => {
               <path fillRule="evenodd" d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z" clipRule="evenodd" />
             </svg>
           </span>
-
         </div>
-
 
       </section>
     </div>

@@ -19,7 +19,10 @@
 
   /* outline: dashed 1px lightgray; */
 }
-
+::selection{
+  background: silver;
+  color: white;
+}
 body {
   scroll-snap-type: y mandatory;
   overflow-x: hidden;
