@@ -24,7 +24,7 @@ const Button = ({ btnText, href, variant }) => {
     const variantStyles = {
         white: "bg-white text-black",
         black: "bg-black hover:bg-transparent text-white hover:text-black transition-all hover:border duration-300",
-        grey: "bg-[#F0F0F0] hover:bg-transparent text-black transition-all hover:border duration-300",
+        grey: "bg-transparent border border-black text-black transition-all  duration-300",
         default: "bg-black hover:bg-transparent text-white hover:text-black transition-all hover:border hover:border-black duration-300",
     };
 

@@ -53,7 +53,7 @@ const About = () => {
                 />
             </TwoColumnGrid>
 
-            <MyServices />
+            {/* <MyServices /> */}
 
             <Interests />
 
@@ -61,7 +61,7 @@ const About = () => {
             <Pictures />
 
 
-            <TwoColumnGrid caption={'Honors'} paragrahText={'Awards '} greyText={' &'} trailingText={' Recognitions.'}>
+            {/* <TwoColumnGrid caption={'Honors'} paragrahText={'Awards '} greyText={' &'} trailingText={' Recognitions.'}>
                 {Awards.map(award => (
                     <ul>
                         <li className='mb-8'>
@@ -77,7 +77,7 @@ const About = () => {
                         </li>
                     </ul>
                 ))}
-            </TwoColumnGrid>
+            </TwoColumnGrid> */}
 
             {/* <CurrentlyWorkingOn src={'https://res.cloudinary.com/dnzi0xxtx/image/upload/v1707164727/Daniel/IMG_4854_ednbr2.jpg'} /> */}
 
