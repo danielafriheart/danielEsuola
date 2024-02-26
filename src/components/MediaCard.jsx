@@ -25,7 +25,7 @@ export default function MediaCover({ imageSrc, children, customHeight, className
                     minWidth: 300,
                     maxWidth: '100%',
                     flexGrow: 1,
-                    borderRadius: '12px',
+                    // borderRadius: '12px',
                     p: 3,
                 }}>
                 <CardCover

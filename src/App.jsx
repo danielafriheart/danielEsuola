@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Route, Routes, Navigate, Outlet, useLocation } from 'react-router-dom'
 // import Home from './views/Home'
 import Error from './views/Error'
@@ -19,6 +19,16 @@ const App = () => {
   const location = useLocation();
   const isContactPage = location.pathname === '/contact';
 
+  useEffect(() => {
+    window.scrollTo(
+        {
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        }
+    );
+    document.title = 'Daniel Esuola | About'
+})
   return (
     <div className='relative'>
       <SpeedInsights/>

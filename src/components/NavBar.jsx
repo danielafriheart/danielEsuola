@@ -54,7 +54,7 @@ const Example = () => {
     const location = useLocation();
 
     return (
-        <header className=" fixed top-0 w-screen z-50">
+        <header className=" ">
             <nav className="mx-auto flex max-w-[93vw] items-center justify-between py-10 lg:px-8" aria-label="Global">
 
                 <div className="flex lg:flex-1">

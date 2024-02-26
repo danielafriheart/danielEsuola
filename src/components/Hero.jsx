@@ -7,7 +7,7 @@ const Hero = () => {
 
 
     return (
-        <Section className={'min-h-fit lg:h-fit lg:pt-40 md:h-[70dvh] flex flex-col justify-center'}>
+        <Section className={'min-h-fit lg:h-fit md:h-[70dvh] flex flex-col justify-center'}>
             <div className='flex flex-col justify-center lg:space-y-6 space-y-8 lg:w-[55vw]'>
 
                 {/* <Header leadingText={'Ókíkìọlá'} /> */}

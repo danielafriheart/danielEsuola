@@ -20,18 +20,21 @@
 
   /* outline: dashed 1px lightgray; */
 }
-::selection{
+
+::selection {
   background: silver;
   color: white;
 }
+
 body {
   scroll-snap-type: y mandatory;
   overflow-x: hidden;
   font-size: clamp(1.125rem, 2vw, 0.9rem) !important;
   background-color: #EBEBEB;
 }
+
 html::-webkit-scrollbar {
- display: none;
+  display: none;
 }
 
 section {
