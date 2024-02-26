@@ -21,10 +21,10 @@ const Hero = () => {
                 />
 
                 <Paragraph
-                    text={"I'm a creative developer with years of experience in building products and appealing web experiences. I've collaborated with individuals and teams to build experiences for SMEs and large enterprises including Osome and StoqHive."} variant={'label'} className={'font-thin'} />
+                    text={"I'm a creative developer with years of experience in building products and appealing web experiences. I've collaborated with individuals and teams to build experiences for SMEs and large enterprises including Osome and StoqHive."} variant={'label'} />
 
                 <Paragraph
-                    text={"Each project is an opportuinity to learn new concepts across multiple domains including arts, maths and physics."} variant={'label'} className={'font-thin'}
+                    text={"Each project is an opportuinity to learn new concepts across multiple domains including arts, maths and physics."} variant={'label'}
                 />
 
             </div>

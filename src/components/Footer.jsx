@@ -86,7 +86,7 @@ const Footer = () => {
                             data_aos_delay={'300'}
                             text={"Send me an email or get in touch with me on any of my socials."}
                             greyText={"Let's start creating magic."}
-                            className={'font-thin'} variant={'paragraph_md'}
+                           variant={'paragraph_md'}
                         />
                         {/* <Button variant={'black'} btnText={"Let's talk"} href={'/contact'} /> */}
                     </div>

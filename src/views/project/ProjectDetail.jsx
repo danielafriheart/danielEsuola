@@ -39,12 +39,12 @@ const ProjectDetail = () => {
 
         <MediaCover imageSrc={project.imageUrl} customHeight={'70vh'} />
 
-        <div className='mx-auto lg:w-[80%] space-y-10'>
+        <div className='mx-auto lg:w-[80vw] space-y-10'>
           <Header leadingText={project.writeUp.article || "Error:( article for this project isn't available in project data"} />
-          <Paragraph variant={'label'} className={'font-thin'} text={project.writeUp.content || "Error:( content for this project isn't available in project data"} />
+          <Paragraph variant={'label'} text={project.writeUp.content || "Error:( content for this project isn't available in project data"} />
           {
             project.writeUp.content_1 ?
-              <Paragraph variant={'label'} className={'font-thin'} text={project.writeUp.content_1} />
+              <Paragraph variant={'label'} text={project.writeUp.content_1} />
               : null
           }
         </div>

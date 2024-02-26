@@ -33,28 +33,17 @@ const Services = () => {
     return (
         <TwoColumnGrid caption={'Services'} paragrahText={'What I bring to the '} greyText={' Table'} trailingText={' :)'}>
             {Services.map((Service, id) => (
-                <div key={id} className='flex space-x-10'>
-                    <Paragraph text={`0${id + 1}`} variant={'paragraph_md'}
-                        data_aos={Service.data_aos}
-                        data_aos_delay={Service.data_aos_delay}
-                    />
-                    <ul>
-                        <li className='mb-8'>
-                            <Paragraph
-                                text={Service.name} variant={'label'}
-                                data_aos={Service.data_aos}
-                                data_aos_delay={Service.data_aos_delay}
-                                className={'font-medium'}
-                            />
-                            <Paragraph
-                                text={Service.caption} variant={'label'} 
-                                className={'mt-3 font-thin'}
-                                data_aos={Service.data_aos}
-                                data_aos_delay={Service.data_aos_delay}
-                            />
-                        </li>
-                    </ul>
-                </div>
+                <ul>
+                    <li className='mb-8'>
+                        <Paragraph
+                            text={Service.name} variant={'label'}
+                        />
+                        <Paragraph
+                            text={Service.caption} variant={'label'}
+                            className={'mt-3 font-thin'}
+                        />
+                    </li>
+                </ul>
             ))}
         </TwoColumnGrid>
     )

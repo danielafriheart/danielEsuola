@@ -42,7 +42,7 @@ const Button = ({ btnText, href, variant }) => {
                 className={`flex items-center space-x-3 py-4 px-10 rounded-full ${selectedVariant}`}
             >
                 {/* <span>{btnText || 'Button'}</span> */}
-                <Paragraph text={btnText || 'Button'} variant={'base'}/>
+                <Paragraph text={btnText || 'Button'} variant={'caption'}/>
                 <span className={`animate-target transition-all duration-300 ${selectedVariant[variant] === 'default' ? 'hidden' : 'flex'}`}>{trailingIcon}</span>
             </NavLink>
         </button>

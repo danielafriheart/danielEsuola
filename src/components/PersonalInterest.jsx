@@ -55,8 +55,6 @@ const Interests = () => {
                                 text="Gaming"
                                 active={activeTab === '1'}
                                 onClick={() => handleTabChange(1)}
-                                data_aos={'fade-left'}
-                                data_aos_delay={'10'}
                             />
                             <Paragraph
                                 variant={'label'}
@@ -64,8 +62,6 @@ const Interests = () => {
                                 text="Virtual Reality"
                                 active={activeTab === '3'}
                                 onClick={() => handleTabChange(3)}
-                                data_aos={'fade-left'}
-                                data_aos_delay={'20'}
                             />
                             <Paragraph
                                 variant={'label'}
@@ -73,8 +69,6 @@ const Interests = () => {
                                 text="Music"
                                 active={activeTab === '2'}
                                 onClick={() => handleTabChange(2)}
-                                data_aos={'fade-left'}
-                                data_aos_delay={'30'}
                             />
                         </div>
                         {
@@ -83,19 +77,14 @@ const Interests = () => {
                                 <Paragraph
                                     variant={'paragraph'}
                                     text={'Xbox 360 / Playstation'}
-                                    data_aos_delay={'100'}
                                 />
                                 <Paragraph
-                                    data_aos_delay={'200'}
                                     variant={'label'}
-                                    className={'font-thin'}
                                     text={'Most of my gaming time goes to FIFA. I often play God Of War, Call of Duty, Marvel\'s Spider-Man and a few others.'}
                                 />
                                 <Paragraph
-                                    data_aos_delay={'300'}
                                     variant={'label'}
                                     text={"I'm also exploring "}
-                                    className={'font-thin'}
                                     greyText={'VR gaming with Oculus.'}
                                 />
                             </div>
@@ -106,12 +95,9 @@ const Interests = () => {
                                 <Paragraph
                                     variant={'paragraph'}
                                     text={'An Eclectic Music Taste'}
-                                    data_aos_delay={'100'}
                                 />
                                 <Paragraph
-                                    data_aos_delay={'200'}
                                     variant={'label'}
-                                    className={'font-thin'}
                                     text={'From the upbeat rhythms of Amapiano, Afrobeat to the soulful melodies of Fuji, I find myself drawn to the unique sounds and styles of different genres.'}
                                 />
                             </div>
@@ -122,18 +108,14 @@ const Interests = () => {
                                 <Paragraph
                                     variant={'paragraph'}
                                     text={'Vision Pro / Oculus'}
-                                    data_aos_delay={'100'}
                                 />
                                 <Paragraph
-                                    data_aos_delay={'200'}
                                     variant={'label'}
-                                    className={'font-thin'}
                                     text={'The concept of being able to fully immerse myself in a completely different world, with the ability to interact with it as if it were real, is absolutely thrilling to me.'}
                                 />
                                 <Paragraph
                                     data_aos_delay={'300'}
                                     variant={'label'}
-                                    className={'font-thin'}
                                     text={'It is a technology that I am deeply interested in and am excited to see where it takes us in the future.'}
                                 />
                             </div>
