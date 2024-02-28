@@ -8,17 +8,12 @@ const Gallery = ({ Src }) => {
     const Src_two = "https://res.cloudinary.com/dnzi0xxtx/image/upload/v1707164392/Daniel/IMG_4811_jge1as.jpg"
     return (
         <Section className={'py-0 pt-16'}>
-            <div className='grid lg:grid-cols-[2fr,1fr] md:grid-cols-[2fr,1fr] gap-5'>
-                <div>
-                    <MediaCard imageSrc={Src_one}></MediaCard>
+         <div className='grid lg:grid-cols-[2fr,1fr] md:grid-cols-[2fr,1fr] gap-5'>
+                <div className='lg:w-full lg:h-full h-[50vh] lg:flex hidden'>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/mV8MWjhvZvk?si=xzl53vKNad8M--KI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <div>
-                    <MediaCard imageSrc={Src_two} >
-                        {/* <Paragraph variant={'base'}
-                            text={'"Creative Junkie"'}
-                            className={'font-thin text-white w-1/2'}
-                        /> */}
-                    </MediaCard>
+                    <MediaCard imageSrc={Src_one} />
                 </div>
             </div>
         </Section>

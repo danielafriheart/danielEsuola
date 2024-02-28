@@ -14,7 +14,13 @@ export default function MediaCover({ imageSrc, children, customHeight, className
                 gap: 2,
                 flexWrap: 'wrap',
                 p: 0, m: 0,
-                height: [customHeight || '50vh'],
+                height: ['50vh', null, null, customHeight || '50vh'], // Use customHeight for large screens
+                '@media screen and (max-width: 992px)': {
+                    height: '45vh', // Use 50vh for medium screens
+                },
+                '@media screen and (max-width: 576px)': {
+                    height: '45vh', // Use 50vh for small screens
+                },
             }}
             className={className}
             data-aos="fade-in"
@@ -25,20 +31,9 @@ export default function MediaCover({ imageSrc, children, customHeight, className
                     minWidth: 300,
                     maxWidth: '100%',
                     flexGrow: 1,
-                    // borderRadius: '12px',
                     p: 3,
                 }}>
-                <CardCover
-                    // sx={{
-                    //     backgroundImage: `url(${imageSrc})`,
-                    //     backgroundSize: 'cover',
-                    //     backgroundAttachment: 'fixed',
-                    //     backgroundPosition: 'center',
-                    //     backgroundRepeat: 'no-repeat'
-                    // }}
-                    className={className}
-
-                >
+                <CardCover>
                     <img
                         src={imageSrc}
                         srcSet={imageSrc}
@@ -46,13 +41,9 @@ export default function MediaCover({ imageSrc, children, customHeight, className
                         alt="image"
                     />
                 </CardCover>
-                <CardCover
-                    // sx={{
-                    //     background: 'linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0) 200px), linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0) 300px)',
-                    // }}
-                    className={className}
 
-                />
+                <CardCover />
+
                 <CardCover />
                 <CardContent>
                     <Typography

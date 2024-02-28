@@ -70,16 +70,16 @@ const Footer = () => {
 
 
     return (
-        <footer className='lg:pt-20 lg:pb-40 bg-black lg:h-screen'>
+        <footer className='lg:pt-20 lg:pb-40 lg:h-screen'>
             <Section className={'flex flex-col justify-between h-full'}>
                 <section className='grid lg:grid-cols-[55%,45%]'>
                     <div className='lg:space-y-14 space-y-10 mb-10 lg:mb-0'>
-                        <Paragraph variant={'base'} className={'font-thin text-white'} text={'Get in touch'} />
+                        <Paragraph variant={'base'} className={'font-thin'} text={'Get in touch'} />
                         <div
                             onMouseEnter={changeCursorCopy}
                             onMouseLeave={defaultCursor}
                         >
-                            <Header leadingText={"esuoladaniel002 @gmail.com"} className={'text-white'}/>
+                            <Header leadingText={"esuoladaniel002 @gmail.com"}/>
                         </div>
                         <Paragraph
                             data_aos={'fade-in'}
@@ -87,7 +87,6 @@ const Footer = () => {
                             text={"Send me an email or get in touch with me on any of my socials."}
                             greyText={"Let's start creating magic."}
                            variant={'paragraph_md'}
-                           className={'text-white'}
                         />
                         {/* <Button variant={'black'} btnText={"Let's talk"} href={'/contact'} /> */}
                     </div>
@@ -119,7 +118,7 @@ const Footer = () => {
                                         linkTitle={social.name}
                                         routeLocation={social.href}
                                         routeStyleType={'icon'}
-                                        className={'transition-all duration-300 font-thin text-white'}
+                                        className={'transition-all duration-300 font-thin'}
                                         variant={'caption'}
                                         hoverState={'none'}
                                         targetState={'_blank'}
