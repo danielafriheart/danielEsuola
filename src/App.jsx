@@ -11,7 +11,7 @@ import About from './views/About'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import ProjectDetail from './views/project/ProjectDetail'
-import { SpeedInsights } from "@vercel/speed-insights/react"
+import { Analytics } from "@vercel/analytics/react"
 // ..
 AOS.init();
 
@@ -30,7 +30,8 @@ const App = () => {
 })
   return (
     <div className='relative'>
-      <SpeedInsights/>
+      <Analytics />
+      
       {!isContactPage && <NavBar />}
       {/* {!isContactPage && <ShareWebsite />} */}
       <Routes>
