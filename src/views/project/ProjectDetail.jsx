@@ -20,7 +20,7 @@ const ProjectDetail = () => {
   return (
     <Container title={'Esuola Daniel'} description={"Esuola Daniel's Portfolio Website"}>
       <Section className={'lg:space-y-24 space-y-10'}>
-        <div className='flex flex-col justify-center lg:space-y-20 space-y-10 lg:pt-20'>
+        <div className='flex flex-col justify-center lg:space-y-10 space-y-10 '>
           <header className='flex gap-10'>
             <div>
               <Paragraph variant={'base'} greyText={'Industry'} />

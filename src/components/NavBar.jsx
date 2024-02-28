@@ -55,7 +55,7 @@ const Example = () => {
 
     return (
         <header className=" ">
-            <nav className="mx-auto flex max-w-[93vw] items-center justify-between py-10 lg:px-8" aria-label="Global">
+            <nav className="mx-auto flex lg:w-[93vw] w-[90vw] items-center justify-between py-10 lg:px-8" aria-label="Global">
 
                 <div className="flex lg:flex-1">
                     <a href="/" className="-m-1.5">
