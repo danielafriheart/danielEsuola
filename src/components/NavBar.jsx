@@ -65,7 +65,7 @@ const Example = () => {
                     </a>
                 </div>
 
-                <div className="flex lg:hidden">
+                <div className="hidden">
                     <button
                         type="button"
                         className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
@@ -76,11 +76,9 @@ const Example = () => {
                     </button>
                 </div>
 
-                <Popover.Group className="hidden lg:flex lg:gap-x-3">
+                <Popover.Group className="flex gap-x-3">
                     {pageroute.map((page, id) => (
                         <RouteLinks
-                            data_aos={page.data_aos}
-                            data_aos_delay={page.data_aos_delay}
                             key={id}
                             linkTitle={page.name}
                             routeLocation={page.href}
@@ -95,7 +93,7 @@ const Example = () => {
 
 
             {/* <<<<<<<<<<========== Mobile Menu Section ==========>>>>>>>>>> */}
-            <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+            <Dialog as="div" className="hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
                 <div className="fixed inset-0 z-10" />
                 <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#000] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div className="flex items-center justify-between">

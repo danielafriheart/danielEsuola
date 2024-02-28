@@ -36,10 +36,6 @@ const RouteLinks = ({ routeLocation, linkTitle, className, title, hoverState, ta
         >
 
             <Link
-                data-aos-easing="ease-in-out"
-                data-aos-delay={data_aos_delay}
-                data-aos-offset="0"
-                data-aos={data_aos}
                 href={routeLocation}
                 title={title}
                 rel={'noreferrer noopener'}

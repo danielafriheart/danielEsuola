@@ -10,7 +10,7 @@ const Paragraph = ({ text, className, variant, trailingText, greyText, onClick, 
     const variantStyles = {
         base: "text-[1rem]leading-[22px] text-black font-normal",   // equivalent to 16px
         caption: "text-[1.125rem] text-[#666666]",  // equivalent to 18px
-        label: "text-[1.5rem] font-normal",  // equivalent to 24px
+        label: "lg:text-[1.5rem] md:text-[1.25rem] text-Base font-normal",  // equivalent to 24px
         paragraph: "lg:text-[2.5rem] md:text-Paragraph-md text-Paragraph-sm", // equivalent to 40px
         paragraph_md: "lg:text-Paragraph-md md:text-Paragraph-sm text-Paragraph-sm", // equivalent to 32px
     };
