@@ -27,7 +27,6 @@ const App = () => {
             behavior: 'smooth'
         }
     );
-    document.title = 'Daniel Esuola | About'
 })
   return (
     <div className='relative'>
