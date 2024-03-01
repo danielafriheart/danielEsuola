@@ -57,13 +57,14 @@ const Example = () => {
         <header className=" ">
             <nav className="mx-auto flex lg:w-[93vw] w-[90vw] items-center justify-between py-10 lg:px-8" aria-label="Global">
 
-                <div className="flex lg:flex-1">
+                <div className="flex">
                     <a href="/" className="-m-1.5">
                         <Box sx={{ display: 'flex', gap: 2 }}>
                             {logo}
                         </Box>
                     </a>
                 </div>
+
 
                 <div className="hidden">
                     <button
@@ -85,57 +86,19 @@ const Example = () => {
                             routeStyleType={'noIcon'}
                             hoverState={`${location.pathname === page.href ? 'always' : 'hover'}`}
                             variant={'base'}
-                            className={'font-thin'}
                         />
                     ))}
                 </Popover.Group>
+
+                <RouteLinks
+                    linkTitle={"esuoladaniel002@gmail.com"}
+                    routeLocation={'mailto:esuoladaniel002@gmail.com'}
+                    routeStyleType={'noIcon'}
+                    hoverState={`always`}
+                    variant={'base'}
+                    className={'lg:flex md:flex hidden'}
+                />
             </nav>
-
-
-            {/* <<<<<<<<<<========== Mobile Menu Section ==========>>>>>>>>>> */}
-            <Dialog as="div" className="hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-                <div className="fixed inset-0 z-10" />
-                <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#000] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-                    <div className="flex items-center justify-between">
-                        <a href="#" className="-m-1.5 p-1.5">
-                            <span className="sr-only">Your Company</span>
-                            {logo}
-                        </a>
-                        <button
-                            type="button"
-                            className="-m-2.5 rounded-md p-2.5 text-gray-700"
-                            onClick={() => setMobileMenuOpen(false)}
-                        >
-                            <span className="sr-only">Close menu</span>
-                            <XMarkIcon className="h-6 w-6" aria-hidden="true" />
-                        </button>
-                    </div>
-                    <div className="mt-6 flow-root">
-                        <div className="-my-6 divide-y divide-gray-500/10">
-                            <div className="space-y-2 py-6">
-                                <RouteLinks
-                                    linkTitle={'Home'}
-                                    routeLocation={'/'}
-                                    className={'font-thin text-white'}
-                                    hoverState={'hover'}
-                                // className={'-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'}
-                                />
-                                {pageroute.map((page, id) => (
-                                    <RouteLinks
-                                        key={id}
-                                        linkTitle={page.name}
-                                        routeLocation={page.href}
-                                        // routeStyleType={'noIcon'}
-                                        hoverState={`${location.pathname === page.href ? 'always' : 'hover'}`}
-                                        variant={'base'}
-                                        className={'font-thin text-white navLink'}
-                                    />
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                </Dialog.Panel>
-            </Dialog>
         </header>
     )
 }

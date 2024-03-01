@@ -34,8 +34,7 @@ const App = () => {
       try {
         // Perform your asynchronous operation here, for example fetching data
         // Replace the setTimeout with your actual asynchronous operation
-        await fetch('your-api-endpoint'); // Example fetch operation
-
+        await fetch('https://res.cloudinary.com/dnzi0xxtx/image/upload/v1684072609/Daniel/unsplash_5f68N0n4Ef8_qybid5.png'); // Example fetch operation
         // Once the operation is completed, set loading to false
         setLoading(false);
       } catch (error) {
@@ -44,7 +43,6 @@ const App = () => {
         setLoading(false); // In case of error, still set loading to false
       }
     };
-
     // Call the async function
     fetchData();
   }, []); // Empty dependency array means this effect runs only once, similar to componentDidMount()

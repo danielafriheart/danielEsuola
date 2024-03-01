@@ -10,17 +10,7 @@ function Gallery() {
     const galleryImages = [
         'https://res.cloudinary.com/dnzi0xxtx/image/upload/v1684072609/Daniel/unsplash_ZSPBhokqDMc_tyivrp.png',
 
-        // 'https://res.cloudinary.com/dnzi0xxtx/image/upload/v1684072612/Daniel/unsplash_ztdvIEjyOdY_nlemmv.png',
-
-        // 'https://res.cloudinary.com/dnzi0xxtx/image/upload/v1684072609/Daniel/unsplash_17rSt_Qso-s_vvosxz.png',
-
-        // 'https://res.cloudinary.com/dnzi0xxtx/image/upload/v1684072604/Daniel/unsplash_LxBMsvUPAgo_mzacvf.png',
-
-        // 'https://res.cloudinary.com/dnzi0xxtx/image/upload/v1684072609/Daniel/unsplash_QemyfppHkU8_w0rfpo.png',
-
         'https://res.cloudinary.com/dnzi0xxtx/image/upload/v1684072602/Daniel/unsplash_pyMbXQhPK0k_kxgyib.png',
-
-        // 'https://res.cloudinary.com/dnzi0xxtx/image/upload/v1684072606/Daniel/unsplash_gy08FXeM2L4_atywzt.png',
 
         'https://res.cloudinary.com/dnzi0xxtx/image/upload/v1684072609/Daniel/unsplash_3ZvHsFiZyME_aslnv3.png',
 
@@ -39,7 +29,7 @@ function Gallery() {
 
         <Section>
             {rows.map((row, i) => (
-                <div key={i} className={`grid lg:grid-cols-4 lg:space-x-5 md:space-x-5 lg:space-y-0 space-y-5`}>
+                <div key={i} className={`grid lg:grid-cols-4 gap-x-5 lg:space-y-0 space-y-5`}>
                     {row.map((img, image) => (
                         <MediaCard
                             imageSrc={img}

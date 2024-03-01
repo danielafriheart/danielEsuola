@@ -16,7 +16,7 @@ export default function MediaCover({ imageSrc, children, customHeight, className
                 p: 0, m: 0,
                 height: ['50vh', null, null, customHeight || '50vh'], // Use customHeight for large screens
                 '@media screen and (max-width: 992px)': {
-                    height: '45vh', // Use 50vh for medium screens
+                    height: '50vh', // Use 50vh for medium screens
                 },
                 '@media screen and (max-width: 576px)': {
                     height: '45vh', // Use 50vh for small screens
