@@ -12,7 +12,7 @@ const Header = ({ leadingText, greyText, trailingText, className }) => {
 
     return (
         <h1
-            className={`${className} lg:text-Header md:text-Header-md text-Paragraph-md lg:leading-[77px] leading-tight space-x-4 font-normal flex-wrap`}>
+            className={`${className} lg:text-[6rem] text-4xl leading-tight md:text-Header-md text-Paragraph-md space-x-4 font-normal flex-wrap`}>
             {leadingText}
             {greyText && <span className='text-Gray'>{greyText}</span>}
             {trailingText}

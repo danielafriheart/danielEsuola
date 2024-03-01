@@ -2,12 +2,9 @@ import React from 'react'
 import Section from '../layout/container/Section'
 import Paragraph from '../layout/typography/Paragraph'
 import Header from '../layout/typography/Header'
-import Button from '../layout/container/Button'
 import RouteLinks from '../layout/typography/RouteLinks'
-import { useLocation } from 'react-router-dom'
-import Avatar from '@mui/joy/Avatar';
 import Container from '../layout/container/Container'
-import Daniel from '../Img/daniel.png'
+import SocialMedias from './SocialMedias'
 
 
 const Contact = () => {
@@ -19,33 +16,6 @@ const Contact = () => {
     const defaultCursor = () => {
         cursor.classList.remove('changeCursorCopy')
     }
-
-    const social_links = [
-        {
-            name: 'YouTube',
-            href: 'https://www.tiktok.com/@danielafriheart?lang=en',
-            data_aos: 'fade-in',
-            data_aos_delay: '0'
-        },
-        {
-            name: 'Twitter',
-            href: 'https://twitter.com/DanielAfriheart',
-            data_aos: 'fade-in',
-            data_aos_delay: '100'
-        },
-        {
-            name: 'Instagram',
-            href: '/projects',
-            data_aos: 'fade-in',
-            data_aos_delay: '150'
-        },
-        {
-            name: 'Linkedln',
-            href: 'https://www.linkedin.com/in/daniel-esuola/',
-            data_aos: 'fade-in',
-            data_aos_delay: '200'
-        },
-    ]
 
     return (
         <Container title={'Esuola Daniel'} description={"Esuola Daniel's Portfolio Website"}>
@@ -67,7 +37,7 @@ const Contact = () => {
                             onMouseEnter={changeCursorCopy}
                             onMouseLeave={defaultCursor}
                         >
-                            <Header leadingText={"esuoladaniel002 @gmail.com"} className={'text-white'} />
+                            <Header leadingText={"ESUOLADANIEL002 @GMAIL.COM"} className={'text-white'} />
                         </div>
 
                         <Paragraph
@@ -78,23 +48,20 @@ const Contact = () => {
                             className={'text-white font-thin'} variant={'paragraph_md'}
                         />
 
-                        {/* <Button variant={'white'} btnText={"Email me"} href={'/contact'} /> */}
                     </div>
                     <div className='grid lg:grid-cols-[50%,50%] lg:ml-40 space-y-3 lg:space-y-0 lg:mb-0 mb-20'>
                         <div className=''></div>
-                        <div className='space-y-3 lg:w-[80%] w-full ml-auto flex flex-col justify-end'>
-                            {social_links.map(social => (
+                        <div className='space-y-3 lg:w-[80%] w-full ml-auto flex flex-col'>
+                            {SocialMedias.map(social => (
                                 <RouteLinks
-                                    key={social.name}
-                                    linkTitle={social.name}
+                                    key={social.platform}
+                                    linkTitle={social.platform}
                                     routeLocation={social.href}
                                     routeStyleType={'icon'}
-                                    className={'transition-all duration-300 font-thin text-white'}
+                                    className={'transition-all duration-300 text-white'}
                                     variant={'caption'}
                                     hoverState={'none'}
                                     targetState={'_blank'}
-                                    data_aos={social.data_aos}
-                                    data_aos_delay={social.data_aos_delay}
                                 />
                             ))}
                         </div>

@@ -7,6 +7,7 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
 import Paragraph from '../layout/typography/Paragraph';
 import Section from '../layout/container/Section';
+import Header from '../layout/typography/Header';
 
 
 const Interests = () => {
@@ -25,20 +26,17 @@ const Interests = () => {
     }
 
     return (
-        <Section className='flex flex-col lg:gap-10 gap-10 '>
+        <Section className='flex flex-col lg:gap-28 gap-10 '>
 
             <section>
-                <div className='flex justify-between'>
-                    <Paragraph
-                      
-                        text={'Personal Interest'}
-                        className={'lg:w-fit w-1/3 font-thin'}
+                <div className='lg:flex justify-between place-items-center'>
+                    <Header
+                        leadingText={'PERSONAL INTEREST'}
+                        className={'lg:w-fit md:w-1/3 font-thin'}
                         data_aos_delay={'500'}
                     />
                     <Paragraph
-                      
                         text={'"CLICK & DRAG AROUND"'}
-                      
                         variant={'base'}
                         data_aos_delay={'600'}
                     />
@@ -84,8 +82,7 @@ const Interests = () => {
                                 />
                                 <Paragraph
                                     variant={'label'}
-                                    text={"I'm also exploring "}
-                                    greyText={'VR gaming with Oculus.'}
+                                    text={"I'm also exploring VR gaming with Oculus."}
                                 />
                             </div>
                         }
@@ -122,7 +119,7 @@ const Interests = () => {
                         }
                     </section>
                 </div>
-                <div className='lg:h-[70vh] h-[30vh]'>
+                <div className='lg:h-[70vh]'>
                     <Canvas
                         onMouseEnter={changeCursorHere}
                         onMouseLeave={defaultCursor}
@@ -139,7 +136,7 @@ const Interests = () => {
                                         enablePan={false}
                                         enableDamping
                                         dampingFactor={0.25}
-                                        // rotateSpeed={0.4}
+                                        rotateSpeed={0.4}
                                         target={[0, 3, 0]} // Set the target to the center of the object
                                         minPolarAngle={[1]}
                                         maxPolarAngle={[0]}
@@ -162,7 +159,7 @@ const Interests = () => {
                                         enablePan={false}
                                         enableDamping
                                         dampingFactor={0.25}
-                                        // rotateSpeed={0.4}
+                                        rotateSpeed={0.4}
                                         target={[0, 2, 0]} // Set the target to the center of the object
                                         minPolarAngle={[1]}
                                         maxPolarAngle={[0]}
@@ -184,7 +181,7 @@ const Interests = () => {
                                         enablePan={false}
                                         enableDamping
                                         dampingFactor={0.25}
-                                        // rotateSpeed={0.4}
+                                        rotateSpeed={0.4}
                                         target={[0, 2, 0]} // Set the target to the center of the object
                                         minPolarAngle={[1]}
                                         maxPolarAngle={[0]}

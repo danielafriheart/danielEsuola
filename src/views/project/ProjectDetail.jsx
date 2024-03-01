@@ -33,18 +33,18 @@ const ProjectDetail = () => {
           </header>
         </div>
 
-        <div className='lg:w-[50vw]'>
-          <Header leadingText={project.writeUp.header} />
+        <div className=''>
+          <Header leadingText={project.writeUp.header} className={'uppercase'}/>
         </div>
 
         <MediaCover imageSrc={project.imageUrl} customHeight={'70vh'} />
 
         <div className='mx-auto lg:w-[80vw] space-y-10'>
-          <Header leadingText={project.writeUp.article || "Error:( article for this project isn't available in project data"} />
-          <Paragraph variant={'label'} text={project.writeUp.content || "Error:( content for this project isn't available in project data"} />
+          <Header leadingText={project.writeUp.article || "Error:( article for this project isn't available in project data"} className={'uppercase'}/>
+          <Paragraph variant={'paragraph_md'} text={project.writeUp.content || "Error:( content for this project isn't available in project data"} />
           {
             project.writeUp.content_1 ?
-              <Paragraph variant={'label'} text={project.writeUp.content_1} />
+              <Paragraph variant={'paragraph_md'} text={project.writeUp.content_1} />
               : null
           }
         </div>

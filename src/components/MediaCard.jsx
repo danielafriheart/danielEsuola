@@ -23,8 +23,6 @@ export default function MediaCover({ imageSrc, children, customHeight, className
                 },
             }}
             className={className}
-            data-aos="fade-in"
-            data-aos-delay="30"
         >
             <Card component="li"
                 sx={{

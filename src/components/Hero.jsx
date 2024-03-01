@@ -2,28 +2,28 @@ import React from 'react'
 import Header from '../layout/typography/Header'
 import Section from '../layout/container/Section'
 import Paragraph from '../layout/typography/Paragraph'
+import Button from '../layout/container/Button'
 
 const Hero = () => {
 
 
     return (
         <Section className={'min-h-fit lg:h-fit md:h-[70dvh] flex flex-col justify-center'}>
-            <div className='flex flex-col justify-center lg:space-y-6 space-y-8 lg:w-[55vw]'>
-
-                {/* <Header leadingText={'Ókíkìọlá'} /> */}
-                <Header leadingText={'Esuola Daniel'} greyText={' Okikiola'} className={'font-medium'}/>
+            <div className='flex flex-col justify-center lg:space-y-6 space-y-8'>
+                <div>
+                    {/* <Header leadingText={'Designer and Webflow developer devoted to crafting beautiful web experiences focused on simplicity and purpose.'} className={'uppercase'}/> */}
+                    <Header leadingText={'Esuola Daniel'} className={'uppercase'} />
+                    <Header leadingText={'fullstack developer'} className={'uppercase'} />
+                </div>
 
                 <Paragraph
-                    text={"I support Designers & Agencies with "}
-                    greyText={'Creative'}
-                    trailingText={' Development.'}
-                    variant={'paragraph'}
+                    text={"I support Designers & Agencies with Creative Development."}
+                    variant={'paragraph_md'}
+                    className={'lg:w-[40%]'}
                 />
-
-                {/* <Paragraph text={"I'm a creative developer with years of experience in building products and appealing web experiences. I've collaborated with individuals and teams to build experiences for SMEs and large enterprises including Osome and StoqHive."} variant={'label'} /> */}
-
-                {/* <Paragraph text={"Each project is an opportuinity to learn new concepts across multiple domains including arts, maths and physics."} variant={'label'}/> */}
-
+                <div>
+                    <Button btnText={'esuoladaniel002@gmail.com'} variant={'grey'} />
+                </div>
             </div>
         </Section>
 

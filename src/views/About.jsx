@@ -39,15 +39,18 @@ const About = () => {
 
             <Gallery />
 
-            <TwoColumnGrid caption={'Perspective'} greyText={'As humans, I believe our sole purpose is to create.'} paragrahText={' I redefine possibility by combining imagination with precision to shape extraordinary experiences. '}>
+            <TwoColumnGrid 
+            caption={'Perspective'} 
+            paragrahText={' I redefine possibility by combining imagination with precision to shape extraordinary experiences. As humans, I believe our sole purpose is to create.'} 
+            >
                 <Paragraph
-                    data_aos_delay={'300'}
+                className={'lg:w-[70%]'}
                     text={"With a background in design, I work closely with design focused teams to build websites and microsites for companies and individuals. I have years of experience working and collaborating on product teams and leading engineering efforts.."}
                     variant={'label'}
                 />
 
                 <Paragraph
-                    data_aos_delay={'400'}
+                className={'lg:w-[70%]'}
                     text={"With my experience in UI and product engineering, I solve product problems and build appealing usable web experiences."} 
                     variant={'label'} 
                 />
@@ -57,7 +60,8 @@ const About = () => {
 
             <Interests />
 
-            <TwoColumnGrid caption={''} paragrahText={"When I’m not on my computer, building or exploring new web experiences, "} greyText={' I’m probably playing games or making videos for YouTube.'} />
+            <TwoColumnGrid caption={''} paragrahText={"When I’m not on my computer, building or exploring new web experiences, I’m probably playing games or making videos for YouTube."} />
+            
             <Pictures />
 
 

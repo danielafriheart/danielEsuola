@@ -39,7 +39,7 @@ function Gallery() {
 
         <Section>
             {rows.map((row, i) => (
-                <div key={i} className={`grid lg:grid-cols-4 lg:space-x-5 lg:space-y-0 space-y-5`}>
+                <div key={i} className={`grid lg:grid-cols-4 lg:space-x-5 md:space-x-5 lg:space-y-0 space-y-5`}>
                     {row.map((img, image) => (
                         <MediaCard
                             imageSrc={img}

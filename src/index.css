@@ -3,6 +3,10 @@
 @import url('https://fonts.cdnfonts.com/css/clash-display');
 @import url('https://fonts.cdnfonts.com/css/druk-wide-bold');
 @import url('https://fonts.cdnfonts.com/css/raleway-5');
+/* Apercu Bold */
+@import url(https://db.onlinewebfonts.com/c/53dfbbcf0e4d38cc847ccd1e8fa25c53?family=Apercu+Bold);
+/* Apercu Regular */
+@import url(https://db.onlinewebfonts.com/c/0a086e32e41c5e5960b26626757f07f3?family=Apercu+Regular);
 
 
 @tailwind base;
@@ -11,7 +15,6 @@
 
 * {
   /* font-family: 'Manrope', sans-serif; */
-  font-family: 'Raleway', sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -31,6 +34,7 @@ body {
   overflow-x: hidden;
   font-size: clamp(1.125rem, 2vw, 0.9rem) !important;
   background-color: #EBEBEB;
+  font-family: "Apercu Regular";
 }
 
 html::-webkit-scrollbar {
@@ -56,6 +60,7 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  font-family: "Apercu Bold" !important;
 }
 
 @keyframes reveal {
@@ -92,8 +97,8 @@ p {
   top: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 1);
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
   border-radius: 50px;
   transform: translate(-50%, -50%);
   pointer-events: none;

@@ -10,7 +10,6 @@ const TwoColumnGrid = ({ caption, greyText, children, paragrahText, href, traili
           data_aos_delay={'100'}
           variant={'base'}
           text={caption}
-          className={'font-thin'}
         />
       </div>
       <div>

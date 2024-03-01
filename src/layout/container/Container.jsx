@@ -1,9 +1,9 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 
-const Container = ({ title, description, children }) => {
+const Container = ({ title, description, children, className }) => {
     return (
-        <section>
+        <section className={className}>
             <Helmet>
                 <title>{title}</title>
                 <meta name="description" content={description} />

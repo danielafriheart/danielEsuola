@@ -11,9 +11,9 @@ const Works = () => {
         <Container title={'Esuola Daniel'} description={"Esuola Daniel's Portfolio Website"}>
 
             <Section className={'min-h-fit lg:h-fit md:h-[70dvh] flex flex-col justify-center'}>
-                <div className='flex flex-col justify-center lg:space-y-6 space-y-8 lg:w-[55vw]'>
+                <div className='flex flex-col justify-center lg:space-y-6 space-y-8 lg:w-[70vw]'>
 
-                    <Header leadingText={"Selected Work (2018 - 2024)"} />
+                    <Header leadingText={"SELECTED PROJECTS (2018 - 2024)"} />
                     <span className='lg:w-[50vw]'>
                         <Paragraph
                             data_aos_delay={'300'}
