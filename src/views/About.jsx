@@ -34,7 +34,7 @@ const About = () => {
     ]
 
     return (
-        <Container title={'Esuola Daniel'} description={"Esuola Daniel's Portfolio Website"}>
+        <Container title={'Esuola Daniel'} description={"Esuola Daniel's Portfolio Website"} className={'space-y-24'}>
             <Hero />
 
             <Gallery />

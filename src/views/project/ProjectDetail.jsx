@@ -40,7 +40,7 @@ const ProjectDetail = () => {
         <MediaCover imageSrc={project.imageUrl} customHeight={'70vh'} />
 
         <div className='mx-auto lg:w-[80vw] space-y-10'>
-          <Header leadingText={project.writeUp.article || "Error:( article for this project isn't available in project data"} className={'uppercase'}/>
+          <Header leadingText={project.writeUp.article || "Error:( article for this project isn't available in project data"} className={'text-3xl'}/>
           <Paragraph variant={'paragraph_md'} text={project.writeUp.content || "Error:( content for this project isn't available in project data"} />
           {
             project.writeUp.content_1 ?

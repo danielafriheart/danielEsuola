@@ -17,7 +17,7 @@ const Projects = () => {
                                     caption={project.name}
                                     label={project.writeUp.article}
                                     year={project.year}
-                                    customHeight={'80vh'}
+                                    customHeight={'85vh'}
                                 />
                             </Link>
                         </div>
