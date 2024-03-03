@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        "White": "#ffffff",
+        "White": "#DBD6CA",
         "Gray": "#969696",
         "Powder": "#DBDFE4",
         "Black": "#1D1D1D",

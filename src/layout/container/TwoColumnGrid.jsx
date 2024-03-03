@@ -14,7 +14,7 @@ const TwoColumnGrid = ({ caption, greyText, children, paragrahText, href, traili
         />
       </div>
       <div>
-        {header && <Header leadingText={header} className={'lg:w-fit  lg:text-[6rem] md:text-[5rem]'}/>}
+        {header && <Header leadingText={header} className={'lg:w-fit lg:text-[6rem] md:text-[5rem]'}/>}
 
         <Paragraph
           data_aos_delay={'200'}

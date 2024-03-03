@@ -13,19 +13,11 @@ export default function Preloader() {
             <section className='w-full h-screen top-0'>
                 <div className="w-[85vw] sm:w-[95vw] lg:w-[90vw] mx-auto flex flex-col justify-between py-20 h-full">
                     <div className='text-right'>
-                        <Paragraph text={'Daniel Esuola'} className={'text-white'} variant={'paragraph'}/>
-                        <Paragraph text={`Portfolio  © ${year}`} className={'text-white'} variant={'paragraph'}/>
+                        <Paragraph text={'Daniel Esuola'} className={'text-White header'} variant={'paragraph'}/>
+                        <Paragraph text={`Portfolio  © ${year}`} className={'text-White header'} variant={'paragraph'}/>
                     </div>
                     <div>
-                        {/* <HashLoader
-                            color={'#ffffff'}
-                            size={250}
-                            aria-label="Loading Spinner"
-                            data-testid="loader"
-                        /> */}
-                    </div>
-                    <div>
-                        <Paragraph text={'"A journey of Creativity'} greyText={' & Exploration"'} className={'text-white'} variant={'paragraph'} />
+                        <Paragraph text={'"A journey of Creativity & Exploration"'} className={'text-White header'} variant={'paragraph'} />
                     </div>
                 </div>
             </section>

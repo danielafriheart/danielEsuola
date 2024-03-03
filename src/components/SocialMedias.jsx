@@ -1,24 +1,40 @@
-/* This code snippet is defining an array named `SocialMedias` that contains objects representing
-different social media platforms along with their corresponding URLs. Each object in the array has
-two properties: `platform` which specifies the platform name and `href` which contains the URL for
-that platform. */
+import React from 'react'; // Import React library if not already imported
+import RouteLinks from '../layout/typography/RouteLinks';
+
 const SocialMedias = [
     {
         platform: 'YouTube', // YouTube
         href: 'https://www.youtube.com/channel/UC1eFtHs88-4PlWdWwWn9EoQ',
     },
     {
-        platform: 'Linkedln', // Linkedin
+        platform: 'Linkedln', // LinkedIn
         href: 'https://www.linkedin.com/in/daniel-esuola/',
     },
     {
-        platform: 'Twitter', // Twitter / "X"
+        platform: 'Twitter', // Twitter
         href: 'https://twitter.com/DanielAfriheart',
     },
     {
-        platform: 'TikTok', // Tiktok
+        platform: 'TikTok', // TikTok
         href: 'https://www.tiktok.com/@danielafriheart',
     },
 ];
 
-export default SocialMedias;
+const SocialMediaLinks = ({className}) => (
+    <div>
+        {SocialMedias.map(social => (
+            <RouteLinks
+                key={social.platform}
+                linkTitle={social.platform}
+                routeLocation={social.href}
+                routeStyleType="icon" // Use double quotes for string literals
+                className={`${className} transition-all duration-300 header`} // Use double quotes for string literals
+                variant="paragraph" // Use double quotes for string literals
+                hoverState="none" // Use double quotes for string literals
+                targetState="_blank" // Use double quotes for string literals
+            />
+        ))}
+    </div>
+);
+
+export default SocialMediaLinks;

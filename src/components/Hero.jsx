@@ -15,8 +15,8 @@ const Hero = () => {
                         variant={'label'}
                         className={'text-right'} />
                 <div>
-                    <Header leadingText={'Esteemed developer'} className={'uppercase lg:text-[7.5em] md:text-[5em]'} />
-                    <Header leadingText={'based in pluto ✼'} className={'uppercase lg:text-[7.7em] md:text-[5em]'} />
+                    <Header leadingText={'Esteemed developer'} className={'uppercase lg:text-[7rem] md:text-[5rem]'} />
+                    <Header leadingText={'based in pluto ✼'} className={'uppercase lg:text-[7rem] md:text-[5rem]'} />
                 </div>
 
                 <Paragraph

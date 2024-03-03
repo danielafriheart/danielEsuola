@@ -32,13 +32,11 @@ const Interests = () => {
                 <div className='lg:flex justify-between place-items-center'>
                     <Header
                         leadingText={'PERSONAL INTEREST'}
-                        className={'lg:w-fit md:w-1/2 lg:text-[6rem] md:text-[5rem]'}
-                        data_aos_delay={'500'}
+                        className={'lg:w-fit lg:text-[6rem] md:text-[5rem]'}
                     />
                     <Paragraph
                         text={'"CLICK & DRAG AROUND"'}
                         variant={'base'}
-                        data_aos_delay={'600'}
                     />
                 </div>
             </section>

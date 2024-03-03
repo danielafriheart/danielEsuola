@@ -5,7 +5,7 @@ import Paragraph from '../../layout/typography/Paragraph'
 const Awards = () => {
     const Honors = [
         {
-            name: 'Career Essentials in Software Development by Microsoft & LinkedIn 2024',
+            name: 'Career Essentials in Software Development 2024',
             caption: 'By Microsoft and LinkedIn January 24, 2024',
             data_aos: 'fade-in',
             data_aos_delay: '400'

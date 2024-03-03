@@ -19,9 +19,9 @@ const Footer = () => {
     return (
         <footer className='lg:pt-20 lg:pb-40 lg:h-screen'>
             <Section className={'flex flex-col justify-between h-full space-y-24'}>
-                <section className=''>
-                    <div className='lg:space-y-14 space-y-10 mb-10 lg:mb-0'>
-                        <Paragraph variant={'base'} className={'font-thin'} text={'Get in touch'} />
+                <section className='z-50 lg:space-y-10 bg-[url(`${Daniel}`)]'>
+
+                    <div className='lg:space-y-14 space-y-10 mb-20 lg:mb-0'>
                         <div
                             onMouseEnter={changeCursorCopy}
                             onMouseLeave={defaultCursor}
@@ -32,37 +32,27 @@ const Footer = () => {
                                     linkTitle={Email.platform}
                                     routeLocation={`mailto: ${Email.mailTo}`}
                                     routeStyleType={'noIcon'}
-                                    className={'lg:text-[7em] text-7xl md:text-Header-md text-Paragraph-md uppercase underline leading-tight header'}
+                                    className={'lg:text-[7rem] text-7xl md:text-Header-md text-Paragraph-md uppercase underline leading-tight header'}
                                     hoverState={'none'}
                                     targetState={'_blank'}
                                 />
                             ))}
                         </div>
+                    </div>
+
+                    <div className='grid lg:grid-cols-2 space-y-3 lg:space-y-0 lg:mb-0 mb-20'>
                         <Paragraph
                             data_aos={'fade-in'}
-                            data_aos_delay={'300'}
+                            data_aos_delay={'20'}
                             text={"Send me an email or get in touch with me on any of my socials. Let's start creating magic."}
                             variant={'paragraph_md'}
+                            className={'my-auto'}
                         />
-                    </div>
-                    <div className=' space-y-3 lg:space-y-0 mb-20 lg:mb-0 w-full'>
-                        <div className='space-y-3 lg:w-[50%] w-full ml-auto'>
-                            {
-                                SocialMedias.map(social => (
-                                    <RouteLinks
-                                        key={social.platform}
-                                        linkTitle={social.platform}
-                                        routeLocation={social.href}
-                                        routeStyleType={'icon'}
-                                        className={'transition-all duration-300'}
-                                        variant={'caption'}
-                                        hoverState={'none'}
-                                        targetState={'_blank'}
-                                    />
-                                ))
-                            }
+                        <div className='w-full ml-auto flex flex-col justify-end space-y-5 lg:w-1/2'>
+                            <SocialMedias className='text-black'/>
                         </div>
                     </div>
+
                 </section>
                 <Paragraph trailingText={'2024 Esuola Daniel Okikiola'} className={'font-thin lg:mt-auto lg:my-0 my-5'} />
             </Section>

@@ -31,7 +31,7 @@ const Contact = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
                                 <path fillRule="evenodd" d="M7.28 7.72a.75.75 0 0 1 0 1.06l-2.47 2.47H21a.75.75 0 0 1 0 1.5H4.81l2.47 2.47a.75.75 0 1 1-1.06 1.06l-3.75-3.75a.75.75 0 0 1 0-1.06l3.75-3.75a.75.75 0 0 1 1.06 0Z" clipRule="evenodd" />
                             </svg>
-                            <Paragraph variant={'base'} className={'font-thin text-white'} text={'Home'} />
+                            <Paragraph variant={'base'} className={'font-thin text-[#DBD6CA]'} text={'Home'} />
                         </a>
 
                         <div
@@ -44,7 +44,7 @@ const Contact = () => {
                                     linkTitle={Email.platform}
                                     routeLocation={`mailto: ${Email.mailTo}`}
                                     routeStyleType={'noIcon'}
-                                    className={'text-white lg:text-[7em] text-7xl md:text-Header-md text-Paragraph-md uppercase underline leading-tight header'}
+                                    className={'text-[#DBD6CA] lg:text-[7rem] text-7xl md:text-Header-md text-Paragraph-md uppercase underline leading-tight header'}
                                     hoverState={'none'}
                                     targetState={'_blank'}
                                 />
@@ -56,28 +56,16 @@ const Contact = () => {
                         <Paragraph
                             data_aos={'fade-in'}
                             data_aos_delay={'20'}
-                            text={"Send me an email or get in touch with me on any of my socials."}
-                            greyText={"Let's start creating magic."}
-                            className={'text-white font-thin'} variant={'paragraph_md'}
+                            text={"Send me an email or get in touch with me on any of my socials. Let's start creating magic."}
+                            className={'text-White font-thin my-auto'} variant={'paragraph_md'}
                         />
                         <div className='w-full ml-auto flex flex-col justify-end space-y-5 lg:w-1/2'>
-                            {SocialMedias.map(social => (
-                                <RouteLinks
-                                    key={social.platform}
-                                    linkTitle={social.platform}
-                                    routeLocation={social.href}
-                                    routeStyleType={'icon'}
-                                    className={'transition-all duration-300 text-white '}
-                                    variant={'caption'}
-                                    hoverState={'none'}
-                                    targetState={'_blank'}
-                                />
-                            ))}
+                            <SocialMedias className='text-White'/>
                         </div>
                     </div>
 
                 </section>
-                <Paragraph trailingText={'2024 Esuola Daniel Okikiola'} variant={'base'} className={'font-thin lg:mt-auto lg:my-0 my-5 text-white'} />
+                <Paragraph trailingText={'2024 Esuola Daniel Okikiola'} variant={'base'} className={'font-thin lg:mt-auto lg:my-0 my-5 text-[#DBD6CA]'} />
             </Section>
         </Container >
     )
