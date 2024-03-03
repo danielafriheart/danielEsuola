@@ -1,6 +1,6 @@
 const EmailAddress = [
     {
-        platform: 'esuoladaniel002 @gmail.com', // Gmail
+        platform: 'esuoladaniel 002@gmail .com', // Gmail
         mailTo: 'esuoladaniel002@gmail.com',
     },
 ];

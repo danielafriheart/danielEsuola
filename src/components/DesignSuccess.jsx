@@ -7,8 +7,7 @@ const DesignSuccess = () => {
         <Section>
             <ThreeColumnGrid
                 caption={'Design Success'}
-                paragrahText={"See how I've turned ideas into reality. Dive into the stories of"}
-                greyText={'successful product designs that make a difference.'}
+                paragrahText={"See how I've turned ideas into reality. Dive into the stories of successful product designs that make a difference."}
                 btnText={'Select Projects'}
                 href={'/projects'}
             />

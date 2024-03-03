@@ -10,10 +10,10 @@ const Gallery = ({ Src }) => {
         <Section className={'py-0 pt-16'}>
          <div className='grid lg:grid-cols-[2fr,1fr] md:grid-cols-1 gap-5'>
                 <div>
-                <MediaCard imageSrc={Src_one} />
+                <MediaCard imageSrc={Src_one} customHeight={'50vh'}/>
                 </div>
                 <div>
-                    <MediaCard imageSrc={Src_two} />
+                    <MediaCard imageSrc={Src_two} customHeight={'50vh'}/>
                 </div>
             </div>
         </Section>

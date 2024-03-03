@@ -26,14 +26,16 @@
 
 ::selection {
   background: none;
-  color: #8E93FF;
+  /* color: #8E93FF; */
+  color: #800020;
 }
 
 body {
   scroll-snap-type: y mandatory;
   overflow-x: hidden;
   font-size: clamp(1.125rem, 2vw, 0.9rem) !important;
-  background-color: #E1DFDD;
+  /* background-color: #E1DFDD; */
+  background-color: #DBD6CA;
   font-family: "Apercu Regular";
 }
 
@@ -50,8 +52,7 @@ section {
 }
 
 /* Animate on scroll */
-h1,
-.header {
+h1 {
   background: linear-gradient(90deg, black, transparent);
   background-size: 200%;
   animation: reveal linear both;
@@ -61,7 +62,13 @@ h1,
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  font-family: "Apercu Bold" !important;
+  /* font-family: "Apercu Bold" !important; */
+  font-family: 'Druk Wide Bold', sans-serif;
+}
+
+.header {
+  font-family: 'Druk Wide Bold', sans-serif;
+
 }
 
 @keyframes reveal {

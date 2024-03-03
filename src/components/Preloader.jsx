@@ -17,12 +17,12 @@ export default function Preloader() {
                         <Paragraph text={`Portfolio  © ${year}`} className={'text-white'} variant={'paragraph'}/>
                     </div>
                     <div>
-                        <HashLoader
+                        {/* <HashLoader
                             color={'#ffffff'}
                             size={250}
                             aria-label="Loading Spinner"
                             data-testid="loader"
-                        />
+                        /> */}
                     </div>
                     <div>
                         <Paragraph text={'"A journey of Creativity'} greyText={' & Exploration"'} className={'text-white'} variant={'paragraph'} />

@@ -4,6 +4,7 @@ import Paragraph from '../layout/typography/Paragraph'
 import Header from '../layout/typography/Header'
 import RouteLinks from '../layout/typography/RouteLinks'
 import SocialMedias from './SocialMedias'
+import EmailAddress from './email/EmailAddress'
 
 const Footer = () => {
 
@@ -18,20 +19,30 @@ const Footer = () => {
     return (
         <footer className='lg:pt-20 lg:pb-40 lg:h-screen'>
             <Section className={'flex flex-col justify-between h-full space-y-24'}>
-                <section className='lg:flex lg:gap-x-40'>
+                <section className=''>
                     <div className='lg:space-y-14 space-y-10 mb-10 lg:mb-0'>
                         <Paragraph variant={'base'} className={'font-thin'} text={'Get in touch'} />
                         <div
                             onMouseEnter={changeCursorCopy}
                             onMouseLeave={defaultCursor}
                         >
-                            <Header leadingText={"ESUOLADANIEL002 @GMAIL.COM"} className={'lg:w-fit lg:text-[6rem] md:text-[5rem]'}/>
+                            {EmailAddress.map(Email => (
+                                <RouteLinks
+                                    key={Email.platform}
+                                    linkTitle={Email.platform}
+                                    routeLocation={`mailto: ${Email.mailTo}`}
+                                    routeStyleType={'noIcon'}
+                                    className={'lg:text-[7em] text-7xl md:text-Header-md text-Paragraph-md uppercase underline leading-tight header'}
+                                    hoverState={'none'}
+                                    targetState={'_blank'}
+                                />
+                            ))}
                         </div>
                         <Paragraph
                             data_aos={'fade-in'}
                             data_aos_delay={'300'}
                             text={"Send me an email or get in touch with me on any of my socials. Let's start creating magic."}
-                           variant={'paragraph_md'}
+                            variant={'paragraph_md'}
                         />
                     </div>
                     <div className=' space-y-3 lg:space-y-0 mb-20 lg:mb-0 w-full'>
