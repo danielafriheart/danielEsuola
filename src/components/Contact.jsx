@@ -1,7 +1,6 @@
 import React from 'react'
 import Section from '../layout/container/Section'
 import Paragraph from '../layout/typography/Paragraph'
-import Header from '../layout/typography/Header'
 import RouteLinks from '../layout/typography/RouteLinks'
 import Container from '../layout/container/Container'
 import SocialMedias from './SocialMedias'

@@ -7,9 +7,7 @@ const DesignSuccess = () => {
         <Section>
             <ThreeColumnGrid
                 caption={'My Story'}
-                paragrahText={"For me, this is a journey of "}
-                greyText={'creativity and exploration... '}
-                trailingText={'I really just want to create.'}
+                paragrahText={"For me, this is a journey of creativity and exploration... I really just want to create."}
                 btnText={'About Me'}
                 href={'/about'}
             />

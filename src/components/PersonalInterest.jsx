@@ -25,10 +25,10 @@ const Interests = () => {
     }
 
     return (
-        <Section className='flex flex-col lg:gap-28 gap-10 '>
+        <Section className='flex flex-col lg:gap-28 gap-10'>
 
             <section>
-                <div className='lg:flex justify-between place-items-center'>
+                <div className='lg:flex justify-between place-items-center space-y-3'>
                     <Header
                         leadingText={'PERSONAL INTEREST'}
                         className={'lg:w-fit lg:text-[6rem] md:text-[5rem]'}
@@ -43,7 +43,7 @@ const Interests = () => {
             <div className='lg:grid lg:grid-cols-[45%,55%] md:grid-cols-1 flex flex-col-reverse gap-0 h-fit'>
                 <div className=''>
                     <section className='flex flex-col justify-evenly h-full'>
-                        <div className='w-full pb-0 flex flex-col lg:space-y-2 mb-10 lg:mb-0'>
+                        <div className='w-full flex flex-col lg:space-y-2 lg:my-0  my-10 lg:mb-0 '>
                             <Paragraph
                                 variant={'paragraph_md'}
                                 className={`cursor-pointer hover:underline underline-offset-4 transition-all duration-300 ${activeTab === 1 ? 'underline' : 'text-black/30'}`}
@@ -70,6 +70,7 @@ const Interests = () => {
                             activeTab === 1 &&
                             <div className='flex flex-col gap-5'>
                                 <Paragraph
+                                    className={'header'}
                                     variant={'paragraph'}
                                     text={'Xbox 360 / Playstation'}
                                 />
@@ -87,6 +88,7 @@ const Interests = () => {
                             activeTab === 2 &&
                             <div className='flex flex-col gap-5'>
                                 <Paragraph
+                                    className={'header'}
                                     variant={'paragraph'}
                                     text={'An Eclectic Music Taste'}
                                 />
@@ -100,6 +102,7 @@ const Interests = () => {
                             activeTab === 3 &&
                             <div className='flex flex-col gap-5'>
                                 <Paragraph
+                                    className={'header'}
                                     variant={'paragraph'}
                                     text={'Vision Pro / Oculus'}
                                 />
@@ -116,7 +119,7 @@ const Interests = () => {
                         }
                     </section>
                 </div>
-                <div className='lg:h-[70vh]'>
+                <div className='lg:h-[70vh] h-[30vh]'>
                     <Canvas
                         onMouseEnter={changeCursorHere}
                         onMouseLeave={defaultCursor}

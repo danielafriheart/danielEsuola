@@ -12,7 +12,7 @@ import Awards from './pages/Awards'
 const About = () => {
 
     return (
-        <Container title={'Esuola ® - Esteemed Creative Developer'} description={"Esuola Daniel's Portfolio Website"} className={'lg:space-y-24 md:space-y-16'}>
+        <Container title={'Esuola ® - Esteemed Creative Developer'} description={"Esuola Daniel's Portfolio Website"} className={'space-y-24'}>
             <Hero />
             <Gallery />
             <Perspective />

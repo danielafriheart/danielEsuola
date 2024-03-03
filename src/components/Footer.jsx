@@ -1,7 +1,6 @@
 import React from 'react'
 import Section from '../layout/container/Section'
 import Paragraph from '../layout/typography/Paragraph'
-import Header from '../layout/typography/Header'
 import RouteLinks from '../layout/typography/RouteLinks'
 import SocialMedias from './SocialMedias'
 import EmailAddress from './email/EmailAddress'
@@ -17,9 +16,9 @@ const Footer = () => {
     }
 
     return (
-        <footer className='lg:pt-20 lg:pb-40 lg:h-screen'>
-            <Section className={'flex flex-col justify-between h-full space-y-24'}>
-                <section className='z-50 lg:space-y-10 bg-[url(`${Daniel}`)]'>
+        <footer className='lg:pt-20'>
+            <Section className={'flex flex-col justify-between h-fit space-y-24'}>
+                <section className='z-50 lg:space-y-10 h-full'>
 
                     <div className='lg:space-y-14 space-y-10 mb-20 lg:mb-0'>
                         <div

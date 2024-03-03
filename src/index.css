@@ -2,7 +2,6 @@
 /* Apercu Regular */
 @import url(https://db.onlinewebfonts.com/c/0a086e32e41c5e5960b26626757f07f3?family=Apercu+Regular);
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,7 +13,7 @@
   scroll-behavior: smooth;
   cursor: none !important;
 
-  /* outline: dashed 1px lightgray; */
+  /* outline: dashed 1px gray; */
 }
 
 ::selection {
@@ -57,7 +56,6 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  /* font-family: "Apercu Bold" !important; */
   font-family: 'Druk Wide Bold', sans-serif;
 }
 
@@ -106,7 +104,6 @@ p {
   transform: translate(-50%, -50%);
   pointer-events: none;
   mix-blend-mode: difference;
-  /* border: 1px solid white; */
 }
 
 .cursor::after,
@@ -139,7 +136,6 @@ p {
   transform: translate(-50%, -50%);
   pointer-events: none;
   mix-blend-mode: difference;
-  /* background-color: rgba(255, 255, 255, 0.2); */
 }
 
 .bigCursor::after,
@@ -227,11 +223,3 @@ p {
 .changeCursorCopy::before {
   background-color: rgb(0, 0, 0);
 }
-
-/* 
-.contact {
-  background-image: url('./Img/daniel.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center calc(100% - (-100%));
-} */
