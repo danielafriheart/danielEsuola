@@ -11,6 +11,7 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 import ProjectDetail from './views/project/ProjectDetail'
 import { Analytics } from "@vercel/analytics/react"
 import Preloader from './components/Preloader'
+import ShareWebsite from './components/ShareWebsite'
 AOS.init();
 
 const App = () => {
@@ -48,9 +49,8 @@ const App = () => {
   }, []); // Empty dependency array means this effect runs only once, similar to componentDidMount()
 
 
-
   return (
-    <div className='relative'>
+    <>
       <Analytics />
       {
         loading ?
@@ -58,7 +58,7 @@ const App = () => {
           :
           <>
             {!isContactPage && <NavBar />}
-            {/* {!isContactPage && <ShareWebsite />} */}
+            {/* <ShareWebsite /> */}
             <Routes>
               <Route path='/' element={<About />} />
               <Route path='/projects' element={<Works />} />
@@ -71,7 +71,7 @@ const App = () => {
 
           </>
       }
-    </div>
+    </>
   )
 }
 

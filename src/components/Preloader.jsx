@@ -9,7 +9,7 @@ export default function Preloader() {
     const year = date.getFullYear();
 
     return (
-        <Container title={'Loading'} description={"Esuola Daniel's Portfolio Website"} className={'cursor-wait bg-black'} >
+        <Container title={'Loading'} description={"Esuola Daniel's Portfolio Website"} className={'cursor-wait bg-Black'} >
             <section className='w-full h-screen top-0'>
                 <div className="w-[85vw] sm:w-[95vw] lg:w-[90vw] mx-auto flex flex-col justify-between py-20 h-full">
                     <div className='text-right'>

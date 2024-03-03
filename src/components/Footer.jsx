@@ -18,25 +18,24 @@ const Footer = () => {
     return (
         <footer className='lg:pt-20 lg:pb-40 lg:h-screen'>
             <Section className={'flex flex-col justify-between h-full space-y-24'}>
-                <section className='lg:flex'>
+                <section className='lg:flex lg:gap-x-40'>
                     <div className='lg:space-y-14 space-y-10 mb-10 lg:mb-0'>
                         <Paragraph variant={'base'} className={'font-thin'} text={'Get in touch'} />
                         <div
                             onMouseEnter={changeCursorCopy}
                             onMouseLeave={defaultCursor}
                         >
-                            <Header leadingText={"ESUOLADANIEL002 @GMAIL.COM"}/>
+                            <Header leadingText={"ESUOLADANIEL002 @GMAIL.COM"} className={'lg:w-fit lg:text-[6rem] md:text-[5rem]'}/>
                         </div>
                         <Paragraph
                             data_aos={'fade-in'}
                             data_aos_delay={'300'}
-                            text={"Send me an email or get in touch with me on any of my socials."}
-                            greyText={"Let's start creating magic."}
+                            text={"Send me an email or get in touch with me on any of my socials. Let's start creating magic."}
                            variant={'paragraph_md'}
                         />
                     </div>
-                    <div className='lg:ml-40 space-y-3 lg:space-y-0 mb-20 lg:mb-0 w-full'>
-                        <div className='space-y-3 lg:w-[80%] w-full ml-auto'>
+                    <div className=' space-y-3 lg:space-y-0 mb-20 lg:mb-0 w-full'>
+                        <div className='space-y-3 lg:w-[50%] w-full ml-auto'>
                             {
                                 SocialMedias.map(social => (
                                     <RouteLinks

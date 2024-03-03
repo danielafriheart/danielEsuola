@@ -8,9 +8,11 @@ import {
     XMarkIcon,
 } from '@heroicons/react/24/outline'
 import RouteLinks from '../layout/typography/RouteLinks'
-import { useLocation } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import Avatar from '@mui/joy/Avatar';
 import Box from '@mui/joy/Box';
+import Paragraph from '../layout/typography/Paragraph'
+import Section from '../layout/container/Section'
 
 
 const Example = () => {
@@ -24,14 +26,6 @@ const Example = () => {
             data_aos: 'fade-in',
             data_aos_delay: '0'
         },
-        // {
-        //     name: 'About,',
-        //     description: 'Speak directly to your customers',
-        //     href: '/about',
-        //     icon: CursorArrowRaysIcon,
-        //     data_aos: 'fade-in',
-        //     data_aos_delay: '100'
-        // },
         {
             name: 'Contact',
             description: 'Your customers’ data will be safe and secure',
@@ -42,7 +36,6 @@ const Example = () => {
         },
     ]
 
-    const logo = <Avatar alt="Esuola Daniel Okikiola" src="https://res.cloudinary.com/dnzi0xxtx/image/upload/v1707069784/Daniel/Avatar_te2xb4.jpg" s />
 
 
     function classNames(...classes) {
@@ -54,16 +47,12 @@ const Example = () => {
     const location = useLocation();
 
     return (
-        <header className=" ">
-            <nav className="mx-auto flex lg:w-[93vw] w-[90vw] items-center justify-between py-10 lg:px-8" aria-label="Global">
+        <nav className=" ">
+            <header className={'lg:px-20 md:p-10 p-5 md:pt-10 flex items-center justify-between'}  aria-label="Global">
 
-                <div className="flex">
-                    <a href="/" className="-m-1.5">
-                        <Box sx={{ display: 'flex', gap: 2 }}>
-                            {logo}
-                        </Box>
-                    </a>
-                </div>
+                <NavLink to={"/"} className="flex items-center gap-3 text-background ">
+                    <Paragraph text={'Esuola Daniel'} variant={'label'} />
+                </NavLink>
 
 
                 <div className="hidden">
@@ -98,8 +87,8 @@ const Example = () => {
                     variant={'base'}
                     className={'lg:flex md:flex hidden'}
                 />
-            </nav>
-        </header>
+            </header>
+        </nav>
     )
 }
 export default Example

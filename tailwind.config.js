@@ -10,7 +10,7 @@ export default {
         "White": "#ffffff",
         "Gray": "#969696",
         "Powder": "#DBDFE4",
-        "Black": "#000000",
+        "Black": "#1D1D1D",
       },
       fontSize: {
         "Base": '1rem',      // equivalent to 16px

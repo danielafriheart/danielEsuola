@@ -1,90 +1,25 @@
 import React from 'react'
-import Paragraph from '../layout/typography/Paragraph'
 import DesignSuccess from '../components/DesignSuccess'
 import Gallery from '../components/Gallery'
 import TwoColumnGrid from '../layout/container/TwoColumnGrid'
 import Interests from '../components/PersonalInterest'
 import Container from '../layout/container/Container'
 import Hero from '../components/Hero'
-import Pictures from '../components/Pictures'
-import MyServices from '../components/Services'
+import Perspective from './pages/Perspective'
+import Awards from './pages/Awards'
 
 
 const About = () => {
-    const Awards = [
-        {
-            name: 'Career Essentials in Software Development by Microsoft & LinkedIn 2024',
-            caption: 'By Microsoft and LinkedIn January 24, 2024',
-            data_aos: 'fade-in',
-            data_aos_delay: '400'
-        },
-        {
-            name: 'JavaScript Algorithms & Data Structures 2023',
-            caption: 'This certifies that I successfully completed the JavaScript Algorithms and Data Structures, representing approximately 300 hours of work.',
-            data_aos: 'fade-in',
-            data_aos_delay: '500'
-        },
-        {
-            name: 'Responsive Web Design 2022',
-            caption: 'This certifies that I successfully completed the Responsive Web Design Developer Certification on January 25, 2022.',
-            data_aos: 'fade-in',
-            data_aos_delay: '600'
-        },
-
-    ]
 
     return (
-        <Container title={'Esuola Daniel'} description={"Esuola Daniel's Portfolio Website"} className={'lg:space-y-24 md:space-y-16'}>
+        <Container title={'Esuola ® - esteemed FullStack Developer'} description={"Esuola Daniel's Portfolio Website"} className={'lg:space-y-24 md:space-y-16'}>
             <Hero />
-
             <Gallery />
-
-            <TwoColumnGrid 
-            caption={'Perspective'} 
-            paragrahText={' I redefine possibility by combining imagination with precision to shape extraordinary experiences. As humans, I believe our sole purpose is to create.'} 
-            >
-                <Paragraph
-                className={'lg:w-[70%]'}
-                    text={"With a background in design, I work closely with design focused teams to build websites and microsites for companies and individuals. I have years of experience working and collaborating on product teams and leading engineering efforts.."}
-                    variant={'label'}
-                />
-
-                <Paragraph
-                className={'lg:w-[70%]'}
-                    text={"With my experience in UI and product engineering, I solve product problems and build appealing usable web experiences."} 
-                    variant={'label'} 
-                />
-            </TwoColumnGrid>
-
-            {/* <MyServices /> */}
-
+            <Perspective />
             <Interests />
-
-            <TwoColumnGrid caption={''} paragrahText={"When I’m not on my computer, building or exploring new web experiences, I’m probably playing games or making videos for YouTube."} />
-            
-            <Pictures />
-
-
-            {/* <TwoColumnGrid caption={'Honors'} paragrahText={'Awards '} greyText={' &'} trailingText={' Recognitions.'}>
-                {Awards.map(award => (
-                    <ul>
-                        <li className='mb-8'>
-                            <Paragraph
-                                text={award.name}
-                                variant={'label'}
-                            />
-                            <Paragraph
-                                text={award.caption}
-                                variant={'label'}
-                                className={'font-thin mt-2'}
-                            />
-                        </li>
-                    </ul>
-                ))}
-            </TwoColumnGrid> */}
-
-            {/* <CurrentlyWorkingOn src={'https://res.cloudinary.com/dnzi0xxtx/image/upload/v1707164727/Daniel/IMG_4854_ednbr2.jpg'} /> */}
-
+            <TwoColumnGrid caption={''} variant={'paragraph'} paragrahText={"When I’m not on my computer, building or exploring new web experiences, I’m probably playing games or making videos for YouTube."} />
+            {/* <Pictures /> */}
+            <Awards />
             <DesignSuccess />
         </Container>
     )

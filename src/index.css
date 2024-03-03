@@ -25,15 +25,15 @@
 }
 
 ::selection {
-  background: silver;
-  color: white;
+  background: none;
+  color: #8E93FF;
 }
 
 body {
   scroll-snap-type: y mandatory;
   overflow-x: hidden;
   font-size: clamp(1.125rem, 2vw, 0.9rem) !important;
-  background-color: #EBEBEB;
+  background-color: #E1DFDD;
   font-family: "Apercu Regular";
 }
 
@@ -50,7 +50,8 @@ section {
 }
 
 /* Animate on scroll */
-h1 {
+h1,
+.header {
   background: linear-gradient(90deg, black, transparent);
   background-size: 200%;
   animation: reveal linear both;
@@ -225,9 +226,10 @@ p {
   background-color: rgb(0, 0, 0);
 }
 
+/* 
 .contact {
   background-image: url('./Img/daniel.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center calc(100% - (-100%));
-}
+} */

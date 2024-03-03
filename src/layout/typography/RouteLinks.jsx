@@ -42,7 +42,7 @@ const RouteLinks = ({ routeLocation, linkTitle, className, title, hoverState, ta
                 target={targetState}
                 underline={hoverState}
                 color='inherit'
-                className={`${className} transition-all duration-300 underline-offset-4 flex items-center`}
+                className={`${className} transition-all duration-300 underline-offset-8 flex items-center`}
             >
                 <Paragraph text={linkTitle} variant={variant} className={className} />
                 <span className={`animate-target transition-all duration-300 ${routeStyleType === 'noIcon' ? 'hidden' : 'flex ml-auto'}`}>{trailingIcon}</span>

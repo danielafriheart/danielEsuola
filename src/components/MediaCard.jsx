@@ -4,8 +4,17 @@ import Card from '@mui/joy/Card';
 import CardCover from '@mui/joy/CardCover';
 import CardContent from '@mui/joy/CardContent';
 import Typography from '@mui/joy/Typography';
+import { motion } from "framer-motion";
+import { useState } from 'react';
+
+const hiddenMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 30px, rgba(0,0,0,1) 30px, rgba(0,0,0,1) 30px)`;
+const visibleMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 0px, rgba(0,0,0,1) 30px)`;
 
 export default function MediaCover({ imageSrc, children, customHeight, className }) {
+
+    const [isLoaded, setIsLoaded] = useState(false);
+    const [isInView, setIsInView] = useState(false);
+
     return (
         <Box
             component="ul"
@@ -19,10 +28,9 @@ export default function MediaCover({ imageSrc, children, customHeight, className
                     height: '50vh', // Use 50vh for medium screens
                 },
                 '@media screen and (max-width: 576px)': {
-                    height: '45vh', // Use 50vh for small screens
+                    height: '50vh', // Use 50vh for small screens
                 },
             }}
-            className={className}
         >
             <Card component="li"
                 sx={{
@@ -30,14 +38,22 @@ export default function MediaCover({ imageSrc, children, customHeight, className
                     maxWidth: '100%',
                     flexGrow: 1,
                     p: 3,
+                    backgroundColor: 'transparent'
                 }}>
                 <CardCover>
-                    <img
-                        src={imageSrc}
-                        srcSet={imageSrc}
-                        loading="lazy"
-                        alt="image"
-                    />
+                    <motion.div
+                        initial={false}
+                        animate={
+                            isLoaded && isInView
+                                ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
+                                : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
+                        }
+                        transition={{ duration: 1, delay: 1 }}
+                        viewport={{ once: true }}
+                        onViewportEnter={() => setIsInView(true)}
+                    >
+                        <img src={imageSrc} alt="Images" onLoad={() => setIsLoaded(true)} />
+                    </motion.div>
                 </CardCover>
 
                 <CardCover />

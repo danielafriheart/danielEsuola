@@ -13,6 +13,7 @@ const Paragraph = ({ text, className, variant, trailingText, greyText, onClick, 
         label: "lg:text-[1.5rem] md:text-[1.25rem] text-Base font-normal",  // equivalent to 24px
         paragraph: "lg:text-[2.5rem] md:text-Paragraph-md text-Paragraph-sm", // equivalent to 40px
         paragraph_md: "lg:text-Paragraph-md md:text-Paragraph-sm text-Paragraph-sm", // equivalent to 32px
+        header: "lg:text-[6rem] text-6xl leading-tight md:text-Header-md text-Paragraph-md space-x-4 font-normal flex-wrap", // equivalent to 32px
     };
 
     const selectedVariant = variantStyles[variant] || variantStyles.base;

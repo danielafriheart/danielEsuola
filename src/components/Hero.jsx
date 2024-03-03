@@ -10,9 +10,13 @@ const Hero = () => {
     return (
         <Section className={'h-fit lg:h-fit md:h-[70dvh] flex flex-col justify-center'}>
             <div className='flex flex-col justify-center lg:space-y-6 space-y-8'>
+                    <Paragraph
+                        text={"About"}
+                        variant={'label'}
+                        className={'text-right'} />
                 <div>
-                    <Header leadingText={'Esuola Daniel'} className={'uppercase'} />
-                    <Header leadingText={'fullstack developer'} className={'uppercase'} />
+                    <Header leadingText={'Esteemed developer'} className={'uppercase lg:text-[7.5rem] md:text-[5rem]'} />
+                    <Header leadingText={'based in pluto ✼'} className={'uppercase lg:text-[7.7rem] md:text-[5rem]'} />
                 </div>
 
                 <Paragraph
@@ -21,10 +25,10 @@ const Hero = () => {
                     className={'lg:w-[40%]'}
                 />
                 <div>
-                    <Button 
-                    btnText={'esuoladaniel002@gmail.com'} 
-                    variant={'grey'} 
-                    href={'mailto:esuoladaniel002@gmail.com'}
+                    <Button
+                        btnText={'esuoladaniel002@gmail.com'}
+                        variant={'grey'}
+                        href={'mailto:esuoladaniel002@gmail.com'}
                     />
                 </div>
             </div>
