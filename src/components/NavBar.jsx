@@ -80,7 +80,7 @@ const Example = () => {
                 </Popover.Group>
 
                 <RouteLinks
-                    linkTitle={"esuoladaniel002@gmail.com"}
+                    linkTitle={"Esuoladaniel002@gmail.com"}
                     routeLocation={'mailto:esuoladaniel002@gmail.com'}
                     routeStyleType={'noIcon'}
                     hoverState={`always`}

@@ -26,7 +26,7 @@ const Hero = () => {
                 />
                 <div>
                     <Button
-                        btnText={'esuoladaniel002@gmail.com'}
+                        btnText={'Esuoladaniel002@gmail.com'}
                         variant={'grey'}
                         href={'mailto:esuoladaniel002@gmail.com'}
                     />

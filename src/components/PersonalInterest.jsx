@@ -1,5 +1,4 @@
 import React, { Suspense, useState } from 'react';
-// import ContainerHeader from '../../layouts/container/ContainerHeader';
 import { Model as Jbl } from '../3dModels/Jbl'
 import { Model as Visionpro } from '../3dModels/Visionapro'
 import { Model as Whitexbox } from '../3dModels/Whitexbox'
@@ -44,24 +43,24 @@ const Interests = () => {
             <div className='lg:grid lg:grid-cols-[45%,55%] md:grid-cols-1 flex flex-col-reverse gap-0 h-fit'>
                 <div className=''>
                     <section className='flex flex-col justify-evenly h-full'>
-                        <div className='w-full pb-0 flex flex-col lg:space-y-3 mb-10 lg:mb-0'>
+                        <div className='w-full pb-0 flex flex-col lg:space-y-2 mb-10 lg:mb-0'>
                             <Paragraph
                                 variant={'paragraph_md'}
-                                className={`cursor-pointer hover:underline underline-offset-4 transition-all duration-300 ${activeTab === 1 ? 'underline' : 'text-Gray'}`}
+                                className={`cursor-pointer hover:underline underline-offset-4 transition-all duration-300 ${activeTab === 1 ? 'underline' : 'text-black/30'}`}
                                 text="Gaming"
                                 active={activeTab === '1'}
                                 onClick={() => handleTabChange(1)}
                             />
                             <Paragraph
                                 variant={'paragraph_md'}
-                                className={`cursor-pointer hover:underline underline-offset-4 transition-all duration-300 ${activeTab === 3 ? 'underline' : 'text-Gray'}`}
+                                className={`cursor-pointer hover:underline underline-offset-4 transition-all duration-300 ${activeTab === 3 ? 'underline' : 'text-black/30'}`}
                                 text="Virtual Reality"
                                 active={activeTab === '3'}
                                 onClick={() => handleTabChange(3)}
                             />
                             <Paragraph
                                 variant={'paragraph_md'}
-                                className={`cursor-pointer hover:underline underline-offset-4 transition-all duration-300 ${activeTab === 2 ? 'underline' : 'text-Gray'}`}
+                                className={`cursor-pointer hover:underline underline-offset-4 transition-all duration-300 ${activeTab === 2 ? 'underline' : 'text-black/30'}`}
                                 text="Music"
                                 active={activeTab === '2'}
                                 onClick={() => handleTabChange(2)}

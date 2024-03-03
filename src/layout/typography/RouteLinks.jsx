@@ -26,8 +26,6 @@ const RouteLinks = ({ routeLocation, linkTitle, className, title, hoverState, ta
         icon: "bg-white",
         noIcon: "bg-black hover:bg-transparent text-white hover:text-black transition-all hover:border duration-300",
     };
-    // const selectedVariant = variantStyles[variant] || variantStyles.noIcon
-
 
     return (
         <div

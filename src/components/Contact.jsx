@@ -19,15 +19,12 @@ const Contact = () => {
     }
 
     return (
-        <Container title={'Esuola Daniel'} description={"Esuola Daniel's Portfolio Website"}>
+        <Container title={'Esuola ® - Esteemed Creative Developer'} description={"Esuola Daniel's Portfolio Website"}>
             <Section className={'min-h-screen h-fit flex flex-col justify-between bg-Black contact'}>
                 <section className='z-50 lg:space-y-10 bg-[url(`${Daniel}`)]'>
 
                     <div className='lg:space-y-14 space-y-10 mb-20 lg:mb-0'>
-                        <a href="/" rel='noreferrer noopener' className='text-white/50 border border-white/50 hover:border-white hover:bg-white/10 hover:text-white transition-all duration-300 flex items-center space-x-10  px-5 rounded-full w-fit'
-                            data_aos={'fade-left'}
-                            data_aos_delay={'20'}
-                        >
+                        <a href="/" rel='noreferrer noopener' className='text-white/50 border border-white/50 hover:border-white hover:bg-white/10 hover:text-white transition-all duration-300 flex items-center space-x-10  px-5 rounded-full w-fit'>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
                                 <path fillRule="evenodd" d="M7.28 7.72a.75.75 0 0 1 0 1.06l-2.47 2.47H21a.75.75 0 0 1 0 1.5H4.81l2.47 2.47a.75.75 0 1 1-1.06 1.06l-3.75-3.75a.75.75 0 0 1 0-1.06l3.75-3.75a.75.75 0 0 1 1.06 0Z" clipRule="evenodd" />
                             </svg>
@@ -44,7 +41,7 @@ const Contact = () => {
                                     linkTitle={Email.platform}
                                     routeLocation={`mailto: ${Email.mailTo}`}
                                     routeStyleType={'noIcon'}
-                                    className={'text-[#DBD6CA] lg:text-[7rem] text-7xl md:text-Header-md text-Paragraph-md uppercase underline leading-tight header'}
+                                    className={'lg:text-[7rem] text-7xl md:text-Header-md text-Paragraph-md uppercase underline leading-tight header white'}
                                     hoverState={'none'}
                                     targetState={'_blank'}
                                 />
@@ -52,7 +49,7 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    <div className='grid lg:grid-cols-2 space-y-3 lg:space-y-0 lg:mb-0 mb-20'>
+                    <div className='grid lg:grid-cols-2 space-y-14 lg:space-y-0 lg:mb-0 mb-20'>
                         <Paragraph
                             data_aos={'fade-in'}
                             data_aos_delay={'20'}
@@ -60,7 +57,7 @@ const Contact = () => {
                             className={'text-White font-thin my-auto'} variant={'paragraph_md'}
                         />
                         <div className='w-full ml-auto flex flex-col justify-end space-y-5 lg:w-1/2'>
-                            <SocialMedias className='text-White'/>
+                            <SocialMedias className='text-White' />
                         </div>
                     </div>
 

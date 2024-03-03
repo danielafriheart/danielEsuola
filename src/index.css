@@ -1,10 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/manrope');
-@import url('https://fonts.cdnfonts.com/css/inter');
-@import url('https://fonts.cdnfonts.com/css/clash-display');
 @import url('https://fonts.cdnfonts.com/css/druk-wide-bold');
-@import url('https://fonts.cdnfonts.com/css/raleway-5');
-/* Apercu Bold */
-@import url(https://db.onlinewebfonts.com/c/53dfbbcf0e4d38cc847ccd1e8fa25c53?family=Apercu+Bold);
 /* Apercu Regular */
 @import url(https://db.onlinewebfonts.com/c/0a086e32e41c5e5960b26626757f07f3?family=Apercu+Regular);
 
@@ -14,7 +8,6 @@
 @tailwind utilities;
 
 * {
-  /* font-family: 'Manrope', sans-serif; */
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -26,7 +19,6 @@
 
 ::selection {
   background: none;
-  /* color: #8E93FF; */
   color: #800020;
 }
 
@@ -34,9 +26,12 @@ body {
   scroll-snap-type: y mandatory;
   overflow-x: hidden;
   font-size: clamp(1.125rem, 2vw, 0.9rem) !important;
-  /* background-color: #E1DFDD; */
   background-color: #DBD6CA;
+  
   font-family: "Apercu Regular";
+}
+.white{
+  color: #DBD6CA;
 }
 
 html::-webkit-scrollbar {

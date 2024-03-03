@@ -8,7 +8,7 @@ import Container from '../layout/container/Container'
 
 const Works = () => {
     return (
-        <Container title={'Esuola ® - esteemed FullStack Developer'} description={"Esuola Daniel's Portfolio Website"}>
+        <Container  title={'Esuola ® - Esteemed Creative Developer'} description={"Esuola Daniel's Portfolio Website"}>
 
             <Section className={'min-h-fit lg:h-fit md:h-[70dvh] flex flex-col justify-center'}>
                 <div className='flex flex-col justify-center lg:space-y-6 space-y-8'>

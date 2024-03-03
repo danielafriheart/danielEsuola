@@ -40,7 +40,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className='grid lg:grid-cols-2 space-y-3 lg:space-y-0 lg:mb-0 mb-20'>
+                    <div className='grid lg:grid-cols-2 space-y-14 lg:space-y-0 lg:mb-0 mb-20'>
                         <Paragraph
                             data_aos={'fade-in'}
                             data_aos_delay={'20'}
