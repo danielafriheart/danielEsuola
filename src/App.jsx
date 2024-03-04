@@ -11,7 +11,6 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 import ProjectDetail from './views/project/ProjectDetail'
 import { Analytics } from "@vercel/analytics/react"
 import Preloader from './components/Preloader'
-import ShareWebsite from './components/ShareWebsite'
 AOS.init();
 
 const App = () => {
@@ -29,25 +28,15 @@ const App = () => {
   })
 
   const [loading, setLoading] = useState(true); // Initially set to true
-
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        // Perform your asynchronous operation here, for example fetching data
-        // Replace the setTimeout with your actual asynchronous operation
-        await fetch('https://res.cloudinary.com/dnzi0xxtx/image/upload/v1684072609/Daniel/unsplash_5f68N0n4Ef8_qybid5.png'); // Example fetch operation
-        // Once the operation is completed, set loading to false
-        setLoading(false);
-      } catch (error) {
-        // Handle any errors
-        console.error('Error fetching data:', error);
-        setLoading(false); // In case of error, still set loading to false
-      }
+    const simulateAsyncTasks = async () => {
+      // Simulate asynchronous tasks
+      await new Promise(resolve => setTimeout(resolve, 2000)); // Simulating some task taking 2 seconds
+      setLoading(false); // Once tasks are completed, set loading to false
     };
-    // Call the async function
-    fetchData();
-  }, []); // Empty dependency array means this effect runs only once, similar to componentDidMount()
 
+    simulateAsyncTasks();
+  }, []);
 
   return (
     <>
@@ -58,7 +47,6 @@ const App = () => {
           :
           <>
             {!isContactPage && <NavBar />}
-            {/* <ShareWebsite /> */}
             <Routes>
               <Route path='/' element={<About />} />
               <Route path='/projects' element={<Works />} />
@@ -68,7 +56,6 @@ const App = () => {
               <Route path='*' element={<Error />} />
             </Routes>
             {!isContactPage && <Footer />}
-
           </>
       }
     </>

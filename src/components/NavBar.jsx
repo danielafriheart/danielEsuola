@@ -8,7 +8,7 @@ const Example = () => {
 
     const pageroute = [
         {
-            name: 'Projects ,',
+            name: 'Projects,',
             description: 'Get a better understanding of your traffic',
             href: '/projects',
         },
@@ -26,7 +26,7 @@ const Example = () => {
             <header className={'lg:px-20 md:p-10 p-5 md:pt-10 flex items-center justify-between'}  aria-label="Global">
 
                 <NavLink to={"/"} className="flex items-center gap-3 text-background ">
-                    <Paragraph text={'Esuola Daniel'} variant={'base'} />
+                    <Paragraph text={'Esuola Daniel'} variant={'caption'} />
                 </NavLink>
 
                 <Popover.Group className="flex gap-x-3">
@@ -37,7 +37,7 @@ const Example = () => {
                             routeLocation={page.href}
                             routeStyleType={'noIcon'}
                             hoverState={`${location.pathname === page.href ? 'always' : 'hover'}`}
-                            variant={'base'}
+                            variant={'caption'}
                         />
                     ))}
                 </Popover.Group>
@@ -47,7 +47,7 @@ const Example = () => {
                     routeLocation={'mailto:esuoladaniel002@gmail.com'}
                     routeStyleType={'noIcon'}
                     hoverState={`always`}
-                    variant={'base'}
+                    variant={'caption'}
                     className={'lg:flex md:flex hidden'}
                 />
             </header>

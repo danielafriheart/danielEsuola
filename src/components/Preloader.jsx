@@ -1,26 +1,55 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import HashLoader from "react-spinners/HashLoader";
 import Container from '../layout/container/Container';
 import Header from '../layout/typography/Header';
 import Paragraph from '../layout/typography/Paragraph';
+import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 
 export default function Preloader() {
     const date = new Date();
     const year = date.getFullYear();
+
+    const count = useMotionValue(0);
+    const rounded = useTransform(count, latest => Math.round(latest));
+
+    const [loading, setLoading] = React.useState(true);
+
+    useEffect(() => {
+        const controls = animate(count, 100);
+
+        // Stop animation when component unmounts
+        return () => controls.stop();
+    }, []);
+
+    useEffect(() => {
+        const unsubscribe = count.onChange(value => {
+            if (value >= 100) {
+                setLoading(false); // Once the counter animation reaches 100, set loading to false
+            }
+        });
+
+        // Unsubscribe from motion value changes when component unmounts
+        return () => unsubscribe();
+    }, [count]);
 
     return (
         <Container title={'Loading'} description={"Esuola Daniel's Portfolio Website"} className={'cursor-wait bg-Black'} >
             <section className='w-full h-screen top-0'>
                 <div className="w-[85vw] sm:w-[95vw] lg:w-[90vw] mx-auto flex flex-col justify-between py-20 h-full">
                     <div className='text-right'>
-                        <Paragraph text={'Daniel Esuola'} className={'text-White header'} variant={'paragraph'}/>
-                        <Paragraph text={`Portfolio  © ${year}`} className={'text-White header'} variant={'paragraph'}/>
+                        <Paragraph text={'Daniel Esuola'} className={'text-White header'} variant={'paragraph'} />
+                        <Paragraph text={`Portfolio  © ${year}`} className={'text-White header'} variant={'paragraph'} />
                     </div>
                     <div>
-                        <Paragraph text={'"A journey of Creativity & Exploration"'} className={'text-White header'} variant={'paragraph'} />
+                    </div>
+                    <div>
+                        <Paragraph text={'"A journey of Creativity & Exploration"'} className={'text-White header lg:hidden flex'} variant={'paragraph'} />
+                        <motion.div className='header text-Header text-White'>
+                            {rounded}
+                        </motion.div>
                     </div>
                 </div>
             </section>
         </Container>
-    )
+    );
 }

@@ -7,6 +7,7 @@ import Container from '../layout/container/Container'
 import Hero from '../components/Hero'
 import Perspective from './pages/Perspective'
 import Awards from './pages/Awards'
+// import SkillTags from '../components/SkillTags'
 
 
 const About = () => {
@@ -14,6 +15,7 @@ const About = () => {
     return (
         <Container title={'Esuola ® - Esteemed Creative Developer'} description={"Esuola Daniel's Portfolio Website"} className={'space-y-24'}>
             <Hero />
+            {/* <SkillTags/> */}
             <Gallery />
             <Perspective />
             <Interests />

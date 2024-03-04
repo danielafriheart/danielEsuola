@@ -16,15 +16,14 @@
   /* outline: dashed 1px gray; */
 }
 
-::selection {
+::selection {  
   background: none;
-  color: #800020;
+  color: #9900ff;
 }
 
 body {
   scroll-snap-type: y mandatory;
   overflow-x: hidden;
-  font-size: clamp(1.125rem, 2vw, 0.9rem) !important;
   background-color: #DBD6CA;
   
   font-family: "Apercu Regular";

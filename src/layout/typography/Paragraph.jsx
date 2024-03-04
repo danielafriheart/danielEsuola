@@ -19,7 +19,7 @@ const Paragraph = ({ text, className, variant, trailingText, greyText, onClick, 
 
     return (
         <p
-            className={`${selectedVariant} ${className} space-x-4`}
+            className={`${selectedVariant} ${className} space-x-4 text-wrap lg:text-pretty md:text-balance`}
             onClick={onClick}
         >
             {text}

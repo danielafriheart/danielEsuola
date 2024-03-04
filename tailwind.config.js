@@ -19,7 +19,7 @@ export default {
         "Paragraph-sm": '1.6rem', // equivalent to 26px
         "Paragraph-md": '2rem', // equivalent to 32px
         "Paragraph": '2.5rem', // equivalent to 40px
-        "Header-md": '3.25rem',     // equivalent to 52px
+        "Header-md": '3rem',     // equivalent to 52px
         "Header": '5rem',     // equivalent to 64px
       },
     },
