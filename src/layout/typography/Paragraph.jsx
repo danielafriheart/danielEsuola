@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Paragraph = ({ text, className, variant, trailingText, greyText, onClick, data_aos_delay }) => {
-
     /* The `variantStyles` object is defining different styling options for the `Paragraph` component. Each
     key-value pair represents a different variant of the paragraph's font size. The keys (`base`,
     `caption`, `label`, `paragraph`) represent the variant names, and the values (`1rem`, `1.125rem`,
@@ -10,7 +9,7 @@ const Paragraph = ({ text, className, variant, trailingText, greyText, onClick, 
     const variantStyles = {
         base: "text-[1rem]leading-[22px] font-normal",   // equivalent to 16px
         caption: "text-[1.125rem]",  // equivalent to 18px
-        label: "lg:text-[1.5rem] md:text-[1.25rem] text-Base font-normal",  // equivalent to 24px
+        label: "lg:text-[1.5rem] md:text-[1.25rem] text-Paragraph-sm",  // equivalent to 24px
         paragraph: "lg:text-[2.5rem] md:text-Paragraph-md text-Paragraph-sm", // equivalent to 40px
         paragraph_md: "lg:text-Paragraph-md md:text-Paragraph-sm text-Paragraph-sm", // equivalent to 32px
         header: "lg:text-[6rem] text-6xl leading-tight md:text-Header-md text-Paragraph-md space-x-4 font-normal flex-wrap", // equivalent to 32px
