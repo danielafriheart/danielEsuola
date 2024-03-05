@@ -8,7 +8,6 @@ const ThreeColumnGrid = ({ caption, greyText, btnText, paragrahText, href, trail
             <div><Paragraph
                 variant={'base'}
                 text={caption}
-                className={'font-thin'}
             /></div>
 
             <section className='grid lg:grid-cols-[2fr,1fr] lg:space-y-0 space-y-10'>

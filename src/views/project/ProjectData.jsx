@@ -1,4 +1,5 @@
 const projectsData = [
+
     {
         id: 1,
         name: 'Foodies Delight',
@@ -18,6 +19,7 @@ const projectsData = [
             "one": "https://res.cloudinary.com/dnzi0xxtx/image/upload/v1708881792/Daniel/MacBook_Pro_16__-_1_ztsshg.png"
         }
     },
+
     {
         id: 2,
         name: 'iWallet',
@@ -27,8 +29,8 @@ const projectsData = [
         industry: 'Financial Technology',
         client: 'Booking Corp',
         writeUp: {
-            'header': 'Fintech Dello Banking App. New Way to Empower Life',
-            'article': 'Revolutionizing Banking: Enhancing User Experience with iWallet ',
+            'header': 'iWallet®',
+            'article': 'Revolutionizing Banking Experience with iWallet ',
             'content': 'In an era where seamless digital experiences define user expectations, the Dello Fintech Banking App emerges as a beacon of innovation in the financial technology landscape. This case study delves into the user experience (UX) design journey undertaken to transform conventional banking interactions into intuitive, efficient, and user-centric experiences.',
             'content_1': 'As traditional banking institutions grapple with the evolving demands of a digital-savvy clientele, Dello steps forward with a visionary approach to redefine how users engage with their financial resources. The intersection of cutting-edge technology, user-centered design principles.'
         },
@@ -37,6 +39,7 @@ const projectsData = [
             "two": "https://res.cloudinary.com/dnzi0xxtx/image/upload/v1671144328/samples/imagecon-group.jpg"
         }
     },
+    
     {
         id: 3,
         name: 'Prime Properties',

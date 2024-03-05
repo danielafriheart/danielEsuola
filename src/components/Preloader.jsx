@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react';
-import HashLoader from "react-spinners/HashLoader";
 import Container from '../layout/container/Container';
-import Header from '../layout/typography/Header';
 import Paragraph from '../layout/typography/Paragraph';
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 

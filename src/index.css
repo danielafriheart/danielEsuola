@@ -1,6 +1,7 @@
+/* DrukWide */
 @import url('https://fonts.cdnfonts.com/css/druk-wide-bold');
-/* Apercu Regular */
-@import url(https://db.onlinewebfonts.com/c/0a086e32e41c5e5960b26626757f07f3?family=Apercu+Regular);
+/* MontSerrat */
+@import url('https://fonts.cdnfonts.com/css/montserrat');
 
 @tailwind base;
 @tailwind components;
@@ -16,17 +17,12 @@
   /* outline: dashed 1px gray; */
 }
 
-::selection {  
-  background: none;
-  color: #9900ff;
-}
-
 body {
   scroll-snap-type: y mandatory;
   overflow-x: hidden;
   background-color: #DBD6CA;
   
-  font-family: "Apercu Regular";
+  font-family: 'Montserrat', sans-serif;
 }
 .white{
   color: #DBD6CA;
@@ -60,7 +56,6 @@ h1 {
 
 .header {
   font-family: 'Druk Wide Bold', sans-serif;
-
 }
 
 @keyframes reveal {

@@ -7,7 +7,7 @@ import projectsData from './ProjectData'; // Import projectsData
 const Projects = () => {
     return (
         <Section>
-            <section className='lg:space-y-24 space-y-10'>
+            <section className='lg:space-y-24 space-y-20'>
                 {
                     projectsData.map(project => (
                         <div key={project.id}>

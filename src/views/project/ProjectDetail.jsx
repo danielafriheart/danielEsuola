@@ -49,12 +49,11 @@ const ProjectDetail = () => {
           }
         </div>
       </Section>
+
       {/* Gallery Area ===>>>>>>>>>> */}
-      <Section className={'space-y-10'}>
-        <div className='grid lg:grid-cols-2 lg:space-x-10 lg:space-y-0 space-y-10'>
+      <Section className={'space-y-20'}>
           <MediaCover imageSrc={project.gallery.one} customHeight={'70vh'} />
           <MediaCover imageSrc={project.gallery.two} customHeight={'70vh'} />
-        </div>
       </Section>
 
       <DesignSuccess />
