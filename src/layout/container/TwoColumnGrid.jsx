@@ -3,12 +3,11 @@ import Paragraph from '../typography/Paragraph';
 import Section from './Section';
 import Header from '../typography/Header';
 
-const TwoColumnGrid = ({ caption, greyText, children, paragrahText, href, trailingText, variant, header }) => {
+const TwoColumnGrid = ({ caption, greyText, children, paragrahText, trailingText, variant, header }) => {
   return (
     <Section className='grid lg:grid-cols-[1fr,4fr] lg:gap-0 gap-5'>
       <div>
         <Paragraph
-          data_aos_delay={'100'}
           variant={'base'}
           text={caption}
         />
@@ -24,7 +23,7 @@ const TwoColumnGrid = ({ caption, greyText, children, paragrahText, href, traili
           trailingText={trailingText}
         />
 
-        {children && <div className='mt-20 space-y-10'>{children}</div>}
+        {children && <div className='lg:mt-20 mt-10 space-y-10'>{children}</div>}
       </div>
 
     </Section>

@@ -4,8 +4,6 @@ import Card from '@mui/joy/Card';
 import CardCover from '@mui/joy/CardCover';
 import CardContent from '@mui/joy/CardContent';
 import Typography from '@mui/joy/Typography';
-import { motion } from "framer-motion";
-import { useState } from 'react';
 
 export default function MediaCover({ imageSrc, children, customHeight, className }) {
 
@@ -32,8 +30,9 @@ export default function MediaCover({ imageSrc, children, customHeight, className
                     minWidth: 300,
                     maxWidth: '100%',
                     flexGrow: 1,
-                    p: 3,
-                    backgroundColor: 'transparent'
+                    p: 5,
+                    backgroundColor: 'transparent',
+                    borderRadius: 10
                 }}>
                 <CardCover>
                     <img
@@ -42,6 +41,7 @@ export default function MediaCover({ imageSrc, children, customHeight, className
                         loading="lazy"
                         alt=""
                         className={className}
+                        style={{ maxWidth: '100%', maxHeight: '100%' }} // Added style to remove default zoom
                     />
                 </CardCover>
 

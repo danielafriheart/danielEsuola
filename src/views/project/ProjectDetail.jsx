@@ -8,6 +8,9 @@ import Error from '../../views/Error';
 import MediaCover from '../../components/MediaCard';
 import DesignSuccess from '../../components/DesignSuccess';
 import Container from '../../layout/container/Container';
+import TwoColumnGrid from '../../layout/container/TwoColumnGrid';
+import RouteLinks from '../../layout/typography/RouteLinks';
+import Button from '../../layout/container/Button';
 
 const ProjectDetail = () => {
   const { projectId } = useParams();
@@ -19,7 +22,7 @@ const ProjectDetail = () => {
 
   return (
     <Container title={'Esuola Daniel'} description={"Esuola Daniel's Portfolio Website"}>
-      <Section className={'lg:space-y-24 space-y-10'}>
+      <Section className={'lg:space-y-10 space-y-10'}>
         <div className='flex flex-col justify-center lg:space-y-10 space-y-10 '>
           <header className='flex gap-10'>
             <div>
@@ -34,29 +37,59 @@ const ProjectDetail = () => {
         </div>
 
         <div className=''>
-          <Header leadingText={project.writeUp.header} className={'uppercase'}/>
+          <Header leadingText={project.name} className={'uppercase'} />
         </div>
 
-        <MediaCover imageSrc={project.imageUrl} customHeight={'70vh'} />
+        <MediaCover imageSrc={project.projectCover} customHeight={'85vh'} />
 
-        <div className='mx-auto lg:w-[80vw] space-y-10'>
-          <Header leadingText={project.writeUp.article || "Error:( article for this project isn't available in project data"} className={'text-3xl'}/>
-          <Paragraph variant={'paragraph_md'} text={project.writeUp.content || "Error:( content for this project isn't available in project data"} />
-          {
-            project.writeUp.content_1 ?
-              <Paragraph variant={'paragraph_md'} text={project.writeUp.content_1} />
-              : null
-          }
-        </div>
+        <TwoColumnGrid
+          caption={`(00${project.id})`}
+          variant={'paragraph'}
+          paragrahText={project.writeUp}
+        >
+
+          <RouteLinks
+            linkTitle={"Visit the website's live version"}
+            routeLocation={''}
+            routeStyleType={'noIcon'}
+            variant={'caption'}
+          />
+
+          <div className='lg:w-[60%] pt-10'>
+            <ul>
+              <li className='flex items-center py-6 justify-between border-black/30 border-t'>
+                <Paragraph text={'Client'} variant={'caption'} />
+                <Paragraph text={project.client} variant={'caption'} />
+              </li>
+              <li className='flex items-center py-6 justify-between border-black/30 border-y'>
+                <Paragraph text={'Year'} variant={'caption'} />
+                <Paragraph text={project.year} variant={'caption'} />
+              </li>
+              <li className='flex items-center py-6 justify-between border-black/30 border-b'>
+                <Paragraph text={'Services'} variant={'caption'} />
+                <Paragraph text={project.services} variant={'caption'} />
+              </li>
+            </ul>
+          </div>
+
+        </TwoColumnGrid>
+
       </Section>
 
       {/* Gallery Area ===>>>>>>>>>> */}
-      <Section className={'space-y-20'}>
-          <MediaCover imageSrc={project.gallery.one} customHeight={'70vh'} />
-          <MediaCover imageSrc={project.gallery.two} customHeight={'70vh'} />
+      <Section className={'space-y-10'}>
+        {project.gallery.map((image, id) => (
+          <MediaCover key={id} imageSrc={image} customHeight={'85vh'} />
+        ))}
       </Section>
 
-      <DesignSuccess />
+      <TwoColumnGrid>
+        <Paragraph text={"Looking to grow your business through the power of great digital design? "} variant={'paragraph'} className={'lg:w-[75%]'} />
+        <Paragraph text={"Reach out to get the conversation started about your digital design needs. "} variant={'paragraph'} className={'lg:w-[75%]'} />
+        <div>
+          <Button btnText={'Esuoladaniel002@gmail.com'} variant={'grey'} href={'mailto:esuoladaniel002@gmail.com'} />
+        </div>
+      </TwoColumnGrid>
     </Container>
   );
 };

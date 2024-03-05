@@ -16,7 +16,7 @@ const Footer = () => {
     }
 
     return (
-        <footer className='lg:pt-20'>
+        <footer className='pt-20'>
             <Section className={'flex flex-col justify-between h-fit space-y-24'}>
                 <section className='z-50 lg:space-y-10 h-full'>
 

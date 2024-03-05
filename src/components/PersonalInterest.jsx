@@ -10,7 +10,7 @@ import Header from '../layout/typography/Header';
 
 
 const Interests = () => {
-    const [activeTab, setActiveTab] = useState(3);
+    const [activeTab, setActiveTab] = useState(2);
 
     const handleTabChange = (newTab) => {
         setActiveTab(newTab);

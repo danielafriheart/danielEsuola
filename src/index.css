@@ -20,12 +20,12 @@
 body {
   scroll-snap-type: y mandatory;
   overflow-x: hidden;
-  background-color: #DBD6CA;
+  background-color: #E1DFDD;
   
   font-family: 'Montserrat', sans-serif;
 }
 .white{
-  color: #DBD6CA;
+  color: #FFFFFF;
 }
 
 html::-webkit-scrollbar {

@@ -32,7 +32,7 @@ const Awards = () => {
                     <li className='mb-8'>
                         <Paragraph
                             text={award.name}
-                            variant={'paragraph'}
+                            variant={'paragraph_md'}
                         />
                         <Paragraph
                             text={award.caption}

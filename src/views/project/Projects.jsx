@@ -13,9 +13,9 @@ const Projects = () => {
                         <div key={project.id}>
                             <Link to={`/projects/${project.id}`}>
                                 <ActionAreaCard
-                                    src={project.imageUrl}
+                                    src={project.projectCover}
                                     caption={project.name}
-                                    label={project.writeUp.article}
+                                    label={project.description}
                                     year={project.year}
                                     customHeight={'85vh'}
                                 />
