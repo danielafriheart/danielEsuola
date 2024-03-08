@@ -40,7 +40,7 @@ const Contact = () => {
                                     linkTitle={Email.platform}
                                     routeLocation={`mailto: ${Email.mailTo}`}
                                     routeStyleType={'noIcon'}
-                                    className={'lg:text-[7rem] text-7xl md:text-Header-md text-Paragraph-md uppercase underline leading-tight header white'}
+                                    className={'lg:text-[6rem] text-7xl md:text-Header-md text-Paragraph-md uppercase underline leading-tight header white'}
                                     hoverState={'none'}
                                     targetState={'_blank'}
                                 />
@@ -61,7 +61,6 @@ const Contact = () => {
                     </div>
 
                 </section>
-                <Paragraph trailingText={'2024 Esuola Daniel Okikiola'} variant={'base'} className={'font-thin lg:mt-auto lg:my-0 my-5 text-[#DBD6CA]'} />
             </Section>
         </Container >
     )

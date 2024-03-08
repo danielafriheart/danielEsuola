@@ -6,8 +6,8 @@ import Projects from '../views/project/Projects'
 import Mystory from '../components/MyStory'
 import Container from '../layout/container/Container'
 import TwoColumnGrid from '../layout/container/TwoColumnGrid'
-import ThreeColumnGrid from '../layout/container/ThreeColumnGrid'
 import Button from '../layout/container/Button'
+import ReachOut from '../components/email/ReachOut'
 
 const Works = () => {
     return (
@@ -15,9 +15,9 @@ const Works = () => {
 
             <Section className={'min-h-fit lg:h-fit md:h-[70dvh] flex flex-col justify-center'}>
                 <div className='flex flex-col justify-center lg:space-y-6 space-y-8'>
-                    <Paragraph text={"Work"} variant={'label'} className={'text-right'} />
-                    <Header leadingText={"SELECTED PROJECTS"} className={'uppercase lg:text-[7rem] md:text-[5rem]'} />
-                    <Header leadingText={"(2018 - 2024)"} className={'uppercase lg:text-[7rem] md:text-[5rem]'} />
+                    <Paragraph text={"Work"} variant={'caption'} className={'text-right'} />
+                    <Header leadingText={"Selected Work"} className={'uppercase'} />
+                    <Header leadingText={"(2018 - 2024)"} className={'uppercase'} />
                     <span className='lg:w-[50vw]'>
                         <Paragraph
                             text={"See how I've turned ideas into reality. Dive into the stories of successful product designs that make a difference."} variant={'paragraph_md'} />
@@ -26,16 +26,7 @@ const Works = () => {
                 </div>
             </Section>
             <Projects />
-            {/* <Mystory /> */}
-
-            <TwoColumnGrid>
-                <Paragraph text={"Looking to grow your business through the power of great digital design? "} variant={'paragraph'} className={'lg:w-[75%]'} />
-                <Paragraph text={"Reach out to get the conversation started about your digital design needs. "} variant={'paragraph'} className={'lg:w-[75%]'} />
-                <div>
-                    <Button btnText={'Esuoladaniel002@gmail.com'} variant={'grey'} href={'mailto:esuoladaniel002@gmail.com'} />
-                </div>
-            </TwoColumnGrid>
-
+            <ReachOut />
         </Container>
     )
 }

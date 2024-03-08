@@ -13,7 +13,7 @@ const ThreeColumnGrid = ({ caption, greyText, btnText, paragrahText, href, trail
             <section className='grid lg:grid-cols-[2fr,1fr] lg:space-y-0 space-y-10'>
                 <div>
                     <Paragraph
-                        variant={'paragraph'} text={paragrahText} greyText={greyText} trailingText={trailingText}
+                        variant={'paragraph_md'} text={paragrahText} greyText={greyText} trailingText={trailingText}
                     /></div>
 
                 <div className='lg:text-right'>

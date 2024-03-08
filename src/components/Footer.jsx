@@ -31,7 +31,7 @@ const Footer = () => {
                                     linkTitle={Email.platform}
                                     routeLocation={`mailto: ${Email.mailTo}`}
                                     routeStyleType={'noIcon'}
-                                    className={'lg:text-[7rem] text-7xl md:text-Header-md text-Paragraph-md uppercase underline leading-tight header'}
+                                    className={'lg:text-[6rem] text-7xl md:text-Header-md text-Paragraph-md uppercase underline leading-tight header'}
                                     hoverState={'none'}
                                     targetState={'_blank'}
                                 />
@@ -41,8 +41,6 @@ const Footer = () => {
 
                     <div className='grid lg:grid-cols-2 space-y-14 lg:space-y-0 lg:mb-0 mb-20'>
                         <Paragraph
-                            data_aos={'fade-in'}
-                            data_aos_delay={'20'}
                             text={"Send me an email or get in touch with me on any of my socials. Let's start creating magic."}
                             variant={'paragraph_md'}
                             className={'my-auto'}
@@ -53,7 +51,6 @@ const Footer = () => {
                     </div>
 
                 </section>
-                <Paragraph trailingText={'2024 Esuola Daniel Okikiola'} className={'font-thin lg:mt-auto lg:my-0 my-5'} />
             </Section>
         </footer>
     )

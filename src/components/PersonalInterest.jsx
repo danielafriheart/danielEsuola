@@ -31,7 +31,7 @@ const Interests = () => {
                 <div className='lg:flex justify-between place-items-center space-y-3'>
                     <Header
                         leadingText={'PERSONAL INTEREST'}
-                        className={'lg:w-fit lg:text-[6rem] md:text-[5rem]'}
+                        className={'lg:w-fit'}
                     />
                     <Paragraph
                         text={'"CLICK & DRAG AROUND"'}
@@ -45,21 +45,21 @@ const Interests = () => {
                     <section className='flex flex-col justify-evenly h-full'>
                         <div className='w-full flex flex-col lg:space-y-2 lg:my-0  my-10 lg:mb-0 '>
                             <Paragraph
-                                variant={'paragraph_md'}
+                                variant={'label'}
                                 className={`cursor-pointer hover:underline underline-offset-4 transition-all duration-300 ${activeTab === 1 ? 'underline' : 'text-black/30'}`}
                                 text="Gaming"
                                 active={activeTab === '1'}
                                 onClick={() => handleTabChange(1)}
                             />
                             <Paragraph
-                                variant={'paragraph_md'}
+                                variant={'label'}
                                 className={`cursor-pointer hover:underline underline-offset-4 transition-all duration-300 ${activeTab === 3 ? 'underline' : 'text-black/30'}`}
                                 text="Virtual Reality"
                                 active={activeTab === '3'}
                                 onClick={() => handleTabChange(3)}
                             />
                             <Paragraph
-                                variant={'paragraph_md'}
+                                variant={'label'}
                                 className={`cursor-pointer hover:underline underline-offset-4 transition-all duration-300 ${activeTab === 2 ? 'underline' : 'text-black/30'}`}
                                 text="Music"
                                 active={activeTab === '2'}

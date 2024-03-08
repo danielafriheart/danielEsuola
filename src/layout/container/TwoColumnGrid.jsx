@@ -12,18 +12,18 @@ const TwoColumnGrid = ({ caption, greyText, children, paragrahText, trailingText
           text={caption}
         />
       </div>
-      <div>
-        {header ? <Header leadingText={header} className={'lg:w-fit lg:text-[6rem] md:text-[5rem]'}/> : ''}
+      <div className='gap-y-10 flex flex-col'>
+        {header && <Header leadingText={header} className={'lg:w-fit'} />}
+        {paragrahText &&
+          <Paragraph
+            variant={variant}
+            text={paragrahText}
+            greyText={greyText}
+            trailingText={trailingText}
+          />
+        }
 
-        <Paragraph
-          data_aos_delay={'200'}
-          variant={variant}
-          text={paragrahText}
-          greyText={greyText}
-          trailingText={trailingText}
-        />
-
-        {children && <div className='lg:mt-20 mt-10 space-y-10'>{children}</div>}
+        {children && <div className='space-y-10'>{children}</div>}
       </div>
 
     </Section>

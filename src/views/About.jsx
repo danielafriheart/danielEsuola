@@ -19,7 +19,7 @@ const About = () => {
             <Gallery />
             <Perspective />
             <Interests />
-            <TwoColumnGrid caption={''} variant={'paragraph'} paragrahText={"When I’m not on my computer, building or exploring new web experiences, I’m probably playing games or making videos for YouTube."} />
+            <TwoColumnGrid caption={''} variant={'paragraph_md'} paragrahText={"When I’m not on my computer, building or exploring new web experiences, I’m probably playing games or making videos for YouTube."} />
             {/* <Pictures /> */}
             <Awards />
             <DesignSuccess />

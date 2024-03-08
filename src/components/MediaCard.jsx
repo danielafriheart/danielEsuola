@@ -44,19 +44,13 @@ export default function MediaCover({ imageSrc, children, customHeight, className
                         style={{ maxWidth: '100%', maxHeight: '100%' }} // Added style to remove default zoom
                     />
                 </CardCover>
-
-                <CardCover />
-
-                <CardCover />
-                <CardContent>
-                    <Typography
-                        level="body-lg"
-                        fontWeight="lg"
-                        textColor="#fff"
-                        mb='auto'
-                    >
-                        {children}
-                    </Typography>
+                <CardContent
+                    sx={{
+                        display: 'grid',
+                        placeContent: 'center'
+                    }}
+                >
+                    {children}
                 </CardContent>
             </Card>
         </Box>

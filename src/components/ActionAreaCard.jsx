@@ -18,9 +18,8 @@ const ActionAreaCard = ({ caption, label, year, customHeight, src }) => {
     Finally, it logs the message 'Animating!' to the console. */
     if (e.type === 'mouseenter') {
       // Mouse entering, add the rotate-45 class
-      animateTarget.classList.add('rotate-45', 'bg-white', 'lg:p-5', 'text-black');
-
-      animateTarget.classList.remove('bg-white/30', 'text-white', 'lg:p-4');
+      animateTarget.classList.add('scale-125', 'opacity-100', 'bg-white');
+      // animateTarget.classList.remove('bg-white/30', 'text-white', 'lg:p-4');
 
       /* The code block `} else if (e.type === 'mouseleave') { ... }` is handling the mouse leave event.
       When the mouse leaves the target element, it removes the classes 'rotate-45' and 'lg:p-5' from the
@@ -29,9 +28,8 @@ const ActionAreaCard = ({ caption, label, year, customHeight, src }) => {
       mouse entered. */
     } else if (e.type === 'mouseleave') {
       // Mouse leaving, remove the rotate-45 class
-      animateTarget.classList.remove('rotate-45', 'lg:p-5');
-
-      animateTarget.classList.add('bg-white/30', 'text-white', 'lg:p-4');
+      animateTarget.classList.remove('scale-125', 'opacity-100', 'bg-white');
+      // animateTarget.classList.add('bg-white/30', 'text-white', 'lg:p-4');
     }
   }
 
@@ -44,25 +42,23 @@ const ActionAreaCard = ({ caption, label, year, customHeight, src }) => {
       onMouseLeave={handleAnimate}
     >
       <section className='space-y-5 mb-10 lg:mb-0 md:mb-0'>
-        <div className='h-full relative z-10'>
 
-          <MediaCard
-            imageSrc={src || img}
-            customHeight={customHeight}
-          >
-            <span className='rounded-full lg:p-4 md:p-3 bg-white/30 w-fit absolute right-5 bottom-5 text-white hover:text-black transition-all duration-300 animate-target hidden lg:flex md:flex'>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
-                <path fillRule="evenodd" d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z" clipRule="evenodd" />
-              </svg>
+        <MediaCard
+          imageSrc={src || img}
+          customHeight={customHeight}
+        >
+          <div className='grid place-content-center my-auto'>
+            <span className='rounded-full w-[120px] h-[120px] transition-all duration-500 animate-target hidden  md:flex lg:grid place-content-center opacity-0 text-sm text-center'>
+              <Paragraph text={'View'} className={'text-sm'}/>
+              <Paragraph text={'Project'} className={'text-sm'}/>
             </span>
-          </MediaCard>
-
-          <div className='flex justify-between lg:w-[80%] mt-5'>
-            <Paragraph variant={'caption'} text={caption} />
-            <Paragraph variant={'caption'} text={label} className={'w-1/2 hidden lg:flex md:flex'}/>
-            <Paragraph variant={'caption'} text={year} />
           </div>
+        </MediaCard>
 
+        <div className='flex justify-between lg:w-[80%] mt-5'>
+          <Paragraph variant={'caption'} text={caption} className={'font-medium'}/>
+          <Paragraph variant={'caption'} text={label} className={'w-1/3 hidden lg:flex md:flex font-medium'} />
+          <Paragraph variant={'caption'} text={year} className={'font-medium'}/>
         </div>
 
       </section>

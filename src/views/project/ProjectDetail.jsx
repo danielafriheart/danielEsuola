@@ -11,6 +11,8 @@ import Container from '../../layout/container/Container';
 import TwoColumnGrid from '../../layout/container/TwoColumnGrid';
 import RouteLinks from '../../layout/typography/RouteLinks';
 import Button from '../../layout/container/Button';
+import ReachOut from '../../components/email/ReachOut';
+// import Button from '';
 
 const ProjectDetail = () => {
   const { projectId } = useParams();
@@ -42,39 +44,40 @@ const ProjectDetail = () => {
 
         <MediaCover imageSrc={project.projectCover} customHeight={'85vh'} />
 
-        <TwoColumnGrid
-          caption={`(00${project.id})`}
-          variant={'paragraph'}
-          paragrahText={project.writeUp}
-        >
-
-          <RouteLinks
-            linkTitle={"Visit the website's live version"}
-            routeLocation={''}
-            routeStyleType={'noIcon'}
-            variant={'caption'}
-          />
-
-          <div className='lg:w-[60%] pt-10'>
-            <ul>
-              <li className='flex items-center py-6 justify-between border-black/30 border-t'>
-                <Paragraph text={'Client'} variant={'caption'} />
-                <Paragraph text={project.client} variant={'caption'} />
-              </li>
-              <li className='flex items-center py-6 justify-between border-black/30 border-y'>
-                <Paragraph text={'Year'} variant={'caption'} />
-                <Paragraph text={project.year} variant={'caption'} />
-              </li>
-              <li className='flex items-center py-6 justify-between border-black/30 border-b'>
-                <Paragraph text={'Services'} variant={'caption'} />
-                <Paragraph text={project.services} variant={'caption'} />
-              </li>
-            </ul>
-          </div>
-
-        </TwoColumnGrid>
-
       </Section>
+
+      <TwoColumnGrid
+        caption={`(00${project.id})`}
+        variant={'paragraph'}
+      >
+        <Paragraph text={project.writeUp} variant={'paragraph_md'} className={'lg:w-[75%]'} />
+
+        <RouteLinks
+          linkTitle={"Visit the website's live version"}
+          routeLocation={project.projectLink}
+          routeStyleType={'noIcon'}
+          variant={'caption'}
+          className={'my-10'}
+          targetState={'_blank'}
+        />
+
+        <div className='lg:w-[70%]'>
+          <ul>
+            <li className='flex items-center py-8 justify-between border-black/30 border-t'>
+              <Paragraph text={'Client'} variant={'caption'} />
+              <Paragraph text={project.client} variant={'caption'} />
+            </li>
+            <li className='flex items-center py-8 justify-between border-black/30 border-y'>
+              <Paragraph text={'Year'} variant={'caption'} />
+              <Paragraph text={project.year} variant={'caption'} />
+            </li>
+            <li className='flex items-center py-8 justify-between border-black/30 border-b'>
+              <Paragraph text={'Services'} variant={'caption'} />
+              <Paragraph text={project.services} variant={'caption'} className={'w-1/2 lg:w-full md:w-full text-right'} />
+            </li>
+          </ul>
+        </div>
+      </TwoColumnGrid>
 
       {/* Gallery Area ===>>>>>>>>>> */}
       <Section className={'space-y-10'}>
@@ -82,14 +85,7 @@ const ProjectDetail = () => {
           <MediaCover key={id} imageSrc={image} customHeight={'85vh'} />
         ))}
       </Section>
-
-      <TwoColumnGrid>
-        <Paragraph text={"Looking to grow your business through the power of great digital design? "} variant={'paragraph'} className={'lg:w-[75%]'} />
-        <Paragraph text={"Reach out to get the conversation started about your digital design needs. "} variant={'paragraph'} className={'lg:w-[75%]'} />
-        <div>
-          <Button btnText={'Esuoladaniel002@gmail.com'} variant={'grey'} href={'mailto:esuoladaniel002@gmail.com'} />
-        </div>
-      </TwoColumnGrid>
+      <ReachOut />
     </Container>
   );
 };

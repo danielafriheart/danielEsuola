@@ -10,19 +10,19 @@ const Hero = () => {
     return (
         <Section className={'h-fit lg:h-fit md:h-[70dvh] flex flex-col justify-center'}>
             <div className='flex flex-col justify-center lg:space-y-6 space-y-8'>
-                    <Paragraph
-                        text={"About"}
-                        variant={'label'}
-                        className={'text-right'} />
+                <Paragraph
+                    text={"About"}
+                    variant={'caption'}
+                    className={'text-right'} />
                 <div>
-                    <Header leadingText={'Esteemed developer'} className={'uppercase lg:text-[7rem] md:text-[5rem]'} />
-                    <Header leadingText={'based in pluto ✼'} className={'uppercase lg:text-[7rem] md:text-[5rem]'} />
+                    <Header leadingText={'Esteemed'} className={'uppercase'} />
+                    <Header leadingText={'developer ✼'} className={'uppercase'} />
+                    <Header leadingText={'based in mars '} className={'uppercase'} />
                 </div>
-
                 <Paragraph
                     text={"I support Designers & Agencies with Creative Development."}
                     variant={'paragraph_md'}
-                    className={'lg:w-[40%]'}
+                    className={'lg:w-[40%] lg:hidden'}
                 />
                 <div>
                     <Button
