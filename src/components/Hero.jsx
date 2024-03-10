@@ -16,12 +16,13 @@ const Hero = () => {
                     className={'text-right'} />
                 <div>
                     <Header leadingText={'Esteemed'} className={'uppercase'} delay={200}/>
-                    <Header leadingText={'developer ✼'} className={'uppercase'} delay={300}/>
-                    <Header leadingText={'based in pluto '} className={'uppercase'} delay={400}/>
+                    <Header leadingText={'developer'} className={'uppercase'} delay={300}/>
+                    <Header leadingText={'based in pluto  ✼ '} className={'uppercase'} delay={400}/>
                 </div>
                 <Paragraph
                     text={"I support Designers & Agencies with Creative Development."}
                     variant={'paragraph_md'}
+                    delay={500}
                     className={'lg:w-[40%] lg:hidden'}
                 />
                 <div>

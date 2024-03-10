@@ -40,7 +40,7 @@ const Button = ({ btnText, href, variant, delay }) => {
         >
             <NavLink
                 to={href}
-                className={`flex items-center space-x-3 py-4 px-10 rounded-full ${selectedVariant}`}
+                className={`flex items-center space-x-3 lg:py-4 py-3 lg:px-10 px-5 rounded-full ${selectedVariant}`}
             >
                 {/* <span>{btnText || 'Button'}</span> */}
                 <Paragraph text={btnText || 'Button'} variant={'caption'}/>
