@@ -31,10 +31,12 @@ const Awards = () => {
                 <ul key={award.name}>
                     <li className='mb-8'>
                         <Paragraph
+                        delay={200}
                             text={award.name}
                             variant={'paragraph_md'}
                         />
                         <Paragraph
+                        delay={300}
                             text={award.caption}
                             variant={'caption'}
                             className={'font-thin mt-2'}

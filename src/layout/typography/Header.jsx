@@ -8,10 +8,13 @@
  */
 import React from 'react'
 
-const Header = ({ leadingText, greyText, trailingText, className }) => {
+const Header = ({ leadingText, greyText, trailingText, className, delay }) => {
 
     return (
         <h1
+            data-aos="fade-in"
+            data-aos-delay={delay}
+            data-aos-easing="ease-in-sine"
             className={`${className} lg:text-[6rem] text-7xl leading-tight md:text-Header-md text-Paragraph-md space-x-4 font-normal text-wrap lg:text-pretty md:text-balance`}>
             {leadingText}
             {greyText && <span className='text-Gray'>{greyText}</span>}

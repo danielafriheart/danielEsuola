@@ -53,7 +53,7 @@ const Contact = () => {
                             data_aos={'fade-in'}
                             data_aos_delay={'20'}
                             text={"Send me an email or get in touch with me on any of my socials. Let's start creating magic."}
-                            className={'text-White font-thin my-auto'} variant={'paragraph_md'}
+                            className={'text-White my-auto'} variant={'paragraph_md'}
                         />
                         <div className='w-full ml-auto flex flex-col justify-end space-y-5 lg:w-1/2'>
                             <SocialMedias className='text-White' />

@@ -41,10 +41,12 @@ export default function Preloader() {
                     <div>
                     </div>
                     <div>
-                        <Paragraph text={'"A journey of Creativity & Exploration"'} className={'text-White header lg:hidden flex'} variant={'paragraph'} />
-                        <motion.div className='header text-Header text-White'>
-                            {rounded}
-                        </motion.div>
+                        <span className='flex items-center'>
+                            <motion.div className='header text-Header text-White'>
+                                {rounded}
+                            </motion.div>
+                            <Paragraph text={"%"} className='header text-Header text-White' />
+                        </span>
                     </div>
                 </div>
             </section>

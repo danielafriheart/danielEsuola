@@ -10,6 +10,7 @@ const TwoColumnGrid = ({ caption, greyText, children, paragrahText, trailingText
         <Paragraph
           variant={'base'}
           text={caption}
+          delay={200}
         />
       </div>
       <div className='gap-y-10 flex flex-col'>
@@ -20,9 +21,9 @@ const TwoColumnGrid = ({ caption, greyText, children, paragrahText, trailingText
             text={paragrahText}
             greyText={greyText}
             trailingText={trailingText}
+            delay={300}
           />
         }
-
         {children && <div className='space-y-10'>{children}</div>}
       </div>
 

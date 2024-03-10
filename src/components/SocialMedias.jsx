@@ -29,7 +29,7 @@ const SocialMediaLinks = ({className}) => (
                 routeLocation={social.href}
                 routeStyleType="icon" // Use double quotes for string literals
                 className={`${className} transition-all duration-300 header`} // Use double quotes for string literals
-                variant="paragraph" // Use double quotes for string literals
+                variant="paragraph_md" // Use double quotes for string literals
                 hoverState="none" // Use double quotes for string literals
                 targetState="_blank" // Use double quotes for string literals
             />

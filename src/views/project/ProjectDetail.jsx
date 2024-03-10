@@ -28,21 +28,21 @@ const ProjectDetail = () => {
         <div className='flex flex-col justify-center lg:space-y-10 space-y-10 '>
           <header className='flex gap-10'>
             <div>
-              <Paragraph variant={'base'} greyText={'Industry'} />
-              <Paragraph variant={'base'} text={project.industry || "Project Industry here"} />
+              <Paragraph variant={'base'} greyText={'Industry'} delay={200}/>
+              <Paragraph variant={'base'} text={project.industry || "Project Industry here"} delay={100}/>
             </div>
             <div>
-              <Paragraph variant={'base'} greyText={'Client'} />
-              <Paragraph variant={'base'} text={project.client || "Project Client here"} />
+              <Paragraph variant={'base'} greyText={'Client'} delay={300}/>
+              <Paragraph variant={'base'} text={project.client || "Project Client here"} delay={200}/>
             </div>
           </header>
         </div>
 
-        <div className=''>
-          <Header leadingText={project.name} className={'uppercase'} />
+        <div>
+          <Header leadingText={project.name} className={'uppercase'} delay={200}/>
         </div>
 
-        <MediaCover imageSrc={project.projectCover} customHeight={'85vh'} />
+        <MediaCover imageSrc={project.projectCover} customHeight={'85vh'} delay={300}/>
 
       </Section>
 
@@ -53,8 +53,8 @@ const ProjectDetail = () => {
         <Paragraph text={project.writeUp} variant={'paragraph_md'} className={'lg:w-[75%]'} />
 
         <RouteLinks
-          linkTitle={"Visit the website's live version"}
-          routeLocation={project.projectLink}
+          linkTitle={`${project.projectLink ? " Visit the website's live version" : "20% Complete"}`}
+          routeLocation={project.projectLink || null}
           routeStyleType={'noIcon'}
           variant={'caption'}
           className={'my-10'}

@@ -29,14 +29,11 @@ const Interests = () => {
 
             <section>
                 <div className='lg:flex justify-between place-items-center space-y-3'>
-                    <Header
-                        leadingText={'PERSONAL INTEREST'}
-                        className={'lg:w-fit'}
-                    />
-                    <Paragraph
-                        text={'"CLICK & DRAG AROUND"'}
-                        variant={'base'}
-                    />
+                    <div>
+                        <Header leadingText={'PERSONAL'} className={'lg:w-fit'} />
+                        <Header leadingText={'INTEREST'} className={'lg:w-fit'} />
+                    </div>
+                    <Paragraph text={'"CLICK & DRAG AROUND"'} variant={'base'} />
                 </div>
             </section>
 
@@ -45,6 +42,7 @@ const Interests = () => {
                     <section className='flex flex-col justify-evenly h-full'>
                         <div className='w-full flex flex-col lg:space-y-2 lg:my-0  my-10 lg:mb-0 '>
                             <Paragraph
+                                delay={200}
                                 variant={'label'}
                                 className={`cursor-pointer hover:underline underline-offset-4 transition-all duration-300 ${activeTab === 1 ? 'underline' : 'text-black/30'}`}
                                 text="Gaming"
@@ -52,6 +50,7 @@ const Interests = () => {
                                 onClick={() => handleTabChange(1)}
                             />
                             <Paragraph
+                                delay={300}
                                 variant={'label'}
                                 className={`cursor-pointer hover:underline underline-offset-4 transition-all duration-300 ${activeTab === 3 ? 'underline' : 'text-black/30'}`}
                                 text="Virtual Reality"
@@ -59,6 +58,7 @@ const Interests = () => {
                                 onClick={() => handleTabChange(3)}
                             />
                             <Paragraph
+                                delay={400}
                                 variant={'label'}
                                 className={`cursor-pointer hover:underline underline-offset-4 transition-all duration-300 ${activeTab === 2 ? 'underline' : 'text-black/30'}`}
                                 text="Music"
@@ -71,7 +71,7 @@ const Interests = () => {
                             <div className='flex flex-col gap-5'>
                                 <Paragraph
                                     className={'header'}
-                                    variant={'paragraph'}
+                                    variant={'paragraph_md'}
                                     text={'Xbox 360 / Playstation'}
                                 />
                                 <Paragraph
@@ -89,7 +89,7 @@ const Interests = () => {
                             <div className='flex flex-col gap-5'>
                                 <Paragraph
                                     className={'header'}
-                                    variant={'paragraph'}
+                                    variant={'paragraph_md'}
                                     text={'An Eclectic Music Taste'}
                                 />
                                 <Paragraph
@@ -103,7 +103,7 @@ const Interests = () => {
                             <div className='flex flex-col gap-5'>
                                 <Paragraph
                                     className={'header'}
-                                    variant={'paragraph'}
+                                    variant={'paragraph_md'}
                                     text={'Vision Pro / Oculus'}
                                 />
                                 <Paragraph

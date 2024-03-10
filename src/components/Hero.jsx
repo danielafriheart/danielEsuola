@@ -15,9 +15,9 @@ const Hero = () => {
                     variant={'caption'}
                     className={'text-right'} />
                 <div>
-                    <Header leadingText={'Esteemed'} className={'uppercase'} />
-                    <Header leadingText={'developer ✼'} className={'uppercase'} />
-                    <Header leadingText={'based in mars '} className={'uppercase'} />
+                    <Header leadingText={'Esteemed'} className={'uppercase'} delay={200}/>
+                    <Header leadingText={'developer ✼'} className={'uppercase'} delay={300}/>
+                    <Header leadingText={'based in pluto '} className={'uppercase'} delay={400}/>
                 </div>
                 <Paragraph
                     text={"I support Designers & Agencies with Creative Development."}
@@ -29,6 +29,7 @@ const Hero = () => {
                         btnText={'Esuoladaniel002@gmail.com'}
                         variant={'grey'}
                         href={'mailto:esuoladaniel002@gmail.com'}
+                        delay={500}
                     />
                 </div>
             </div>

@@ -3,9 +3,8 @@ import Box from '@mui/joy/Box';
 import Card from '@mui/joy/Card';
 import CardCover from '@mui/joy/CardCover';
 import CardContent from '@mui/joy/CardContent';
-import Typography from '@mui/joy/Typography';
 
-export default function MediaCover({ imageSrc, children, customHeight, className }) {
+export default function MediaCover({ imageSrc, children, customHeight, className, delay }) {
 
 
     return (
@@ -24,6 +23,9 @@ export default function MediaCover({ imageSrc, children, customHeight, className
                     height: '50vh', // Use 50vh for small screens
                 },
             }}
+            data-aos="fade-in"
+            data-aos-delay={delay}
+            data-aos-easing="ease-in-sine"
         >
             <Card component="li"
                 sx={{

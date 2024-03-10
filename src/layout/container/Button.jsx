@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom';
 import Paragraph from '../typography/Paragraph';
 
-const Button = ({ btnText, href, variant }) => {
+const Button = ({ btnText, href, variant, delay }) => {
     const handleAnimate = (e) => {
         const buttonDiv = e.currentTarget;
         const animateTarget = buttonDiv.querySelector('.animate-target');
@@ -34,8 +34,9 @@ const Button = ({ btnText, href, variant }) => {
             type='button'
             onMouseEnter={handleAnimate}
             onMouseLeave={handleAnimate}
-            data_aos={'fade-in'}
-            data_aos_delay={'0'}
+            data-aos="fade-in"
+            data-aos-delay={delay}
+            data-aos-easing="ease-in-sine"
         >
             <NavLink
                 to={href}

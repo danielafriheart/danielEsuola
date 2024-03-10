@@ -3,10 +3,7 @@ import Section from '../layout/container/Section'
 import Paragraph from '../layout/typography/Paragraph'
 import Header from '../layout/typography/Header'
 import Projects from '../views/project/Projects'
-import Mystory from '../components/MyStory'
 import Container from '../layout/container/Container'
-import TwoColumnGrid from '../layout/container/TwoColumnGrid'
-import Button from '../layout/container/Button'
 import ReachOut from '../components/email/ReachOut'
 
 const Works = () => {
@@ -16,13 +13,9 @@ const Works = () => {
             <Section className={'min-h-fit lg:h-fit md:h-[70dvh] flex flex-col justify-center'}>
                 <div className='flex flex-col justify-center lg:space-y-6 space-y-8'>
                     <Paragraph text={"Work"} variant={'caption'} className={'text-right'} />
-                    <Header leadingText={"Selected Work"} className={'uppercase'} />
-                    <Header leadingText={"(2018 - 2024)"} className={'uppercase'} />
-                    <span className='lg:w-[50vw]'>
-                        <Paragraph
-                            text={"See how I've turned ideas into reality. Dive into the stories of successful product designs that make a difference."} variant={'paragraph_md'} />
-                    </span>
-
+                    <Header leadingText={"Selected Work"} className={'uppercase'} delay={200} />
+                    <Header leadingText={"(2023 - 2024)"} className={'uppercase'} delay={300} />
+                    <Paragraph text={"See how I've turned ideas into reality. Dive into the stories of successful product designs that make a difference."} className={'lg:w-[50vw]'} variant={'paragraph_md'} delay={500} />
                 </div>
             </Section>
             <Projects />
