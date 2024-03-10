@@ -39,7 +39,7 @@ const Footer = () => {
                             ))}
                         </div>
                     </div>
-
+ 
                     <div className='grid lg:grid-cols-2 space-y-14 lg:space-y-0 lg:mb-0 mb-20'>
                         <Paragraph
                             text={"Send me an email or get in touch with me on any of my socials. Let's start creating magic."}
@@ -51,7 +51,6 @@ const Footer = () => {
                             <SocialMedias className='text-black'/>
                         </div>
                     </div>
-
                 </section>
             </Section>
         </footer>

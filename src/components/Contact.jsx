@@ -18,7 +18,7 @@ const Contact = () => {
     }
 
     return (
-        <Container title={'Esuola ® - Esteemed Creative Developer'} description={"Esuola Daniel's Portfolio Website"}>
+        <Container title={'Esuola ®'} description={"Esuola Daniel's Portfolio Website"}>
             <Section className={'min-h-screen h-fit flex flex-col justify-between bg-black contact'}>
                 <section className='z-50 lg:space-y-10 bg-[url(`${Daniel}`)]'>
 

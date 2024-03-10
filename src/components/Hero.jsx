@@ -17,7 +17,7 @@ const Hero = () => {
                 <div>
                     <Header leadingText={'Esteemed'} className={'uppercase'} delay={200}/>
                     <Header leadingText={'developer'} className={'uppercase'} delay={300}/>
-                    <Header leadingText={'based in pluto  ✼ '} className={'uppercase'} delay={400}/>
+                    <Header leadingText={'based in pluto'} className={'uppercase'} delay={400}/>
                 </div>
                 <Paragraph
                     text={"I support Designers & Agencies with Creative Development."}
