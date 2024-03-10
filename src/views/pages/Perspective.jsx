@@ -7,7 +7,7 @@ const Perspective = () => {
     <TwoColumnGrid
       caption={'Perspective'}
       variant={'paragraph_md'}
-      header={"I don't just build, I craft possibilities."}
+      header={"I don't just cpde, I craft possibilities."}
     >
       <Paragraph
         delay={400}

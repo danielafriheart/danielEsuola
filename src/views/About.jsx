@@ -15,12 +15,10 @@ const About = () => {
     return (
         <Container title={'Esuola ®'} description={"Esuola Daniel's Portfolio Website"} className={'space-y-24'}>
             <Hero />
-            {/* <SkillTags/> */}
             <Gallery />
             <Perspective />
             <Interests />
             <TwoColumnGrid variant={'paragraph_md'} paragrahText={"When I’m not on my computer, building or exploring new web experiences, I’m probably playing games or making videos for YouTube."} />
-            {/* <Pictures /> */}
             <Awards />
             <DesignSuccess />
         </Container>
