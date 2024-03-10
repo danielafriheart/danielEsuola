@@ -25,7 +25,7 @@ const projectsData = [
     // Klusta ==========>>>>>>>>>>
     {
         id: 2,
-        name: 'Klusta ®',
+        name: 'Klusta®',
         description: 'Building the first ever smart mailbox',
         year: '(2024)',
         projectCover: "https://res.cloudinary.com/dnzi0xxtx/image/upload/v1709846009/portfolioImages/MacBook_Pro_du5swr.webp",

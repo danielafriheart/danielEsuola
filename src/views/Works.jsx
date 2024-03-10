@@ -15,7 +15,7 @@ const Works = () => {
                     <Paragraph text={"Work"} variant={'caption'} className={'text-right'} />
                     <Header leadingText={"Selected Work"} className={'uppercase'} delay={200} />
                     <Header leadingText={"(2023 - 2024)"} className={'uppercase'} delay={300} />
-                    <Paragraph text={"See how I've turned ideas into reality. Dive into the stories of successful product designs that make a difference."} className={'lg:w-[50vw]'} variant={'paragraph_md'} delay={500} />
+                    <Paragraph text={"See how I've turned ideas into reality. Dive into the stories of successful product designs that make a difference."} className={'lg:w-[40vw]'} variant={'label'} delay={500} />
                 </div>
             </Section>
             <Projects />

@@ -42,7 +42,7 @@ const Interests = () => {
                     <section className='flex flex-col justify-evenly h-full'>
                         <div className='w-full flex flex-col lg:space-y-2 lg:my-0  my-10 lg:mb-0 '>
                             <Paragraph
-                                delay={200}
+                                delay={100}
                                 variant={'label'}
                                 className={`cursor-pointer hover:underline underline-offset-4 transition-all duration-300 ${activeTab === 1 ? 'underline' : 'text-black/30'}`}
                                 text="Gaming"
@@ -50,7 +50,7 @@ const Interests = () => {
                                 onClick={() => handleTabChange(1)}
                             />
                             <Paragraph
-                                delay={300}
+                                delay={200}
                                 variant={'label'}
                                 className={`cursor-pointer hover:underline underline-offset-4 transition-all duration-300 ${activeTab === 3 ? 'underline' : 'text-black/30'}`}
                                 text="Virtual Reality"
@@ -58,7 +58,7 @@ const Interests = () => {
                                 onClick={() => handleTabChange(3)}
                             />
                             <Paragraph
-                                delay={400}
+                                delay={300}
                                 variant={'label'}
                                 className={`cursor-pointer hover:underline underline-offset-4 transition-all duration-300 ${activeTab === 2 ? 'underline' : 'text-black/30'}`}
                                 text="Music"
@@ -71,16 +71,19 @@ const Interests = () => {
                             <div className='flex flex-col gap-5'>
                                 <Paragraph
                                     className={'header'}
-                                    variant={'paragraph_md'}
+                                    variant={'paragraph'}
                                     text={'Xbox 360 / Playstation'}
+                                    delay={200}
                                 />
                                 <Paragraph
                                     variant={'label'}
                                     text={'Most of my gaming time goes to FIFA. I often play God Of War, Call of Duty, Marvel\'s Spider-Man and a few others.'}
+                                    delay={300}
                                 />
                                 <Paragraph
                                     variant={'label'}
                                     text={"I'm also exploring VR gaming with Oculus."}
+                                    delay={400}
                                 />
                             </div>
                         }
@@ -89,12 +92,14 @@ const Interests = () => {
                             <div className='flex flex-col gap-5'>
                                 <Paragraph
                                     className={'header'}
-                                    variant={'paragraph_md'}
+                                    variant={'paragraph'}
                                     text={'An Eclectic Music Taste'}
+                                    delay={200}
                                 />
                                 <Paragraph
                                     variant={'label'}
                                     text={'From the upbeat rhythms of Amapiano, Afrobeat to the soulful melodies of Fuji, I find myself drawn to the unique sounds and styles of different genres.'}
+                                    delay={300}
                                 />
                             </div>
                         }
@@ -103,17 +108,19 @@ const Interests = () => {
                             <div className='flex flex-col gap-5'>
                                 <Paragraph
                                     className={'header'}
-                                    variant={'paragraph_md'}
+                                    variant={'paragraph'}
                                     text={'Vision Pro / Oculus'}
+                                    delay={200}
                                 />
                                 <Paragraph
                                     variant={'label'}
                                     text={'The concept of being able to fully immerse myself in a completely different world, with the ability to interact with it as if it were real, is absolutely thrilling to me.'}
+                                    delay={300}
                                 />
                                 <Paragraph
-                                    data_aos_delay={'300'}
                                     variant={'label'}
                                     text={'It is a technology that I am deeply interested in and am excited to see where it takes us in the future.'}
+                                    delay={400}
                                 />
                             </div>
                         }

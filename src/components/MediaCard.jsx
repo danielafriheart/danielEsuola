@@ -41,7 +41,7 @@ export default function MediaCover({ imageSrc, children, customHeight, className
                         src={imageSrc}
                         srcSet={imageSrc}
                         loading="lazy"
-                        alt=""
+                        alt="Image"
                         className={className}
                         style={{ maxWidth: '100%', maxHeight: '100%' }} // Added style to remove default zoom
                     />

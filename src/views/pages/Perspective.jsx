@@ -7,19 +7,19 @@ const Perspective = () => {
     <TwoColumnGrid
       caption={'Perspective'}
       variant={'paragraph_md'}
-      paragrahText={' I redefine possibility by combining imagination with precision to shape extraordinary experiences. As humans, I believe our sole purpose is to create.'}
+      header={"I don't just build, I craft possibilities."}
     >
       <Paragraph
         delay={400}
-        className={'lg:w-[70%]'}
-        text={"With a background in design, I work closely with design focused teams to build websites and microsites for companies and individuals. I have years of experience working and collaborating on product teams and leading engineering efforts.."}
-        variant={'paragraph_md'}
+        className={'lg:w-[85%]'}
+        text={"As a developer with a passion for creation, I combine visionary thinking with technical precision to bring unique user experiences to life.  For me, the greatest human purpose lies in shaping the world around us, and I do that by collaborating closely with design-focused teams to build impactful websites and microsites."}
+        variant={'label'}
       />
       <Paragraph
         delay={500}
-        className={'lg:w-[70%]'}
-        text={"With my experience in UI and product engineering, I solve product problems and build appealing usable web experiences."}
-        variant={'paragraph_md'}
+        className={'lg:w-[85%]'}
+        text={"My background spans both product engineering and UI design, allowing me to solve complex product challenges while crafting beautiful and user-friendly web experiences. With years of experience leading engineering efforts and collaborating on product teams, I bring a well-rounded skillset to every project."}
+        variant={'label'}
       />
     </TwoColumnGrid>
   )

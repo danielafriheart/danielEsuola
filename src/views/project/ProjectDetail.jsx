@@ -6,11 +6,9 @@ import Header from '../../layout/typography/Header';
 import Paragraph from '../../layout/typography/Paragraph';
 import Error from '../../views/Error';
 import MediaCover from '../../components/MediaCard';
-import DesignSuccess from '../../components/DesignSuccess';
 import Container from '../../layout/container/Container';
 import TwoColumnGrid from '../../layout/container/TwoColumnGrid';
 import RouteLinks from '../../layout/typography/RouteLinks';
-import Button from '../../layout/container/Button';
 import ReachOut from '../../components/email/ReachOut';
 // import Button from '';
 
@@ -23,7 +21,7 @@ const ProjectDetail = () => {
   }
 
   return (
-    <Container title={'Esuola Daniel'} description={"Esuola Daniel's Portfolio Website"}>
+    <Container title={'Esuola ®'} description={"Esuola Daniel's Portfolio Website"}>
       <Section className={'lg:space-y-10 space-y-10'}>
         <div className='flex flex-col justify-center lg:space-y-10 space-y-10 '>
           <header className='flex gap-10'>
@@ -31,10 +29,10 @@ const ProjectDetail = () => {
               <Paragraph variant={'base'} greyText={'Industry'} delay={300}/>
               <Paragraph variant={'base'} text={project.industry || "Project Industry here"} delay={400}/>
             </div>
-            <div>
+            {/* <div>
               <Paragraph variant={'base'} greyText={'Client'} delay={500}/>
               <Paragraph variant={'base'} text={project.client || "Project Client here"} delay={600}/>
-            </div>
+            </div> */}
           </header>
         </div>
 
@@ -50,7 +48,7 @@ const ProjectDetail = () => {
         caption={`(00${project.id})`}
         variant={'paragraph'}
       >
-        <Paragraph text={project.writeUp} variant={'paragraph_md'} className={'lg:w-[75%]'} />
+        <Paragraph text={project.writeUp} variant={'label'} className={'lg:w-[75%]'} />
 
         <RouteLinks
           linkTitle={`${project.projectLink ? " Visit the website's live version" : "20% Complete"}`}
