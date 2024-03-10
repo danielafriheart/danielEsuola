@@ -45,7 +45,7 @@ export default function Preloader() {
                             <motion.div className='header text-Header text-White'>
                                 {rounded}
                             </motion.div>
-                            <Paragraph text={"%"} className='header text-Header text-White/50' />
+                            <Paragraph text={"%"} className='header text-Header lg:text-White/50' />
                         </span>
                     </div>
                 </div>
