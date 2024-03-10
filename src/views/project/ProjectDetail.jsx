@@ -28,21 +28,21 @@ const ProjectDetail = () => {
         <div className='flex flex-col justify-center lg:space-y-10 space-y-10 '>
           <header className='flex gap-10'>
             <div>
-              <Paragraph variant={'base'} greyText={'Industry'} delay={200}/>
-              <Paragraph variant={'base'} text={project.industry || "Project Industry here"} delay={100}/>
+              <Paragraph variant={'base'} greyText={'Industry'} delay={300}/>
+              <Paragraph variant={'base'} text={project.industry || "Project Industry here"} delay={400}/>
             </div>
             <div>
-              <Paragraph variant={'base'} greyText={'Client'} delay={300}/>
-              <Paragraph variant={'base'} text={project.client || "Project Client here"} delay={200}/>
+              <Paragraph variant={'base'} greyText={'Client'} delay={500}/>
+              <Paragraph variant={'base'} text={project.client || "Project Client here"} delay={600}/>
             </div>
           </header>
         </div>
 
         <div>
-          <Header leadingText={project.name} className={'uppercase'} delay={200}/>
+          <Header leadingText={project.name} className={'uppercase'} delay={500}/>
         </div>
 
-        <MediaCover imageSrc={project.projectCover} customHeight={'85vh'} delay={300}/>
+        <MediaCover imageSrc={project.projectCover} customHeight={'85vh'} delay={700}/>
 
       </Section>
 

@@ -124,6 +124,9 @@ const Interests = () => {
                         onMouseEnter={changeCursorHere}
                         onMouseLeave={defaultCursor}
                         className='h-[100%] hover:cursor-grab'
+                        data-aos="fade-in"
+                        data-aos-delay={300}
+                        data-aos-easing="ease-in-sine"
                     >
                         <Suspense fallback={null}>
 

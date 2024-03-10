@@ -1,7 +1,6 @@
 import React from 'react'
 import Section from '../layout/container/Section'
 import MediaCard from './MediaCard'
-import Paragraph from '../layout/typography/Paragraph'
 
 const Gallery = ({ Src }) => {
     const Src_one = "https://res.cloudinary.com/dnzi0xxtx/image/upload/v1707164727/Daniel/IMG_4854_ednbr2.jpg"

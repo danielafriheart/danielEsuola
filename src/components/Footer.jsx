@@ -34,6 +34,7 @@ const Footer = () => {
                                     className={'lg:text-[6rem] text-7xl md:text-Header-md text-Paragraph-md uppercase underline leading-tight header'}
                                     hoverState={'none'}
                                     targetState={'_blank'}
+                                    delay={100}
                                 />
                             ))}
                         </div>
@@ -44,6 +45,7 @@ const Footer = () => {
                             text={"Send me an email or get in touch with me on any of my socials. Let's start creating magic."}
                             variant={'paragraph_md'}
                             className={'my-auto'}
+                            delay={200}
                         />
                         <div className='w-full ml-auto flex flex-col justify-end space-y-5 lg:w-1/2'>
                             <SocialMedias className='text-black'/>
