@@ -10,6 +10,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import ProjectDetail from './views/project/ProjectDetail'
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Preloader from './components/Preloader'
 AOS.init();
 
@@ -41,6 +42,7 @@ const App = () => {
   return (
     <>
       <Analytics />
+      <SpeedInsights />
       {
         loading ?
           <Preloader />
