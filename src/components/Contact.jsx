@@ -40,7 +40,7 @@ const Contact = () => {
                                     linkTitle={Email.platform}
                                     routeLocation={`mailto: ${Email.mailTo}`}
                                     routeStyleType={'noIcon'}
-                                    className={'lg:text-[6rem] text-7xl md:text-Header-md text-Paragraph-md uppercase underline leading-tight header white'}
+                                    className={'lg:text-[6rem] text-7xl md:text-Header-md text-Paragraph-md uppercase underline leading-tight header white textResponsiveness'}
                                     hoverState={'none'}
                                     targetState={'_blank'}
                                 />

@@ -48,7 +48,7 @@ const ActionAreaCard = ({ caption, label, year, customHeight, src }) => {
           customHeight={customHeight}
         >
           <div className='grid place-content-center my-auto'>
-            <span className='rounded-full w-[120px] h-[120px] transition-all duration-500 animate-target hidden  md:flex lg:grid place-content-center opacity-0 text-sm text-center'>
+            <span className='rounded-full w-[120px] h-[120px] transition-all duration-500 animate-target hidden  md:grid lg:grid place-content-center opacity-0 text-sm text-center'>
               <Paragraph text={'View'} className={'text-sm'}/>
               <Paragraph text={'Project'} className={'text-sm'}/>
             </span>

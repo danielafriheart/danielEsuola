@@ -12,6 +12,7 @@ import ProjectDetail from './views/project/ProjectDetail'
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from '@vercel/speed-insights/react';
 import Preloader from './components/Preloader'
+import SnackBar from './components/SnackBar'
 AOS.init();
 
 const App = () => {
@@ -48,6 +49,8 @@ const App = () => {
           <Preloader />
           :
           <>
+          {/* <SnackBar message={"See What I'm Up to on UpWork"} severity={'success'} open={'true'}/> */}
+
             {!isContactPage && <NavBar />}
             <Routes>
               <Route path='/' element={<About />} />

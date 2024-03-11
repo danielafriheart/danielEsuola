@@ -4,7 +4,7 @@ import Card from '@mui/joy/Card';
 import CardCover from '@mui/joy/CardCover';
 import CardContent from '@mui/joy/CardContent';
 
-export default function MediaCover({ imageSrc, children, customHeight, className, delay }) {
+export default function MediaCover({ imageSrc, children, customHeight, delay }) {
 
 
     return (
@@ -15,14 +15,15 @@ export default function MediaCover({ imageSrc, children, customHeight, className
                 gap: 2,
                 flexWrap: 'wrap',
                 p: 0, m: 0,
-                height: ['50vh', null, null, customHeight || '50vh'], // Use customHeight for large screens
+                height: ['50vh', null, '60vh', customHeight || '50vh'], // Use customHeight for large screens
                 '@media screen and (max-width: 992px)': {
-                    height: '50vh', // Use 50vh for medium screens
+                    height: '60vh', // Use 80vh for medium screens
                 },
                 '@media screen and (max-width: 576px)': {
-                    height: '50vh', // Use 50vh for small screens
+                    height: '50vh', // Use 100vh for small screens
                 },
             }}
+            
             data-aos="fade-in"
             data-aos-delay={delay}
             data-aos-easing="ease-in-sine"
@@ -42,7 +43,6 @@ export default function MediaCover({ imageSrc, children, customHeight, className
                         srcSet={imageSrc}
                         loading="lazy"
                         alt="Image"
-                        className={className}
                         style={{ maxWidth: '100%', maxHeight: '100%' }} // Added style to remove default zoom
                     />
                 </CardCover>

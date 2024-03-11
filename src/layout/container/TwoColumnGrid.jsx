@@ -5,7 +5,7 @@ import Header from '../typography/Header';
 
 const TwoColumnGrid = ({ caption, greyText, children, paragrahText, trailingText, variant, header }) => {
   return (
-    <Section className='grid lg:grid-cols-[1fr,4fr] lg:gap-0 gap-5'>
+    <Section className='grid lg:grid-cols-[1fr,4fr] lg:gap-0 gap-5 twoColumnResponsiveness'>
       <div>
         <Paragraph
           variant={'base'}
@@ -14,7 +14,7 @@ const TwoColumnGrid = ({ caption, greyText, children, paragrahText, trailingText
         />
       </div>
       <div className='gap-y-10 flex flex-col'>
-        {header && <Header leadingText={header} className={'lg:w-fit'} />}
+        {header && <Header leadingText={header} className={'lg:w-fit textResponsiveness'} />}
         {paragrahText &&
           <Paragraph
             variant={variant}

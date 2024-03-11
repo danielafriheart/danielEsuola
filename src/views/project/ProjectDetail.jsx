@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 import projectsData from './ProjectData'; // Import projectsData
 import Section from '../../layout/container/Section';
 import Header from '../../layout/typography/Header';
@@ -20,14 +20,23 @@ const ProjectDetail = () => {
     return <Error />;
   }
 
+  const location = useLocation();
+
   return (
     <Container title={'Esuola ®'} description={"Esuola Daniel's Portfolio Website"}>
       <Section className={'lg:space-y-10 space-y-10'}>
+
+        {/* <a href="" rel='noreferrer noopener' className='border border-black transition-all duration-300 flex items-center space-x-10  px-5 rounded-full w-fit'>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+            <path fillRule="evenodd" d="M7.28 7.72a.75.75 0 0 1 0 1.06l-2.47 2.47H21a.75.75 0 0 1 0 1.5H4.81l2.47 2.47a.75.75 0 1 1-1.06 1.06l-3.75-3.75a.75.75 0 0 1 0-1.06l3.75-3.75a.75.75 0 0 1 1.06 0Z" clipRule="evenodd" />
+          </svg>
+        </a> */}
+
         <div className='flex flex-col justify-center lg:space-y-10 space-y-10 '>
           <header className='flex gap-10'>
             <div>
-              <Paragraph variant={'base'} greyText={'Industry'} delay={300}/>
-              <Paragraph variant={'base'} text={project.industry || "Project Industry here"} delay={400}/>
+              <Paragraph variant={'base'} greyText={'Industry'} delay={300} />
+              <Paragraph variant={'base'} text={project.industry || "Project Industry here"} delay={400} />
             </div>
             {/* <div>
               <Paragraph variant={'base'} greyText={'Client'} delay={500}/>
@@ -37,10 +46,10 @@ const ProjectDetail = () => {
         </div>
 
         <div>
-          <Header leadingText={project.name} className={'uppercase'} delay={500}/>
+          <Header leadingText={project.name} className={'uppercase'} delay={500} />
         </div>
 
-        <MediaCover imageSrc={project.projectCover} customHeight={'85vh'} delay={700}/>
+        <MediaCover imageSrc={project.projectCover} customHeight={'85vh'} delay={700} />
 
       </Section>
 

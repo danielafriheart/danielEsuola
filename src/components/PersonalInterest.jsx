@@ -28,7 +28,7 @@ const Interests = () => {
         <Section className='flex flex-col lg:gap-28 gap-10'>
 
             <section>
-                <div className='lg:flex justify-between place-items-center space-y-3'>
+                <div className='lg:flex justify-between place-items-center space-y-3 twoColumnResponsiveness'>
                     <div>
                         <Header leadingText={'PERSONAL'} className={'lg:w-fit'} />
                         <Header leadingText={'INTEREST'} className={'lg:w-fit'} />
@@ -37,7 +37,7 @@ const Interests = () => {
                 </div>
             </section>
 
-            <div className='lg:grid lg:grid-cols-[45%,55%] md:grid-cols-1 flex flex-col-reverse gap-0 h-fit'>
+            <div className='lg:grid lg:grid-cols-[45%,55%] sm:grid-cols-[30%,70%] flex flex-col-reverse gap-0 h-fit personalInterest'>
                 <div className=''>
                     <section className='flex flex-col justify-evenly h-full'>
                         <div className='w-full flex flex-col lg:space-y-2 lg:my-0  my-10 lg:mb-0 '>
@@ -126,7 +126,8 @@ const Interests = () => {
                         }
                     </section>
                 </div>
-                <div className='lg:h-[70vh] h-[30vh]'>
+
+                <div className='lg:h-[70vh] h-[35vh] canvas'>
                     <Canvas
                         onMouseEnter={changeCursorHere}
                         onMouseLeave={defaultCursor}
