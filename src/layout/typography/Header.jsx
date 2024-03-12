@@ -12,6 +12,7 @@ const Header = ({ leadingText, greyText, trailingText, className, delay }) => {
 
     return (
         <h1
+            data-scroll
             data-aos="fade-in"
             data-aos-delay={delay}
             data-aos-easing="ease-in-sine"

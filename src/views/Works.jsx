@@ -8,8 +8,7 @@ import ReachOut from '../components/email/ReachOut'
 
 const Works = () => {
     return (
-        <Container title={'Esuola ®'} description={"Esuola Daniel's Portfolio Website"}>
-
+        <Container title={'Esuola ® || Selected Work'} description={"Esuola Daniel's Portfolio Website"}>
             <Section className={'min-h-fit lg:h-fit md:h-[70dvh] flex flex-col justify-center'}>
                 <div className='flex flex-col justify-center lg:space-y-6 space-y-8'>
                     <Paragraph text={"Work"} variant={'caption'} className={'text-right'} />

@@ -23,14 +23,16 @@ const ProjectDetail = () => {
   const location = useLocation();
 
   return (
-    <Container title={'Esuola ®'} description={"Esuola Daniel's Portfolio Website"}>
+    <Container title={'Esuola ® || Project Detail'} description={"Esuola Daniel's Portfolio Website"}>
       <Section className={'lg:space-y-10 space-y-10'}>
 
-        {/* <a href="" rel='noreferrer noopener' className='border border-black transition-all duration-300 flex items-center space-x-10  px-5 rounded-full w-fit'>
+        <a data-aos="fade-in"
+          data-aos-delay="600"
+          data-aos-easing="ease-in-sine" href="/projects" rel='noreferrer noopener' className='border border-black transition-all duration-300 flex items-center space-x-10  px-5 rounded-full w-fit'>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
             <path fillRule="evenodd" d="M7.28 7.72a.75.75 0 0 1 0 1.06l-2.47 2.47H21a.75.75 0 0 1 0 1.5H4.81l2.47 2.47a.75.75 0 1 1-1.06 1.06l-3.75-3.75a.75.75 0 0 1 0-1.06l3.75-3.75a.75.75 0 0 1 1.06 0Z" clipRule="evenodd" />
           </svg>
-        </a> */}
+        </a>
 
         <div className='flex flex-col justify-center lg:space-y-10 space-y-10 '>
           <header className='flex gap-10'>

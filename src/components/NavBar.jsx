@@ -26,7 +26,7 @@ const Example = () => {
             <header className={'lg:px-20 md:p-10 p-5 md:pt-10 flex items-center justify-between'}  aria-label="Global">
 
                 <NavLink to={"/"} className="flex items-center gap-3 text-background ">
-                    <Paragraph text={'Esuola Daniel'} variant={'caption'} delay={200} />
+                    <Paragraph text={'Esuola Daniel'} variant={'caption'}/>
                 </NavLink>
 
                 <Popover.Group className="flex gap-x-3">
@@ -38,7 +38,6 @@ const Example = () => {
                             routeStyleType={'noIcon'}
                             hoverState={`${location.pathname === page.href ? 'always' : 'hover'}`}
                             variant={'caption'}
-                            delay={300}
                         />
                     ))}
                 </Popover.Group>
@@ -50,7 +49,6 @@ const Example = () => {
                     hoverState={`always`}
                     variant={'caption'}
                     className={'lg:flex md:flex hidden'}
-                    delay={400}
                 />
             </header>
         </nav>

@@ -17,10 +17,10 @@ const Paragraph = ({ text, className, variant, trailingText, greyText, onClick, 
 
     const selectedVariant = variantStyles[variant] || variantStyles.base;
     return (
-
         <p
             className={`${selectedVariant} ${className} space-x-4 text-wrap lg:text-pretty md:text-balance`}
             onClick={onClick}
+            data-scroll
         >
             <span
                 data-aos="fade-in"

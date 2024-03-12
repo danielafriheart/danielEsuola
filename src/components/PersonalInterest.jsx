@@ -30,8 +30,8 @@ const Interests = () => {
             <section>
                 <div className='lg:flex justify-between place-items-center space-y-3 twoColumnResponsiveness'>
                     <div>
-                        <Header leadingText={'PERSONAL'} className={'lg:w-fit'} />
-                        <Header leadingText={'INTEREST'} className={'lg:w-fit'} />
+                        <Header leadingText={'Personal'} className={'lg:w-fit'} />
+                        <Header leadingText={'Interest'} className={'lg:w-fit'} />
                     </div>
                     <Paragraph text={'"CLICK & DRAG AROUND"'} variant={'base'} />
                 </div>
@@ -116,11 +116,6 @@ const Interests = () => {
                                     variant={'label'}
                                     text={'The concept of being able to fully immerse myself in a completely different world, with the ability to interact with it as if it were real, is absolutely thrilling to me.'}
                                     delay={300}
-                                />
-                                <Paragraph
-                                    variant={'label'}
-                                    text={'It is a technology that I am deeply interested in and am excited to see where it takes us in the future.'}
-                                    delay={400}
                                 />
                             </div>
                         }
