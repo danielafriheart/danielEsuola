@@ -40,10 +40,10 @@ const ProjectDetail = () => {
               <Paragraph variant={'base'} greyText={'Industry'} delay={300} />
               <Paragraph variant={'base'} text={project.industry || "Project Industry here"} delay={400} />
             </div>
-            <div>
-              <Paragraph variant={'base'} greyText={'Year'} delay={500}/>
-              <Paragraph variant={'base'} text={project.year || "Project Year"} delay={600}/>
-            </div>
+            {/* <div>
+              <Paragraph variant={'base'} greyText={'Client'} delay={500}/>
+              <Paragraph variant={'base'} text={project.client || "Project Client here"} delay={600}/>
+            </div> */}
           </header>
         </div>
 
@@ -62,7 +62,7 @@ const ProjectDetail = () => {
         <Paragraph text={project.writeUp} variant={'label'} className={'lg:w-[75%]'} />
 
         <RouteLinks
-          linkTitle={`${project.projectLink ? " Visit the website's live version" : project.message}`}
+          linkTitle={`${project.projectLink ? " Visit the website's live version" : "20% Complete"}`}
           routeLocation={project.projectLink || null}
           routeStyleType={'noIcon'}
           variant={'caption'}
