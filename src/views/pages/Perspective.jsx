@@ -6,6 +6,7 @@ const Perspective = () => {
   return (
     <TwoColumnGrid
       caption={'Perspective'}
+      variant={'paragraph_md'}
       header={"I don't just code, I craft possibilities."}
     >
       <Paragraph

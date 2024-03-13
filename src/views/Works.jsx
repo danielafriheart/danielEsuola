@@ -10,10 +10,10 @@ const Works = () => {
     return (
         <Container title={'Esuola ® || Selected Work'} description={"Esuola Daniel's Portfolio Website"}>
             <Section className={'min-h-fit lg:h-fit md:h-[70dvh] flex flex-col justify-center'}>
-                <div className='flex flex-col justify-center lg:space-y-0 space-y-8'>
+                <div className='flex flex-col justify-center lg:space-y-6 space-y-8'>
                     <Paragraph text={"Work"} variant={'caption'} className={'text-right'} />
-                    <Header leadingText={"selected projects (2023 - 2024)"} className={'uppercase lg:text-[10rem]'} delay={200} />
-                    <Header leadingText={""} className={'uppercase'} delay={300} />
+                    <Header leadingText={"Selected Work"} className={'uppercase'} delay={200} />
+                    <Header leadingText={"(2023 - 2024)"} className={'uppercase'} delay={300} />
                     <Paragraph text={"See how I've turned ideas into reality. Dive into the stories of successful product designs that make a difference."} className={'lg:w-[40vw]'} variant={'label'} delay={500} />
                 </div>
             </Section>

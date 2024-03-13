@@ -14,7 +14,7 @@ const TwoColumnGrid = ({ caption, greyText, children, paragrahText, trailingText
         />
       </div>
       <div className='gap-y-10 flex flex-col'>
-        {header && <Header leadingText={header} className={'lg:w-fit lg:text-[8rem] textResponsiveness'} />}
+        {header && <Header leadingText={header} className={'lg:w-fit textResponsiveness'} />}
         {paragrahText &&
           <Paragraph
             variant={variant}

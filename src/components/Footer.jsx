@@ -16,8 +16,8 @@ const Footer = () => {
     }
 
     return (
-        <footer className='lg:h-screen'>
-            <Section className={'flex flex-col justify-between h-full space-y-24'}>
+        <footer className='pt-20'>
+            <Section className={'flex flex-col justify-between h-fit space-y-24'}>
                 <section className='z-50 lg:space-y-10 h-full'>
 
                     <div className='lg:space-y-14 space-y-10 mb-20 lg:mb-0'>
@@ -31,7 +31,7 @@ const Footer = () => {
                                     linkTitle={Email.platform}
                                     routeLocation={`mailto: ${Email.mailTo}`}
                                     routeStyleType={'noIcon'}
-                                    className={'lg:text-[10rem] text-[5rem] md:text-[7rem] uppercase underline leading-tight header textResponsiveness'}
+                                    className={'lg:text-[6rem] text-7xl md:text-Header-md text-Paragraph-md uppercase underline leading-tight header textResponsiveness'}
                                     hoverState={'none'}
                                     targetState={'_blank'}
                                     delay={100}
