@@ -16,15 +16,8 @@ const Header = ({ leadingText, greyText, trailingText, className, delay }) => {
             data-aos="fade-in"
             data-aos-delay={delay}
             data-aos-easing="ease-in-sine"
-<<<<<<< HEAD
-<<<<<<< HEAD
+
             className={`${className} lg:text-[6rem] text-[2.3rem] leading-tight md:text-Header-md space-x-4 font-normal text-wrap lg:text-pretty md:text-balance`}>
-=======
-            className={`${className} lg:text-[6rem] text-[2.3rem] leading-tight md:text-Header-md space-x-4  text-wrap lg:text-pretty md:text-balance`}>
->>>>>>> parent of 22c4b12 (Updates to typeface and contact page)
-=======
-            className={`${className} lg:text-[6rem] text-[2.3rem] leading-tight md:text-Header-md space-x-4 font-normal text-wrap lg:text-pretty md:text-balance`}>
->>>>>>> parent of 52ddb3a (Addeed a new portfolio case study and  year to project detail section)
             {leadingText}
             {greyText && <span className='text-Gray'>{greyText}</span>}
             {trailingText}
