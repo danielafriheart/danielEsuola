@@ -14,15 +14,11 @@ const Hero = () => {
                     text={"About"}
                     variant={'caption'}
                     className={'text-right'} />
-                <div>
-                    <Header leadingText={'Esteemed'} className={'uppercase'} delay={200}/>
-                    <Header leadingText={'developer'} className={'uppercase'} delay={300}/>
-                    <Header leadingText={'based in pluto'} className={'uppercase'} delay={400}/>
-                </div>
+                <Header leadingText={'Esteemed developer based in pluto'} className={'uppercase lg:text-[10rem]'} delay={200} />
                 <Paragraph
                     text={"I support Designers & Agencies with Creative Development."}
                     variant={'paragraph_md'}
-                    delay={500}
+                    delay={300}
                     className={'lg:w-[40%] lg:hidden'}
                 />
                 <div>

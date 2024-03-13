@@ -39,10 +39,10 @@ const Awards = () => {
                 <tbody className='w-full'>
                     {Honors.map((AWARD, id) => {
                         return (
-                            <tr title={AWARD.caption} key={id} className='flex md:flex-row flex-col w-full border-black/30 border-b justify-between'>
+                            <tr title={AWARD.caption} key={id} className='flex md:flex-row flex-col w-full border-black/30 border-b justify-between py-5 lg:py-0'>
                                 <td className={TABLE_STYLE}><Paragraph text={AWARD.platform} variant={'caption'} /></td>
                                 <td className={TABLE_STYLE}><Paragraph text={AWARD.award} variant={'caption'} /></td>
-                                <td className={TABLE_STYLE}><Paragraph text={AWARD.year} variant={'caption'} className={'lg:text-right'}/></td>
+                                <td className={TABLE_STYLE}><Paragraph text={AWARD.year} variant={'caption'} className={'lg:text-right md:text-right'}/></td>
                             </tr>
                         )
                     })}

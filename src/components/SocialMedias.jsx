@@ -20,10 +20,11 @@ const SocialMedias = [
     },
 ];
 
-const SocialMediaLinks = ({className}) => (
+const SocialMediaLinks = ({ className }) => (
     <div>
         {SocialMedias.map(social => (
             <RouteLinks
+                delay={100}
                 key={social.platform}
                 linkTitle={social.platform}
                 routeLocation={social.href}

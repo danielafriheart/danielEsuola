@@ -29,10 +29,7 @@ const Interests = () => {
 
             <section>
                 <div className='lg:flex justify-between place-items-center space-y-3 twoColumnResponsiveness'>
-                    <div>
-                        <Header leadingText={'Personal'} className={'lg:w-fit'} />
-                        <Header leadingText={'Interest'} className={'lg:w-fit'} />
-                    </div>
+                    <Header leadingText={'Personal Interest'} className={'lg:w-fit lg:text-[8rem]'} />
                     <Paragraph text={'"CLICK & DRAG AROUND"'} variant={'base'} />
                 </div>
             </section>

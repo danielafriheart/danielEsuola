@@ -12,18 +12,24 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
   cursor: none !important;
 
   /* outline: dashed 1px gray; */
 }
 
 body {
-  /* scroll-snap-type: y mandatory; */
+  scroll-snap-type: y mandatory;
   overflow-x: hidden;
   background-color: #E1DFDD;
 
   font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+.header {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: bold;
 }
 
 .white {
@@ -48,12 +54,6 @@ body {
 
 .navLink {
   mix-blend-mode: difference !important;
-}
-
-h1,
-.header {
-  font-family: 'Druk Wide Bold', sans-serif;
-  /* font-family: 'Bebas Neue', sans-serif; */
 }
 
 

@@ -48,7 +48,7 @@ const ProjectDetail = () => {
         </div>
 
         <div>
-          <Header leadingText={project.name} className={'uppercase'} delay={500} />
+          <Header leadingText={project.name} className={'uppercase lg:text-[10rem]'} delay={500} />
         </div>
 
         <MediaCover imageSrc={project.projectCover} customHeight={'85vh'} delay={700} />
