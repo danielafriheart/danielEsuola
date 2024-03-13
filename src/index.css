@@ -49,6 +49,12 @@ body {
   mix-blend-mode: difference !important;
 }
 
+h1,
+.header {
+  font-family: 'Druk Wide Bold', sans-serif;
+  /* font-family: 'Bebas Neue', sans-serif; */
+}
+
 
 /* Custom cursor */
 .cursor {
