@@ -27,7 +27,7 @@ const Awards = () => {
     const TABLE_STYLE = 'lg:py-10 md:py-5 py-2 w-full'
 
     return (
-        <TwoColumnGrid header={'Awards & Recognition'} caption={'(001) '} className={'uppercase header'}>
+        <TwoColumnGrid header={'Awards & Recognition '} caption={'(001) '} className={'uppercase header'}>
             <table className='w-full mt-20 table-auto'>
                 <thead>
                     <tr className='lg:flex md:flex hidden text-left border-black/30 border-b '>

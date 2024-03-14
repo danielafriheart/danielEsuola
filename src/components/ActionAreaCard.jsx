@@ -46,6 +46,7 @@ const ActionAreaCard = ({ caption, label, year, customHeight, src }) => {
         <MediaCard
           imageSrc={src || img}
           customHeight={customHeight}
+          delay={400}
         >
           <div className='grid place-content-center my-auto'>
             <span className='rounded-full w-[120px] h-[120px] transition-all duration-500 animate-target hidden  md:grid lg:grid place-content-center opacity-0 text-sm text-center'>

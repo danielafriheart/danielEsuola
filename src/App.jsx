@@ -49,7 +49,8 @@ const App = () => {
           <Preloader />
           :
           <>
-            {!isContactPage && <NavBar />}
+            {/* {!isContactPage && <NavBar />} */}
+             <NavBar />
             <Routes>
               <Route path='/' element={<About />} />
               <Route path='/projects' element={<Works />} />

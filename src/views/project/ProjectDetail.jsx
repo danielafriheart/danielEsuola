@@ -23,7 +23,7 @@ const ProjectDetail = () => {
   const location = useLocation();
 
   return (
-    <Container title={'Esuola ® || Project Detail'} description={"Esuola Daniel's Portfolio Website"}>
+    <Container title={'Esuola ® || Project Detail'} description={"Esuola Daniel's Portfolio Website"} className={'pt-32'}>
       <Section className={'lg:space-y-10 space-y-10'}>
 
         <a data-aos="fade-in"
@@ -40,15 +40,16 @@ const ProjectDetail = () => {
               <Paragraph variant={'base'} greyText={'Industry'} delay={300} />
               <Paragraph variant={'base'} text={project.industry || "Project Industry here"} delay={400} />
             </div>
-            <div>
+            {/* <div>
               <Paragraph variant={'base'} greyText={'Year'} delay={500} />
               <Paragraph variant={'base'} text={project.year || "Project Client here"} delay={600} />
-            </div>
+            </div> */}
           </header>
         </div>
 
-        <div>
-          <Header leadingText={project.name} className={'uppercase'} delay={500} />
+        <div className='flex items-center justify-between'>
+          <Header leadingText={project.name} className={'uppercase lg:text-[10rem]'} delay={500} />
+          <Header leadingText={project.year} className={'uppercase lg:text-[10rem]'} delay={500} />
         </div>
 
         <MediaCover imageSrc={project.projectCover} customHeight={'85vh'} delay={700} />

@@ -22,7 +22,7 @@ const Example = () => {
     const location = useLocation();
 
     return (
-        <nav>
+        <nav className='fixed top-0 w-screen z-50'>
             <header className={'lg:px-20 md:p-10 p-5 md:pt-10 flex items-center justify-between'}  aria-label="Global">
 
                 <NavLink to={"/"} className="flex items-center gap-3 text-background ">
