@@ -1,8 +1,21 @@
-const projectsData = [
+/* The code snippet you provided is a JavaScript object array named `projectsData` containing
+information about different projects. 
+Each project object within the array includes details such as
+project name, 
+description, 
+year, 
+project cover image URL, p
+roject link, 
+message, 
+industry, 
+lient,
+services, 
+write-up, 
+and a gallery of images related to the project. 
 
-    // Esuola Daniel ==========>>>>>>>>>>
+*/
+const projectsData = [
     {
-        id: 1,
         name: 'Esuola Daniel',
         description: 'Custom portfolio website design for creative developer Esuola Daniel.',
         year: '(2024)',
@@ -18,10 +31,7 @@ const projectsData = [
 
         ]
     },
-
-    // Klusta ==========>>>>>>>>>>
     {
-        id: 2,
         name: 'Klusta®',
         description: 'Building the first ever smart mailbox',
         year: '(2024)',
@@ -37,13 +47,9 @@ const projectsData = [
             "https://res.cloudinary.com/dnzi0xxtx/image/upload/v1710072606/portfolioImages/klustt_a1j47q.webp",
 
             "https://res.cloudinary.com/dnzi0xxtx/image/upload/v1710072606/portfolioImages/klustaa_i5oi4c.webp",
-            // "",
         ]
     },
-
-    // Prime Properties ==========>>>>>>>>>>
     {
-        id: 3,
         name: 'Prime Properties',
         description: 'Real Estate Website built for MayorK Prime Properties',
         year: '(2023)',
@@ -64,5 +70,10 @@ const projectsData = [
         ]
     },
 ];
+
+// Auto-generate IDs based on array index
+projectsData.forEach((project, index) => {
+    project.id = index + 1;
+});
 
 export default projectsData;

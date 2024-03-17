@@ -15,7 +15,16 @@ const Hero = () => {
                     variant={'caption'}
                     className={'text-right'} />
                 <div>
-                    <Header leadingText={'Esteemed developer based in pluto'} className={'uppercase '} delay={200}/>
+                    <div className='flex justify-between border-b-8 border-black '>
+                        <Header leadingText={'creative'} className={'uppercase '} delay={200} />
+                        <Header leadingText={'developer'} className={'uppercase '} delay={200} />
+                        <Header leadingText={'</>'} className={'uppercase hidden lg:flex md:flex'} delay={200} />
+                    </div>
+                    <div className='flex justify-between border-b-8 border-black '>
+                        <Header leadingText={'Based in '} className={'uppercase '} delay={200} />
+                        <Header leadingText={'pluto  ✼'} className={'uppercase '} delay={200} />
+                    </div>
+                    {/* <Header leadingText={'based in pluto  ✼'} className={'uppercase '} delay={200} /> */}
                     {/* <Header leadingText={'developer'} className={'uppercase'} delay={300}/> */}
                     {/* <Header leadingText={'based in pluto'} className={'uppercase'} delay={400}/> */}
                 </div>

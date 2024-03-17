@@ -34,7 +34,7 @@ export default function MediaCover({ imageSrc, children, customHeight, delay }) 
                     maxWidth: '100%',
                     flexGrow: 1,
                     p: 5,
-                    backgroundColor: 'transparent',
+                    backgroundColor: 'black',
                     borderRadius: 10
                 }}>
                 <CardCover>

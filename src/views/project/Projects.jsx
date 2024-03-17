@@ -11,7 +11,7 @@ const Projects = () => {
                 {
                     projectsData.map(project => (
                         <div key={project.id}>
-                            <Link to={`/projects/${project.id}`}>
+                            <Link to={`/work/${project.id}`}>
                                 <ActionAreaCard
                                     src={project.projectCover}
                                     caption={project.name}

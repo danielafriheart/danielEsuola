@@ -19,12 +19,12 @@
   /* outline: dashed 1px gray; */
 }
 ::selection{
-  color: orangered;
+  color: #8E93FF;
 }
 body {
   /* scroll-snap-type: y mandatory; */
   overflow-x: hidden;
-  background-color: #E1DFDD;
+  background-color: #EBEBEB;
 
   font-family: 'Montserrat', sans-serif;
 }

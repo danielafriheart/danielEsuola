@@ -8,12 +8,17 @@ const Example = () => {
 
     const pageroute = [
         {
-            name: 'Projects,',
+            name: 'About,',
             description: 'Get a better understanding of your traffic',
-            href: '/projects',
+            href: '/',
         },
         {
-            name: 'Contact',
+            name: 'Work,',
+            description: 'Get a better understanding of your traffic',
+            href: '/work',
+        },
+        {
+            name: 'Contact,',
             description: 'Your customers’ data will be safe and secure',
             href: '/contact',
         },

@@ -17,7 +17,7 @@ const Header = ({ leadingText, greyText, trailingText, className, delay }) => {
             data-aos-delay={delay}
             data-aos-easing="ease-in-sine"
 
-            className={`${className} lg:text-[7rem] text-[2.3rem] leading-tight md:text-Header-md space-x-4 text-wrap lg:text-pretty md:text-balance`}>
+            className={`${className} lg:text-[9rem] text-[3.5rem] md:text-[8rem] leading-tight space-x-4 text-wrap lg:text-pretty md:text-balance`}>
             {leadingText}
             {greyText && <span className='text-Gray'>{greyText}</span>}
             {trailingText}
