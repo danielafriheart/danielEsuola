@@ -10,19 +10,21 @@ const Hero = () => {
     return (
         <Section className={'h-fit lg:h-fit md:h-[70dvh] flex flex-col justify-center'}>
             <div className='flex flex-col justify-center lg:space-y-6 space-y-8'>
-                <Paragraph
+                {/* <Paragraph
                     text={"About"}
                     variant={'caption'}
-                    className={'text-right'} />
+                    className={'text-right'} /> */}
                 <div>
                     <div className='flex justify-between border-b-8 border-black '>
-                        <Header leadingText={'creative'} className={'uppercase '} delay={200} />
-                        <Header leadingText={'developer'} className={'uppercase '} delay={200} />
-                        <Header leadingText={'</>'} className={'uppercase hidden lg:flex md:flex'} delay={200} />
+                        <Header leadingText={'earthling '} className={'uppercase '} delay={200} />
                     </div>
-                    <div className='flex justify-between border-b-8 border-black '>
-                        <Header leadingText={'Based in '} className={'uppercase '} delay={200} />
-                        <Header leadingText={'pluto  ✼'} className={'uppercase '} delay={200} />
+                    <div className='lg:flex justify-between border-b-8 border-black '>
+                        <Header leadingText={'full stack'} className={'uppercase '} delay={200} />
+                        <Header leadingText={'developer'} className={'uppercase '} delay={200} />
+                    </div>
+                    <div className='lg:flex justify-between'>
+                        <Header leadingText={'Based in →'} className={'uppercase '} delay={200} />
+                        <Header leadingText={'pluto at heart'} className={'uppercase '} delay={200} />
                     </div>
                     {/* <Header leadingText={'based in pluto  ✼'} className={'uppercase '} delay={200} /> */}
                     {/* <Header leadingText={'developer'} className={'uppercase'} delay={300}/> */}
@@ -34,7 +36,7 @@ const Hero = () => {
                     delay={500}
                     className={'lg:w-[40%] lg:hidden'}
                 />
-                <div>
+                <div className='lg:hidden'>
                     <Button
                         btnText={'Esuoladaniel002@gmail.com'}
                         variant={'grey'}
