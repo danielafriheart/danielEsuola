@@ -7,7 +7,6 @@ const Container = ({ title, description, children, className }) => {
             <Helmet>
                 <title>{title}</title>
                 <meta name="description" content={description} />
-                <link rel="canonical" href="http://esuoladaniel.com/" />
             </Helmet>
 
             {children}
