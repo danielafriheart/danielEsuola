@@ -15,6 +15,23 @@ const Hero = () => {
                     variant={'caption'}
                     className={'text-right'} /> */}
                 <div>
+                    <h1 className='lg:text-[20rem] leading-none  text-[7rem] md:text-[8rem] text-wrap lg:text-pretty md:text-balance'
+                        data-aos="fade-in"
+                        data-aos-delay={100}
+                        data-aos-easing="ease-in-sine"
+                    >Okikiola</h1>
+                    <h1 className='lg:text-[20rem] leading-none  text-[7rem] md:text-[8rem] text-wrap lg:text-pretty md:text-balance'
+                        data-aos="fade-in"
+                        data-aos-delay={200}
+                        data-aos-easing="ease-in-sine"
+                    >esuola </h1>
+                    <h1 className='lg:text-[20rem] leading-none  text-[7rem] md:text-[8rem] text-wrap lg:text-pretty md:text-balance'
+                        data-aos="fade-in"
+                        data-aos-delay={300}
+                        data-aos-easing="ease-in-sine"
+                    >Daniel </h1>
+                </div>
+                {/* <div>
                     <div className='flex justify-between border-b-8 border-black '>
                         <Header leadingText={'earthling '} className={'uppercase '} delay={200} />
                     </div>
@@ -26,10 +43,7 @@ const Hero = () => {
                         <Header leadingText={'Based in →'} className={'uppercase '} delay={200} />
                         <Header leadingText={'pluto at heart'} className={'uppercase '} delay={200} />
                     </div>
-                    {/* <Header leadingText={'based in pluto  ✼'} className={'uppercase '} delay={200} /> */}
-                    {/* <Header leadingText={'developer'} className={'uppercase'} delay={300}/> */}
-                    {/* <Header leadingText={'based in pluto'} className={'uppercase'} delay={400}/> */}
-                </div>
+                </div> */}
                 <Paragraph
                     text={"I support Designers & Agencies with Creative Development."}
                     variant={'paragraph_md'}
