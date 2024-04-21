@@ -63,7 +63,7 @@ const ProjectDetail = () => {
         <Paragraph text={project.writeUp} variant={'label'} className={'lg:w-[75%]'} />
 
         <RouteLinks
-          linkTitle={`${project.projectLink ? " Visit the website's live version" : project.message}`}
+          linkTitle={`${project.projectLink ? " View Project" : project.message}`}
           routeLocation={project.projectLink || null}
           routeStyleType={'noIcon'}
           variant={'caption'}

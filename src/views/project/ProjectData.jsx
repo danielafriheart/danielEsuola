@@ -4,9 +4,9 @@ const projectsData = [
     {
         name: 'Flip',
         description: 'We aim to deliver a first-class experience to digitally inclined traders.',
-        year: '(2024)',
+        year: '2024',
         projectCover: 'https://res.cloudinary.com/dnzi0xxtx/image/upload/v1713698439/Daniel/Celestial_Laptop_Mockup_nj852r.png',
-        projectLink: '',
+        projectLink: 'https://www.figma.com/proto/IxwOi1Q1U5TZDBkaIfKPP9/Flip?page-id=0%3A1&type=design&node-id=1-559&viewport=177%2C299%2C0.1&t=loNcULJIJauNjugP-1&scaling=scale-down-width&mode=design',
         message: "Figma",
         industry: 'Cryptocurrency / Web3',
         client: '---',
@@ -22,7 +22,7 @@ const projectsData = [
     {
         name: 'Esuola Daniel',
         description: 'Custom portfolio website design for creative developer Esuola Daniel.',
-        year: '(2024)',
+        year: '2024',
         projectCover: 'https://res.cloudinary.com/dnzi0xxtx/image/upload/v1710290875/portfolioImages/Scene_t1s1na.png',
         projectLink: '',
         message: "You're currently using it :)",
@@ -38,7 +38,7 @@ const projectsData = [
     {
         name: 'Klusta®',
         description: 'Building the first ever smart mailbox',
-        year: '(2024)',
+        year: '2024',
         projectCover: "https://res.cloudinary.com/dnzi0xxtx/image/upload/v1709846009/portfolioImages/MacBook_Pro_du5swr.webp",
         projectLink: '',
         message: '20% Complete',
@@ -56,7 +56,7 @@ const projectsData = [
     {
         name: 'Prime Properties',
         description: 'Real Estate Website built for MayorK Prime Properties',
-        year: '(2023)',
+        year: '2023',
         projectCover: 'https://res.cloudinary.com/dnzi0xxtx/image/upload/v1709843868/portfolioImages/mayorkprimeproperties_tewq0h.webp',
         projectLink: 'https://mayorkprimeproperties.com/',
         message: '',
