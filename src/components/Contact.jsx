@@ -19,7 +19,7 @@ const Contact = () => {
     }
 
     return (
-        <Container title={'Esuola Daniel ® - get in touch'} description={"Esuola Daniel's Portfolio Website"} className={'bg-[#C4DFD9] pt-32 lg:h-fit md:h-fit h-screen'}>
+        <Container title={'Get in touch'} description={"Esuola Daniel's Portfolio Website"} className={'bg-[#C4DFD9] pt-32 lg:h-fit md:h-fit h-screen'}>
             <Section className={'flex flex-col justify-between h-full space-y-24'}>
                 <section className='z-20 lg:gap-y-48 h-full lg:flex lg:flex-col-reverse'>
 

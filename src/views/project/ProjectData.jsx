@@ -1,20 +1,24 @@
-/* The code snippet you provided is a JavaScript object array named `projectsData` containing
-information about different projects. 
-Each project object within the array includes details such as
-project name, 
-description, 
-year, 
-project cover image URL, p
-roject link, 
-message, 
-industry, 
-lient,
-services, 
-write-up, 
-and a gallery of images related to the project. 
+// Project details database
 
-*/
 const projectsData = [
+    {
+        name: 'Flip',
+        description: 'We aim to deliver a first-class experience to digitally inclined traders.',
+        year: '(2024)',
+        projectCover: 'https://res.cloudinary.com/dnzi0xxtx/image/upload/v1713698439/Daniel/Celestial_Laptop_Mockup_nj852r.png',
+        projectLink: '',
+        message: "Figma",
+        industry: 'Cryptocurrency / Web3',
+        client: '---',
+        services: 'Art direction, Web design',
+        writeUp: 'Our goal was to break free of the high commissions and clunky products offered by traditional brokers. Also, we aim to deliver a first-class experience to digitally inclined traders, regardless of the size of their accounts.',
+
+        gallery: [
+            'https://res.cloudinary.com/dnzi0xxtx/image/upload/v1713698439/Daniel/block-1_yqsibt.png',
+
+            'https://res.cloudinary.com/dnzi0xxtx/image/upload/v1713699143/Daniel/MacBook_Pro_16__-_3_fiuzkz.png',
+        ]
+    },
     {
         name: 'Esuola Daniel',
         description: 'Custom portfolio website design for creative developer Esuola Daniel.',

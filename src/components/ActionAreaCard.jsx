@@ -57,7 +57,7 @@ const ActionAreaCard = ({ caption, label, year, customHeight, src }) => {
         </MediaCard>
 
         <div className='flex justify-between lg:w-[80%] mt-5'>
-          <Paragraph variant={'caption'} text={caption} className={'font-medium'}/>
+          <Paragraph variant={'caption'} text={caption} className={'font-medium header'}/>
           <Paragraph variant={'caption'} text={label} className={'w-1/3 hidden lg:flex md:flex font-medium'} />
           <Paragraph variant={'caption'} text={year} className={'font-medium'}/>
         </div>
