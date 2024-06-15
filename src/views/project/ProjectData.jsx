@@ -1,3 +1,4 @@
+
 // Project details database
 
 const projectsData = [
